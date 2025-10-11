@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 
 export const metadata = {
   title: 'Ali Eldaoushy — Portfolio',
-  description: 'Projects, experience, and contact information'
+  description: 'Projects, Experience, and contact information'
 };
 
 export default function RootLayout({ children }) {

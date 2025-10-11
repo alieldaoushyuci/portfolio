@@ -1,0 +1,31 @@
+.home-page {
+    padding: 2rem;
+}
+
+.home-page-navbar {
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+}
+
+.initials-display {
+    font-size: 24px;
+    display: inline-flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid white;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 55rem;
+}
+
+.name-title{
+    font-size: 3rem;
+    padding-bottom: 0;
+}
+.home-page-header {
+    padding: 1rem;
+    background: #111;
+}
