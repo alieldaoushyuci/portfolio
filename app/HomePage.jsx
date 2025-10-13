@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import './styles/HomePage.css'
 
 export default function HomePage({ children }) {
   return (
