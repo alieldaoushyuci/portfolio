@@ -38,7 +38,8 @@ body {
   padding: 0;
   color: #fff;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   z-index: 1;
 }
 
