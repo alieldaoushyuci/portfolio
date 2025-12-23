@@ -11,6 +11,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <video
+          className="background-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/portfolio/vecteezy_global-connection-and-the-internet-network-modernization-in_8800866.mp4" type="video/mp4" />
+        </video>
         <header className="home-page-header">
           <nav className="home-page-navbar">
             <Link href="/" className="initials-display">AE</Link>
