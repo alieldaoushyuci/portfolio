@@ -39,7 +39,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=aeldaoushy1@gmail.com&su=Contact%20from%20Portfolio"
+              href="https://mail.google.com/mail/u/0/?to=aeldaoushy1@gmail.com&su=Contact%20from%20Portfolio&tf=cm"
               target="_blank"
               rel="noopener noreferrer"
               className="social-button email-button"
