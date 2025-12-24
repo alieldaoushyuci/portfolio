@@ -2,36 +2,17 @@ html {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
+  background-image: url('/portfolio/17-23-54-364_512.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #000;
   /* Fallback */
   position: relative;
   min-height: 100vh;
 }
 
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-  opacity: 0.3;
-  /* Adjust opacity to your preference (0-1) */
-}
-
-html::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Dark overlay to make background subtle - adjust opacity (0.5 = 50% dark) */
-  z-index: -1;
-  pointer-events: none;
-}
 
 body {
   margin: 0;

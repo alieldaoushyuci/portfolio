@@ -2,7 +2,3 @@ node_modules
 .next
 .env
 .DS_Store
-
-# Large video files - host externally (e.g., Cloudinary, AWS S3, or CDN)
-public/**/*.mp4
-public/vecteezy_circuit-data-neural-network-ai-technology-cloud-computing_8800860.mp4
