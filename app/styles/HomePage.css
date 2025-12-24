@@ -1,7 +1,7 @@
 /* Main element styles for scrolling */
 main {
   overflow-x: hidden;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 80px);
 }
 
 .home-page {
@@ -14,28 +14,107 @@ main {
   box-sizing: border-box;
 }
 
+.home-page-header {
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
 .home-page-navbar {
   display: flex;
-  gap: 1rem;
-  font-size: 18px;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
 }
 
 .initials-display {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
   display: inline-flex;
-  padding: 2px 4px;
-  border: 1px solid white;
-  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
   align-items: center;
+  justify-content: center;
   margin-right: auto;
+  background: rgba(255, 255, 255, 0.05);
+  color: #9cf;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 48px;
+  height: 40px;
 }
 
-.home-page-header {
-  padding: 1rem;
-  background: rgba(17, 17, 17, 0.8);
-  backdrop-filter: blur(10px);
+.initials-display:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: #9cf;
+}
+
+.home-page-navbar>a:not(.initials-display) {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #dfe6f3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
   position: relative;
-  z-index: 10;
+}
+
+.home-page-navbar>a:not(.initials-display):hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #9cf;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.home-page-navbar>a:not(.initials-display)::after {
+  content: '';
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 60%;
+  height: 2px;
+  background: #9cf;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+.home-page-navbar>a:not(.initials-display):hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .home-page-header {
+    padding: 1rem;
+  }
+
+  .home-page-navbar {
+    font-size: 14px;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .home-page-navbar>a:not(.initials-display) {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .initials-display {
+    font-size: 18px;
+    padding: 0.4rem 0.6rem;
+    min-width: 44px;
+    height: 36px;
+  }
 }
 
 .hero-card {
