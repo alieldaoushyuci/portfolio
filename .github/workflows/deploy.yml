@@ -1,0 +1,53 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Copy build output to docs
+        run: |
+          # Remove old docs content (except .nojekyll if it exists)
+          if [ -f docs/.nojekyll ]; then
+            find docs -mindepth 1 ! -name '.nojekyll' -delete
+          else
+            rm -rf docs/*
+          fi
+          
+          # Copy everything from out to docs
+          cp -r out/* docs/
+          
+          # Ensure .nojekyll exists for GitHub Pages
+          touch docs/.nojekyll
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/
+          git diff --staged --quiet || git commit -m "Deploy: Update docs from build [skip ci]"
+          git push
+
