@@ -28,9 +28,9 @@ main {
 .home-page-navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   font-size: 16px;
 }
 
@@ -43,13 +43,13 @@ main {
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
   background: rgba(255, 255, 255, 0.12);
   color: #9cf;
   transition: all 0.3s ease;
   text-decoration: none;
   min-width: 48px;
   height: 40px;
+  flex-shrink: 0;
 }
 
 .initials-display:hover {
@@ -60,39 +60,59 @@ main {
   color: #9cf;
 }
 
-.home-page-navbar>a:not(.initials-display) {
-  padding: 0.5rem 1rem;
+.home-page-navbar .nav-links-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.home-page-navbar .nav-links-group > a {
+  padding: 0.4rem 0.65rem;
   border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
   color: #dfe6f3;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 400;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.home-page-navbar>a:not(.initials-display):hover {
+.home-page-navbar>a:not(.initials-display) {
+  padding: 0.4rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.12);
+  color: #dfe6f3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.home-page-navbar .nav-links-group > a:hover,
+.home-page-navbar>a:not(.initials-display):hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
   color: #9cf;
   text-decoration: none;
   transform: translateY(-1px);
 }
 
-.home-page-navbar>a:not(.initials-display)::after {
-  content: '';
-  position: absolute;
-  bottom: 0.25rem;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  width: 60%;
-  height: 2px;
-  background: #9cf;
-  transition: transform 0.3s ease;
-  border-radius: 2px;
-}
-
-.home-page-navbar>a:not(.initials-display):hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
 
 @media (max-width: 768px) {
   .home-page-header {
@@ -105,8 +125,14 @@ main {
     flex-wrap: wrap;
   }
 
+  .home-page-navbar .nav-links-group {
+    gap: 0.25rem;
+  }
+
+  .home-page-navbar .nav-links-group > a,
   .home-page-navbar>a:not(.initials-display) {
-    padding: 0.5rem 0.75rem;
+    padding: 0.35rem 0.55rem;
+    height: 32px;
   }
 
   .initials-display {
