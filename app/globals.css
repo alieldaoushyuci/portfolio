@@ -19,8 +19,9 @@ body {
   padding: 0;
   color: #fff;
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 1;
 }
 

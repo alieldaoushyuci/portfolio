@@ -1,3 +1,9 @@
+/* Main element styles for scrolling */
+main {
+  overflow-x: hidden;
+  min-height: calc(100vh - 60px);
+}
+
 .home-page {
   height: calc(100vh - 60px);
   display: flex;
@@ -137,5 +143,233 @@
 
   .hero-buttons {
     justify-content: center;
+  }
+}
+
+/* Education Page Styles */
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: calc(100vh - 60px);
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.education-card h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.75rem;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-institution {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #9cf;
+}
+
+.education-location {
+  color: #dfe6f3;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.education-degree {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.education-date,
+.education-gpa {
+  color: #dfe6f3;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.education-list {
+  margin-top: 1.5rem;
+}
+
+.list-title {
+  font-size: 1.1rem;
+  color: #9cf;
+  margin: 0 0 0.75rem 0;
+  font-weight: 500;
+}
+
+.education-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-list li {
+  color: #dfe6f3;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.education-list li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: #9cf;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.skill-title {
+  font-size: 1rem;
+  color: #9cf;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.skill-items {
+  color: #dfe6f3;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.certification-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certification-item {
+  color: #dfe6f3;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Experience Page Styles */
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience-company {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #9cf;
+}
+
+.experience-location {
+  color: #dfe6f3;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.experience-role {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.experience-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.experience-date {
+  color: #dfe6f3;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  margin-top: 1rem;
+}
+
+.experience-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience-list li {
+  color: #dfe6f3;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.experience-list li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: #9cf;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    gap: 1.5rem;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
