@@ -19,8 +19,7 @@ export default function Home() {
             passion for technology and problem-solving. I love building
             things—whether it's on the web or in an efficient backend system. My
             skills in C++, Python, and JavaScript allow me to work across the
-            stack, and I'm very eager to learn new tools and technologies, please reach out to me if you have any questions or oppurunities, my email is{' '}
-            <a href="mailto:aeldaoushy1@gmail.com">aeldaoushy1@gmail.com</a>.
+            stack, and I'm very eager to learn new tools and technologies. Please reach out to me if you have any questions or opportunities.
           </p>
           <div className="hero-buttons">
             <a
@@ -38,6 +37,12 @@ export default function Home() {
               className="social-button github-button"
             >
               GitHub
+            </a>
+            <a
+              href="mailto:aeldaoushy1@gmail.com"
+              className="social-button email-button"
+            >
+              Email
             </a>
           </div>
         </div>

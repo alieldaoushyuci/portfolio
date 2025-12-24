@@ -201,9 +201,15 @@ main {
 }
 
 .github-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: #fff;
+  background: rgba(0, 119, 181, 0.2);
+  border-color: rgba(0, 119, 181, 0.5);
+  color: #9cf;
+}
+
+.email-button:hover {
+  background: rgba(0, 119, 181, 0.2);
+  border-color: rgba(0, 119, 181, 0.5);
+  color: #9cf;
 }
 
 @media (max-width: 640px) {
