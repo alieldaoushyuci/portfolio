@@ -212,6 +212,8 @@ main {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
   color: #fff;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .social-button:hover {

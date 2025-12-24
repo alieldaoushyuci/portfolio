@@ -39,7 +39,9 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="mailto:aeldaoushy1@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=aeldaoushy1@gmail.com&su=Contact%20from%20Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-button email-button"
             >
               Email
