@@ -1,6 +1,7 @@
 import './globals.css';
 import './styles/HomePage.css';
 import Link from 'next/link';
+import PipelineBackground from '@/components/PipelineBackground';
 
 export const metadata = {
   title: 'Ali Eldaoushy — Portfolio',
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <PipelineBackground />
         <header className="home-page-header">
           <nav className="home-page-navbar">
             <Link href="/" className="initials-display">AE</Link>
