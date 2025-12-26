@@ -1,7 +1,7 @@
 import './globals.css';
 import './styles/HomePage.css';
-import Link from 'next/link';
 import PipelineBackground from '@/components/PipelineBackground';
+import Header from './components/Header';
 
 export const metadata = {
   title: "Ali Eldaoushy's Portfolio",
@@ -13,17 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <PipelineBackground />
-        <header className="home-page-header">
-          <nav className="home-page-navbar">
-            <Link href="/" className="initials-display">AE</Link>
-            <div className="nav-links-group">
-              <Link href="/education">Education</Link>
-              <Link href="/experience">Experience</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/skills">Skills</Link>
-            </div>
-          </nav>
-        </header>
+        <Header />
         <main>{children}</main>
       </body>
     </html>
