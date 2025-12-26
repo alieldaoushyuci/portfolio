@@ -15,7 +15,7 @@ export default function Home() {
           <div className="hero-label">Computer Science | UC Irvine</div>
           <h1 className="hero-title">Ali Eldaoushy</h1>
           <p className="hero-description">
-            Hello, I'm Ali Eldaoushy! I'm a Computer Science major at UCI with a
+            Hi, I'm Ali Eldaoushy, I'm a Computer Science major at UCI with a
             passion for technology and problem-solving. I love building
             things, whether it's on the web or in an efficient backend system. My
             skills in C++, Python, and JavaScript allow me to work across the
