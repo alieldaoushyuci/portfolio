@@ -10,6 +10,8 @@ export default function Home() {
           className="hero-avatar"
           src={profileSrc}
           alt="Ali Eldaoushy portrait"
+          loading="eager"
+          decoding="async"
         />
         <div className="hero-text">
           <div className="hero-label">Computer Science | UC Irvine</div>
