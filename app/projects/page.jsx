@@ -31,7 +31,7 @@ export default function Projects() {
               <p className="experience-location">Irvine, CA</p>
               <div className="experience-role">
                 <p className="experience-title">React, Wagmi, Viem, PostgreSQL, FastAPI</p>
-                <p className="experience-date">September 2025 – Present</p>
+                <p className="experience-date">September 2025 – February 2026</p>
               </div>
               <div className="experience-list">
                 <ul>
