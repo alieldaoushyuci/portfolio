@@ -6,6 +6,27 @@ export default function Experience() {
                     <h1>Experience</h1>
                     <div className="experience-section">
                         <div className="experience-item">
+                            <h2 className="experience-company">Pacific Industrial Installers</h2>
+                            <p className="experience-location">Irvine, CA</p>
+                            <div className="experience-role">
+                                <p className="experience-title">Full-Stack Software Engineer (Contract)</p>
+                                <p className="experience-date">November 2025 – Present</p>
+                                </div>
+                                <div className="experience-list">
+                                    <ul>
+                                        <li>Architecting full-stack mobile app in React, enabling contractors to verify insurance and certification compliance before job-site entry</li>
+                                        <li>Built core authentication and user onboarding using AWS and Supabase, storing account data securely and enforcing password validation and access policies </li>
+                                        <li>Designed upload and verification workflows allowing workers to import certificates with metadata extraction and expiration tracking</li>
+                                        <li>Integrated third-party verification APIs to validate policy information against trusted external providers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div className="education-card">
+                    <h1>Experience</h1>
+                    <div className="experience-section">
+                        <div className="experience-item">
                             <h2 className="experience-company">Office Of Information Technology, UC Irvine</h2>
                             <p className="experience-location">Irvine, CA</p>
                             <div className="experience-role">

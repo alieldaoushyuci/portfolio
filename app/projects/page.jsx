@@ -6,27 +6,6 @@ export default function Projects() {
           <h1>Projects</h1>
           <div className="experience-section">
             <div className="experience-item">
-              <h2 className="experience-company">Contract Verification App – Construction Compliance Platform</h2>
-              <p className="experience-location">Irvine, CA</p>
-              <div className="experience-role">
-                <p className="experience-title">React Native, PostgreSQL, AWS S3, Clearinghouse API Integration</p>
-                <p className="experience-date">November 2025 – Present</p>
-              </div>
-              <div className="experience-list">
-                <ul>
-                  <li>Architecting full-stack mobile app enabling contractors to verify worker insurance and certification compliance before job-site entry</li>
-                  <li>Built core authentication and user onboarding, storing account data securely and enforcing password validation and access policies</li>
-                  <li>Designed camera upload workflows allowing workers to scan or import certificates with metadata extraction and expiration tracking</li>
-                  <li>Integrated clearinghouse-style insurance verification APIs to validate policy information against trusted external providers</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="education-card">
-          <div className="experience-section">
-            <div className="experience-item">
               <h2 className="experience-company">Agonus AI – AI-Based Crypto Trading Platform</h2>
               <p className="experience-location">Irvine, CA</p>
               <div className="experience-role">
