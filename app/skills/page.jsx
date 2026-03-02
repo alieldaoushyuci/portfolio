@@ -1,9 +1,8 @@
 export default function Skills() {
-    const frontEndSkills = ['CSS', 'HTML', 'JavaScript', 'React', 'Tkinter', 'TypeScript'];
-    const backEndSkills = ['AWS', 'C++', 'Flask', 'Python', 'SQL', 'SQLite'];
-    const toolsSkills = ['Git', 'IntelliJ', 'PyCharm', 'R', 'Visual Studio Code', 'Vitest'];
-    const conceptSkills = ['Object-Oriented Programming', 'Root Cause Analysis', 'Software Development Lifecycle', 'Unit Testing', 'Web Development',
-        'Debugging Skills'];
+    const frontEndSkills = ['CSS', 'HTML', 'JavaScript', 'React', 'Tailwind CSS', 'Tkinter', 'TypeScript'];
+    const backEndSkills = ['AWS', 'C++', 'Flask', 'PostgreSQL', 'Python', 'REST APIs', 'SQL', 'SQLite', 'Supabase'];
+    const toolsSkills = ['Git', 'IntelliJ', 'JSON', 'PyCharm', 'R', 'Vercel', 'Visual Studio Code', 'Vitest'];
+    const conceptSkills = ['Object-Oriented Programming', 'Root Cause Analysis', 'Software Development Lifecycle', 'Unit Testing', 'Web Development'];
 
     return (
         <section style={{ padding: '2rem' }}>

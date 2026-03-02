@@ -6,37 +6,11 @@ export default function Projects() {
           <h1>Projects</h1>
           <div className="experience-section">
             <div className="experience-item">
-              <h2 className="experience-company">Agonus AI – AI-Based Crypto Trading Platform</h2>
-              <p className="experience-location">Irvine, CA</p>
-              <div className="experience-role">
-                <p className="experience-title">React, Wagmi, Viem, PostgreSQL, FastAPI</p>
-                <p className="experience-date">September 2025 – February 2026</p>
-              </div>
-              <div className="experience-list">
-                <ul>
-                  <li>Implemented blockchain wallet authentication using Wagmi and WalletConnect, allowing users to sign in with supported Base networks</li>
-                  <li>Built smart contract interaction hooks enabling users to place wagers, fetch live tournament data, and claim winnings with real-time onchain state updates</li>
-                  <li>Designed and integrated backend schema using PostgreSQL and SQLAlchemy to persist tournament and user activity for scalable service operation</li>
-                </ul>
-              </div>
-              <div className="project-buttons">
-                <a
-                  href="https://github.com/blockchainuci/Agonus"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-button github-button"
-                >
-                  View GitHub
-                </a>
-              </div>
-            </div>
-
-            <div className="experience-item">
-              <h2 className="experience-company">HomePilot – Smart Home Management Dashboard</h2>
+              <h2 className="experience-company">HomePilot – AI Powered Rental Copilot</h2>
               <p className="experience-location">Personal Project</p>
               <div className="experience-role">
-                <p className="experience-title">Next.js, React, Tailwind CSS, TypeScript</p>
-                <p className="experience-date">2025</p>
+                <p className="experience-title">React, TypeScript, Supabase, PostgreSQL, Groq, Vercel</p>
+                <p className="experience-date">February 2026 – Present</p>
               </div>
               <div className="experience-list">
                 <ul>
@@ -53,10 +27,40 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="social-button"
                 >
-                  Try it out
+                  Live Demo
                 </a>
                 <a
                   href="https://github.com/Ivan-Shishkin-Dev/HomePilot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-button github-button"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="education-card">
+          <div className="experience-section">
+            <div className="experience-item">
+              <h2 className="experience-company">Agonus AI – AI-Based Crypto Trading Platform</h2>
+              <p className="experience-location">Irvine, CA</p>
+              <div className="experience-role">
+                <p className="experience-title">React, Wagmi, Viem, PostgreSQL, FastAPI</p>
+                <p className="experience-date">September 2025 – February 2026</p>
+              </div>
+              <div className="experience-list">
+                <ul>
+                  <li>Implemented blockchain wallet authentication using Wagmi and WalletConnect, allowing users to sign in with supported Base networks</li>
+                  <li>Built smart contract interaction hooks enabling users to place wagers, fetch live tournament data, and claim winnings with real-time onchain state updates</li>
+                  <li>Designed and integrated backend schema using PostgreSQL and SQLAlchemy to persist tournament and user activity for scalable service operation</li>
+                </ul>
+              </div>
+              <div className="project-buttons">
+                <a
+                  href="https://github.com/blockchainuci/Agonus"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-button github-button"
