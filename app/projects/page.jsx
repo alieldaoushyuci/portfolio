@@ -19,6 +19,51 @@ export default function Projects() {
                   <li>Designed and integrated backend schema using PostgreSQL and SQLAlchemy to persist tournament and user activity for scalable service operation</li>
                 </ul>
               </div>
+              <div className="project-buttons">
+                <a
+                  href="https://github.com/blockchainuci/Agonus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-button github-button"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="experience-item">
+              <h2 className="experience-company">HomePilot – Smart Home Management Dashboard</h2>
+              <p className="experience-location">Personal Project</p>
+              <div className="experience-role">
+                <p className="experience-title">Next.js, React, Tailwind CSS, TypeScript</p>
+                <p className="experience-date">2025</p>
+              </div>
+              <div className="experience-list">
+                <ul>
+                  <li>Built a responsive dashboard for configuring and monitoring smart home devices with real-time UI updates</li>
+                  <li>Implemented reusable card-based layouts for rooms, devices, and schedules, optimized for desktop and mobile</li>
+                  <li>Designed intuitive navigation and stateful views so users can quickly switch between overview, room, and device detail pages</li>
+                  <li>Collaborated via GitHub using code reviews and feature branches to maintain a clean, scalable component architecture</li>
+                </ul>
+              </div>
+              <div className="project-buttons">
+                <a
+                  href="https://v0-homepilot.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-button"
+                >
+                  Try it out
+                </a>
+                <a
+                  href="https://github.com/Ivan-Shishkin-Dev/HomePilot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-button github-button"
+                >
+                  View GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
