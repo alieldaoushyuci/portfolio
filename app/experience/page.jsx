@@ -6,6 +6,18 @@ export default function Experience() {
                     <h1>Experience</h1>
                     <div className="experience-section">
                         <div className="experience-item">
+                            <h2 className="experience-company">Nomad eCommerce</h2>
+                            <p className="experience-location"></p>
+                            <div className="experience-role">
+                                <p className="experience-title">Web Development Intern</p>
+                                <p className="experience-date">March 2026 – Present</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="education-card">
+                    <div className="experience-section">
+                        <div className="experience-item">
                             <h2 className="experience-company">Pacific Coast Industrial Installers</h2>
                             <p className="experience-location">Irvine, CA</p>
                             <div className="experience-role">
