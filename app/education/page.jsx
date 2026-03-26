@@ -10,7 +10,7 @@ export default function Education() {
                         <div className="education-details">
                             <p className="education-degree">Bachelor of Science in Computer Science; Specialization in Intelligient Systems</p>
                             <p className="education-date">Graduation Date: June 2027</p>
-                            <p className="education-gpa">GPA: 3.67</p>
+                            <p className="education-gpa">GPA: 3.83</p>
                         </div>
                         <div className="education-list">
                             <h3 className="list-title">Relevant Courses:</h3>
