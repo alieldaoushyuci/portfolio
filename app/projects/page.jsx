@@ -10,7 +10,7 @@ export default function Projects() {
               <p className="experience-location">Personal Project</p>
               <div className="experience-role">
                 <p className="experience-title">React, TypeScript, Supabase, PostgreSQL, Groq, Vercel</p>
-                <p className="experience-date">February 2026 – Present</p>
+                <p className="experience-date">February 2026 – March 2026</p>
               </div>
               <div className="experience-list">
                 <ul>
