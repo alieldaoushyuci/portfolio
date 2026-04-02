@@ -1,3 +1,9 @@
+# Deploys the Next.js static export in ./out to GitHub Pages.
+#
+# One-time repo setup (required or deploy will fail):
+# Settings → Pages → Build and deployment → Source → "GitHub Actions"
+# (not "Deploy from a branch"). Save, then re-run this workflow.
+
 name: Deploy to GitHub Pages
 
 on:
@@ -12,7 +18,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -20,12 +26,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -37,8 +43,9 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      # configure-pages omitted: it calls the Pages API and fails with HttpError
+      # Not Found until the repo uses "GitHub Actions" as the Pages source. This
+      # static export does not need its metadata.
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -51,6 +58,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
