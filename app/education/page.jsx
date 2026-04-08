@@ -27,7 +27,7 @@ export default function Education() {
                             <h3 className="list-title">Extracurricular Involvement:</h3>
                             <ul>
                                 <li>Blockchain at UCI</li>
-                                <li>Hack at UCI</li>
+                                <li>Campuswide Honors Collegium</li>
                                 <li>ICS Student Council</li>
                                 <li>Muslim Student Union</li>
                                 <li>Sigma Pi Fraternity</li>
