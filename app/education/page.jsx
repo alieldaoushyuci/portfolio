@@ -8,7 +8,7 @@ export default function Education() {
                         <h2 className="education-institution">University of California, Irvine</h2>
                         <p className="education-location">Irvine, CA</p>
                         <div className="education-details">
-                            <p className="education-degree">Bachelor of Science in Computer Science; Specialization in Intelligient Systems</p>
+                            <p className="education-degree">Bachelor of Science in Computer Science; Specialization in Intelligent Systems</p>
                             <p className="education-date">Graduation Date: June 2027</p>
                             <p className="education-gpa">GPA: 3.80</p>
                         </div>
@@ -18,6 +18,7 @@ export default function Education() {
                                 <li>Advanced Programming in Python</li>
                                 <li>Data Structures and Algorithms</li>
                                 <li>Discrete Mathematics and Boolean Logic</li>
+                                <li>Introduction to Artificial Intelligence</li>
                                 <li>Programming in C++ as a Second Language</li>
                                 <li>Software Libraries and Networks</li>
                             </ul>

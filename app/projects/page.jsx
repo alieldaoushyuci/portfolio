@@ -7,17 +7,16 @@ export default function Projects() {
           <div className="experience-section">
             <div className="experience-item">
               <h2 className="experience-company">HomePilot – AI Powered Rental Copilot</h2>
-              <p className="experience-location">Personal Project</p>
               <div className="experience-role">
-                <p className="experience-title">React, TypeScript, Supabase, PostgreSQL, Groq, Vercel</p>
+                <p className="experience-title">Groq, PostgreSQL, React, Supabase, TypeScript, Vercel</p>
                 <p className="experience-date">February 2026 – March 2026</p>
               </div>
               <div className="experience-list">
                 <ul>
-                  <li>Built a responsive dashboard for configuring and monitoring smart home devices with real-time UI updates</li>
-                  <li>Implemented reusable card-based layouts for rooms, devices, and schedules, optimized for desktop and mobile</li>
-                  <li>Designed intuitive navigation and stateful views so users can quickly switch between overview, room, and device detail pages</li>
-                  <li>Collaborated via GitHub using code reviews and feature branches to maintain a clean, scalable component architecture</li>
+                  <li>Architected and deployed a full-stack rental platform that aggregates live Zillow listings, computes personalized match scores, and generates AI-driven recommendations for renters</li>
+                  <li>Built a web-scraping pipeline using third-party APIs to parse data into JSON with multi-layer extraction and in-memory implementation</li>
+                  <li>Designed a PostgreSQL trigger-chain architecture with auto-provisioning user data to enforce strict per-user access policies</li>
+                  <li>Integrated Groq to generate listing-tailored cover letters, structured improvement feedback, and contextual recommendation insights</li>
                 </ul>
               </div>
               <div className="project-buttons">
@@ -46,16 +45,15 @@ export default function Projects() {
           <div className="experience-section">
             <div className="experience-item">
               <h2 className="experience-company">Agonus AI – AI-Based Crypto Trading Platform</h2>
-              <p className="experience-location">Irvine, CA</p>
               <div className="experience-role">
-                <p className="experience-title">React, Wagmi, Viem, PostgreSQL, FastAPI</p>
+                <p className="experience-title">FastAPI, React, SQLAlchemy, Viem, Wagmi</p>
                 <p className="experience-date">September 2025 – February 2026</p>
               </div>
               <div className="experience-list">
                 <ul>
+                  <li>Built smart contract interaction hooks enabling users to place wagers, fetch live tournament data, and claim winnings with real-time on-chain state updates</li>
+                  <li>Designed and integrated backend schema using SQLAlchemy to persist tournament and user activity for scalable service operation</li>
                   <li>Implemented blockchain wallet authentication using Wagmi and WalletConnect, allowing users to sign in with supported Base networks</li>
-                  <li>Built smart contract interaction hooks enabling users to place wagers, fetch live tournament data, and claim winnings with real-time onchain state updates</li>
-                  <li>Designed and integrated backend schema using PostgreSQL and SQLAlchemy to persist tournament and user activity for scalable service operation</li>
                 </ul>
               </div>
               <div className="project-buttons">
@@ -76,7 +74,6 @@ export default function Projects() {
           <div className="experience-section">
             <div className="experience-item">
               <h2 className="experience-company">GRAMS – Graduate Academic Management System</h2>
-              <p className="experience-location">Irvine, CA</p>
               <div className="experience-role">
                 <p className="experience-title">IntelliJ, React, Git</p>
                 <p className="experience-date">June 2025 – September 2025</p>

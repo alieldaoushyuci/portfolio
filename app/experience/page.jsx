@@ -7,10 +7,17 @@ export default function Experience() {
                     <div className="experience-section">
                         <div className="experience-item">
                             <h2 className="experience-company">Nomad eCommerce</h2>
-                            <p className="experience-location"></p>
                             <div className="experience-role">
-                                <p className="experience-title">Web Development Intern</p>
+                                <p className="experience-title">Web Development Intern (Part-Time)</p>
                                 <p className="experience-date">March 2026 – Present</p>
+                            </div>
+                            <div className="experience-list">
+                                <ul>
+                                    <li>Engineered end-to-end integration between back-end services and front-end interfaces, establishing reliable data flow across the full stack</li>
+                                    <li>Configured and deployed REST APIs to connect platform features with external services, enabling seamless data exchange across systems</li>
+                                    <li>Diagnosed and resolved database issues including query inefficiencies and data integrity failures, restoring system reliability</li>
+                                    <li>Built responsive user-facing storefront pages with focus on performance, layout precision, and polished user experience</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -19,7 +26,6 @@ export default function Experience() {
                     <div className="experience-section">
                         <div className="experience-item">
                             <h2 className="experience-company">Pacific Coast Industrial Installers</h2>
-                            <p className="experience-location">Irvine, CA</p>
                             <div className="experience-role">
                                 <p className="experience-title">Full-Stack Software Engineer (Contract)</p>
                                 <p className="experience-date">November 2025 – Present</p>
@@ -39,7 +45,6 @@ export default function Experience() {
                     <div className="experience-section">
                         <div className="experience-item">
                             <h2 className="experience-company">Office Of Information Technology, UC Irvine</h2>
-                            <p className="experience-location">Irvine, CA</p>
                             <div className="experience-role">
                                 <p className="experience-title">Software Development Intern</p>
                                 <p className="experience-date">June 2025 – Present</p>
@@ -47,8 +52,8 @@ export default function Experience() {
                             <div className="experience-list">
                                 <ul>
                                     <li>Developed front-end and back-end components for student management systems, delivering enhanced UI and functionality</li>
-                                    <li>Implemented interactive React components with reactive layouts and advanced state management for user input handling</li>
                                     <li>Built and debugged APIs for student data retrieval and persistence, ensuring accurate integration with campus systems</li>
+                                    <li>Implemented interactive React components with reactive layouts and advanced state management for user input handling</li>
                                     <li>Located and resolved functional issues across table rendering, form validation, and modal interactions, improving system usability</li>
                                 </ul>
                             </div>
@@ -60,7 +65,6 @@ export default function Experience() {
                     <div className="experience-section">
                         <div className="experience-item">
                             <h2 className="experience-company">Torpedo Labs – Game Development and Publishing Company</h2>
-                            <p className="experience-location">San Francisco, CA</p>
                             <div className="experience-role">
                                 <p className="experience-title">Software Development Intern</p>
                                 <p className="experience-date">May 2024 – September 2024</p>
