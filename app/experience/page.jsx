@@ -47,7 +47,7 @@ export default function Experience() {
                             <h2 className="experience-company">Office Of Information Technology, UC Irvine</h2>
                             <div className="experience-role">
                                 <p className="experience-title">Software Development Intern</p>
-                                <p className="experience-date">June 2025 – Present</p>
+                                <p className="experience-date">June 2025 – June 2026</p>
                             </div>
                             <div className="experience-list">
                                 <ul>
