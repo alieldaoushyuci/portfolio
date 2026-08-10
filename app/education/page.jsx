@@ -8,7 +8,7 @@ export default function Education() {
                         <h2 className="education-institution">University of California, Irvine</h2>
                         <p className="education-location">Irvine, CA</p>
                         <div className="education-details">
-                            <p className="education-degree">Bachelor of Science in Computer Science; Specialization in Intelligent Systems</p>
+                            <p className="education-degree">Bachelor of Science in Computer Science</p>
                             <p className="education-date">Graduation Date: December 2027</p>
                             <p className="education-gpa">GPA: 3.74</p>
                         </div>
@@ -26,11 +26,13 @@ export default function Education() {
                         <div className="education-list">
                             <h3 className="list-title">Extracurricular Involvement:</h3>
                             <ul>
+                                <li>AI Safety at UCI</li>
                                 <li>Blockchain at UCI</li>
                                 <li>Campuswide Honors Collegium</li>
                                 <li>ICS Student Council</li>
                                 <li>Muslim Student Union</li>
                                 <li>Sigma Pi Fraternity</li>
+                                <li>Triathlon Club</li>
                             </ul>
                         </div>
                     </div>

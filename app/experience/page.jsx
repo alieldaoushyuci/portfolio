@@ -8,7 +8,7 @@ export default function Experience() {
                         <div className="experience-item">
                             <h2 className="experience-company">Nomad eCommerce</h2>
                             <div className="experience-role">
-                                <p className="experience-title">Web Development Intern (Part-Time)</p>
+                                <p className="experience-title">Web Development Intern</p>
                                 <p className="experience-date">March 2026 – Present</p>
                             </div>
                             <div className="experience-list">
