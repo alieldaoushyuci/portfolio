@@ -1,6 +1,6 @@
 export default function Skills() {
     const frontEndSkills = ['CSS', 'HTML', 'JavaScript', 'React', 'Tailwind CSS', 'Tkinter', 'TypeScript'];
-    const backEndSkills = ['AWS', 'C++', 'Flask', 'PostgreSQL', 'Python', 'REST APIs', 'SQL', 'SQLAlchemy', 'Supabase'];
+    const backEndSkills = ['AWS', 'Azure', 'C++', 'Flask', 'PostgreSQL', 'Python', 'REST APIs', 'SQL', 'SQLAlchemy', 'Supabase'];
     const toolsSkills = ['Git', 'IntelliJ', 'JSON', 'PyCharm', 'R', 'Vercel', 'Visual Studio Code', 'Vitest'];
     const conceptSkills = ['CI/CD Pipelines', 'Object-Oriented Programming', 'Root Cause Analysis', 'Software Development Lifecycle', 'Unit Testing', 'Web Development'];
 
