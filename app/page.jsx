@@ -19,7 +19,7 @@ export default function Home() {
           <p className="hero-description">
             Hi, I'm Ali Eldaoushy, I'm a Computer Science major at UCI with a
             passion for technology and problem-solving. I love building
-            things—whether it's a on the web or in an efficient backend system. My
+            things—whether it's on the web or in an efficient backend system. My
             skills in C++, Python, and JavaScript allow me to work across the
             stack, and I'm very eager to learn new tools and technologies.
           </p>
