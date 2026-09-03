@@ -50,7 +50,7 @@ export default function Skills() {
 
                     <div className="certification-section">
                         <h2 className="skills-section-title">Certifications</h2>
-                        <div className="certification-item">Future of AI (BlueDot Impact)</div>
+                        <div className="certification-item">Future of AI (Issued by BlueDot Foundation)</div>
                         <div className="certification-item">Networking and Cybersecurity (William S. Hart District)</div>
                     </div>
                 </div>
