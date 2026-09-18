@@ -100,7 +100,7 @@ export default function Experience() {
         <div className="entry platform">
           <h2 className="who">
             Software Development Intern{' '}
-            <em>— Torpedo Labs – Game Development and Publishing Company</em>
+            <em>— Torpedo Labs</em>
           </h2>
           <p className="when">May 2024 – September 2024</p>
           <div className="body">
@@ -126,11 +126,12 @@ export default function Experience() {
 
         <div className="entry platform">
           <h2 className="who">
-            Alumni Network Chairman <em>— Sigma Pi Fraternity</em>
+            Committee Chairman <em>— Sigma Pi Fraternity</em>
           </h2>
-          <p className="when">Present</p>
+          <p className="when">January 2025 – Present</p>
           <div className="body">
             <ul>
+              <li>Alumni Network Chairman</li>
               <li>Scholarship Chairman</li>
               <li>Active Member</li>
             </ul>

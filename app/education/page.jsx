@@ -7,9 +7,7 @@ export default function Education() {
       <article className="entries">
         <div className="entry platform">
           <p className="when">Graduating December 2027</p>
-          <h2 className="who">
-            University of California, Irvine <em>— Irvine, CA</em>
-          </h2>
+          <h2 className="who">University of California, Irvine</h2>
           <p className="meta">Bachelor of Science in Computer Science</p>
           <p className="meta">GPA: 3.74</p>
         </div>
