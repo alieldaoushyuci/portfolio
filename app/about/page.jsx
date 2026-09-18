@@ -182,7 +182,7 @@ export default function About() {
             <h3>Music</h3>
           </div>
           <p>
-            Music has had a big role in my life for as long as I can remember. I
+            Music has been a big part of my life for as long as I can remember. I
             really began exploring more music and curating my taste when I was a
             freshman in high school and got into skating. There was always
             something playing, either in my headphones or whatever my friends

@@ -30,7 +30,6 @@ function coinFace(metal, face) {
   return pixels;
 }
 
-/** LinkedIn blue token — star */
 function TokenStar() {
   const base = coinFace('#0a66c2', '#3b8ddd');
   const stamp = [
@@ -55,7 +54,6 @@ function TokenStar() {
   );
 }
 
-/** GitHub silver token — diamond */
 function TokenDiamond() {
   const base = coinFace('#b8c4d0', '#d5dde6');
   const stamp = [
@@ -80,7 +78,6 @@ function TokenDiamond() {
   );
 }
 
-/** Gmail yellow token — lightning */
 function TokenBolt() {
   const base = coinFace('#f4c430', '#ffe066');
   const stamp = [
@@ -107,7 +104,6 @@ function TokenBolt() {
   );
 }
 
-/** Substack orange token — 1UP mushroom */
 function TokenOneUp() {
   const base = coinFace('#e85d04', '#ff8c42');
   const stamp = [

@@ -1,6 +1,3 @@
-/* Ali Eldaoushy — portfolio
-   Soft maroon · Spectral · clean editorial layout */
-
 :root {
   --bg: #1a2e1a;
   --paper: #243824;
@@ -52,7 +49,6 @@ a {
   text-decoration: none;
 }
 
-/* ── Page shell ─────────────────────────────── */
 .page {
   position: relative;
   z-index: 2;
@@ -81,7 +77,6 @@ a {
   color: var(--subtle);
 }
 
-/* Soft green platforms */
 .platform {
   background: var(--platform);
   color: var(--platform-ink);
@@ -208,7 +203,6 @@ a {
   margin-block: clamp(32px, 5vh, 64px);
 }
 
-/* ── Motion ─────────────────────────────────── */
 @keyframes rise {
   from {
     opacity: 0;
@@ -240,7 +234,6 @@ a {
   }
 }
 
-/* ── Top bar ────────────────────────────────── */
 .topbar {
   margin-bottom: 8px;
 }
@@ -387,7 +380,6 @@ a {
   }
 }
 
-/* ── Section header ─────────────────────────── */
 .section-head {
   margin-top: 40px;
   margin-bottom: 36px;
@@ -409,7 +401,6 @@ a {
   margin-bottom: 0;
 }
 
-/* ── Hero ───────────────────────────────────── */
 .hero {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -629,7 +620,6 @@ a {
   color: var(--accent);
 }
 
-/* ── Section pages ──────────────────────────── */
 p {
   font-family: var(--ser), Georgia, serif;
   font-size: 1.15rem;
@@ -667,7 +657,6 @@ article h2:first-child {
   margin-top: 0;
 }
 
-/* ── Entries (experience / projects / education) */
 .entries {
   display: flex;
   flex-direction: column;
@@ -822,7 +811,6 @@ article h2:first-child {
   opacity: 0.7;
 }
 
-/* ── Skills chips ───────────────────────────── */
 .skill-groups {
   display: flex;
   flex-direction: column;
@@ -886,7 +874,6 @@ article h2:first-child {
   padding-top: 0;
 }
 
-/* ── About interests ────────────────────────── */
 .interests-heading {
   margin-top: 48px;
   margin-bottom: 8px;
@@ -990,7 +977,6 @@ article h2:first-child {
   align-self: center;
 }
 
-/* Reading tabs + covers */
 .reading-shelf {
   margin-top: 18px;
 }
@@ -1202,7 +1188,6 @@ article h2:first-child {
   object-fit: cover;
 }
 
-/* Travel favorites gallery */
 .travel-gallery {
   list-style: none;
   margin: 20px 0 0;
@@ -1273,7 +1258,6 @@ article h2:first-child {
   color: var(--muted);
 }
 
-/* ── Footer ─────────────────────────────────── */
 .site-foot {
   margin-top: auto;
   padding-top: 40px;
