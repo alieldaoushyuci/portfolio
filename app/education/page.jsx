@@ -15,11 +15,10 @@ export default function Education() {
         <div className="platform">
           <p className="group-label">Relevant Coursework</p>
           <ul className="edu-list">
-            <li>Advanced Programming in Python</li>
             <li>Data Structures and Algorithms</li>
             <li>Discrete Mathematics and Boolean Logic</li>
             <li>Introduction to Artificial Intelligence</li>
-            <li>Programming in C++ as a Second Language</li>
+            <li>Machine Learning and Data Mining</li>
             <li>Software Libraries and Networks</li>
           </ul>
         </div>
