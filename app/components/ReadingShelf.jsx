@@ -16,9 +16,9 @@ const BOOKS = {
       cover: '/portfolio/books/letters-from-a-stoic.jpg',
     },
     {
-      title: 'If Anyone Builds It, Everyone Dies',
-      author: 'Eliezer Yudkowsky & Nate Soares',
-      cover: '/portfolio/books/if-anyone-builds-it.jpg',
+      title: "Man's Search for Meaning",
+      author: 'Viktor E. Frankl',
+      cover: '/portfolio/books/mans-search-for-meaning.jpg',
     },
   ],
   planned: [
@@ -26,11 +26,6 @@ const BOOKS = {
       title: 'The Art of Living',
       author: 'Epictetus',
       cover: '/portfolio/books/the-art-of-living.jpg',
-    },
-    {
-      title: "Man's Search for Meaning",
-      author: 'Viktor E. Frankl',
-      cover: '/portfolio/books/mans-search-for-meaning.jpg',
     },
     {
       title: 'Musicophilia: Tales of Music and the Brain',
@@ -48,6 +43,11 @@ const BOOKS = {
       title: 'Building a Second Brain',
       author: 'Tiago Forte',
       cover: '/portfolio/books/building-a-second-brain.jpg',
+    },
+    {
+      title: 'If Anyone Builds It, Everyone Dies',
+      author: 'Eliezer Yudkowsky & Nate Soares',
+      cover: '/portfolio/books/if-anyone-builds-it.jpg',
     },
     {
       title: 'The Allegory of the Cave',
