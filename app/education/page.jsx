@@ -8,7 +8,10 @@ export default function Education() {
         <div className="entry platform">
           <p className="when">Graduating December 2027</p>
           <h2 className="who">University of California, Irvine</h2>
-          <p className="meta">Bachelor of Science in Computer Science</p>
+          <p className="meta">
+            Bachelor of Science in Computer Science; Specialization in
+            Intelligent Systems
+          </p>
           <p className="meta">GPA: 3.74</p>
         </div>
 

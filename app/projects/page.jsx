@@ -14,18 +14,13 @@ export default function Projects() {
           <div className="body">
             <ul>
               <li>
-                Architected and deployed a full-stack rental platform that
-                aggregates live Zillow listings, computes personalized match
-                scores, and generates AI-driven recommendations for renters
+                Architected a full-stack rental platform that aggregates live
+                property listings and generates AI-driven recommendations for
+                users
               </li>
               <li>
                 Built a web-scraping pipeline using third-party APIs to parse data
                 into JSON with multi-layer extraction and in-memory implementation
-              </li>
-              <li>
-                Designed a PostgreSQL trigger-chain architecture with
-                auto-provisioning user data to enforce strict per-user access
-                policies
               </li>
               <li>
                 Integrated Groq to generate listing-tailored cover letters,

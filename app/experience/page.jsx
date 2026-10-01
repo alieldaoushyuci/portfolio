@@ -20,6 +20,12 @@ export default function Experience() {
                 full stack
               </li>
               <li>
+                Drove custom feature work from client discovery through delivery,
+                translating requirements into wireframes and technical specs, then
+                building the approved features end-to-end across the database,
+                APIs, and storefront UI
+              </li>
+              <li>
                 Configured and deployed REST APIs to connect platform features
                 with external services, enabling seamless data exchange across
                 systems
@@ -28,10 +34,6 @@ export default function Experience() {
                 Diagnosed and resolved database issues including query
                 inefficiencies and data integrity failures, restoring system
                 reliability
-              </li>
-              <li>
-                Built responsive user-facing storefront pages with focus on
-                performance, layout precision, and polished user experience
               </li>
             </ul>
           </div>
@@ -46,23 +48,22 @@ export default function Experience() {
           <div className="body">
             <ul>
               <li>
-                Architecting full-stack mobile app in React, enabling contractors
-                to verify insurance and certification compliance before job-site
-                entry
+                Architecting cross-platform application that verifies contractor
+                identity, insurance, and licenses before job-site entry
               </li>
               <li>
-                Built core authentication and user onboarding using AWS and
-                Supabase, storing user data securely and enforcing strict access
-                policies
+                Led client requirements sessions with stakeholders and translated
+                business needs into scalable development milestones and designing
+                architecture accordingly
               </li>
               <li>
-                Designed upload and verification workflows allowing workers to
-                import certificates with metadata extraction and expiration
-                tracking
+                Implemented database authentication and row-level access policies,
+                building server-side verification workflows for credential data
               </li>
               <li>
-                Integrated third-party verification APIs to validate policy
-                information against trusted external providers
+                Integrated third-party APIs to validate credentials against live
+                sources, with expiration tracking and QR-code sharing of user
+                profiles
               </li>
             </ul>
           </div>
@@ -77,16 +78,12 @@ export default function Experience() {
           <div className="body">
             <ul>
               <li>
-                Developed front-end and back-end components for student
-                management systems, delivering enhanced UI and functionality
+                Implemented interactive React components with reactive layouts
+                and advanced state management for user input handling
               </li>
               <li>
                 Built and debugged APIs for student data retrieval and
                 persistence, ensuring accurate integration with campus systems
-              </li>
-              <li>
-                Implemented interactive React components with reactive layouts
-                and advanced state management for user input handling
               </li>
               <li>
                 Located and resolved functional issues across table rendering,
