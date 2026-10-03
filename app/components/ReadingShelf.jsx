@@ -27,6 +27,16 @@ const BOOKS = {
       author: 'Oliver Sacks',
       cover: '/portfolio/books/musicophilia.jpg',
     },
+    {
+      title: '80,000 Hours',
+      author: 'Benjamin Todd',
+      cover: '/portfolio/books/80000-hours.jpg',
+    },
+    {
+      title: 'The 7 Habits of Highly Effective People',
+      author: 'Stephen R. Covey',
+      cover: '/portfolio/books/the-7-habits.jpg',
+    },
   ],
   finished: [
     {
