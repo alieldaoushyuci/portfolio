@@ -7,6 +7,6 @@ export default function LastUpdated() {
   if (!pathname || pathname === '/') return null;
 
   return (
-    <p className="last-updated">Last updated · September 18, 2026</p>
+    <p className="last-updated">Last updated · October 3, 2026</p>
   );
 }

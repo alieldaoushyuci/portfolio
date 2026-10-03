@@ -8,6 +8,7 @@ const sections = [
   { slug: '/about', title: 'About' },
   { slug: '/education', title: 'Education' },
   { slug: '/experience', title: 'Experience' },
+  { slug: '/involvement', title: 'Involvement' },
   { slug: '/projects', title: 'Projects' },
   { slug: '/skills', title: 'Skills' },
 ];

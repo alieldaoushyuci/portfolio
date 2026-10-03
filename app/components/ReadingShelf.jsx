@@ -11,9 +11,9 @@ const TABS = [
 const BOOKS = {
   now: [
     {
-      title: 'Letters From a Stoic',
-      author: 'Seneca',
-      cover: '/portfolio/books/letters-from-a-stoic.jpg',
+      title: 'The Art of Living',
+      author: 'Epictetus',
+      cover: '/portfolio/books/the-art-of-living.jpg',
     },
     {
       title: "Man's Search for Meaning",
@@ -23,17 +23,17 @@ const BOOKS = {
   ],
   planned: [
     {
-      title: 'The Art of Living',
-      author: 'Epictetus',
-      cover: '/portfolio/books/the-art-of-living.jpg',
-    },
-    {
       title: 'Musicophilia: Tales of Music and the Brain',
       author: 'Oliver Sacks',
       cover: '/portfolio/books/musicophilia.jpg',
     },
   ],
   finished: [
+    {
+      title: 'Letters From a Stoic',
+      author: 'Seneca',
+      cover: '/portfolio/books/letters-from-a-stoic.jpg',
+    },
     {
       title: 'Atomic Habits',
       author: 'James Clear',

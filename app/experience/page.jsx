@@ -5,8 +5,6 @@ export default function Experience() {
     <main>
       <SectionHeader slug="experience" />
       <article className="entries">
-        <p className="group-label">Industry</p>
-
         <div className="entry platform">
           <h2 className="who">
             Software Development Intern <em>— Nomad eCommerce</em>
@@ -114,57 +112,6 @@ export default function Experience() {
               <li>
                 Conducted testing and debugging, identifying areas for
                 improvement and optimizing player experience
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <p className="group-label">Involvement</p>
-
-        <div className="entry platform">
-          <h2 className="who">
-            Committee Chairman <em>— Sigma Pi Fraternity</em>
-          </h2>
-          <p className="when">January 2025 – Present</p>
-          <div className="body">
-            <ul>
-              <li>Alumni Network Chairman</li>
-              <li>Scholarship Chairman</li>
-              <li>Active Member</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="entry platform">
-          <h2 className="who">
-            Private Tutor <em>— Self-employed</em>
-          </h2>
-          <p className="when">August 2023 – January 2024</p>
-          <div className="body">
-            <ul>
-              <li>
-                Provided one-on-one assistance to elementary and middle school
-                students with homework, studying, and general school-related
-                struggles
-              </li>
-              <li>
-                Supported students with learning disabilities and made
-                accommodations based on each student&apos;s personal needs
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="entry platform">
-          <h2 className="who">
-            Courtesy Clerk <em>— Vons</em>
-          </h2>
-          <p className="when">February 2023 – July 2023</p>
-          <div className="body">
-            <ul>
-              <li>Assisted customers with shopping needs and services</li>
-              <li>
-                Maintained sanitation of the store and surrounding perimeter
               </li>
             </ul>
           </div>

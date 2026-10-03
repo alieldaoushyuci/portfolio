@@ -6,6 +6,10 @@ export default function SectionHeader({ slug }) {
     },
     education: { title: 'Education', eyebrow: 'School and coursework' },
     experience: { title: 'Experience', eyebrow: 'Jobs and internships' },
+    involvement: {
+      title: 'Involvement',
+      eyebrow: 'Organizations, work, and field context',
+    },
     projects: { title: 'Projects', eyebrow: "Some work that I'm proud of" },
     skills: { title: 'Skills', eyebrow: 'Tools and concepts' },
   };
