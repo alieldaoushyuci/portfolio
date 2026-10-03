@@ -49,11 +49,6 @@ const BOOKS = {
       author: 'Eliezer Yudkowsky & Nate Soares',
       cover: '/portfolio/books/if-anyone-builds-it.jpg',
     },
-    {
-      title: 'The Allegory of the Cave',
-      author: 'Plato',
-      cover: '/portfolio/books/allegory-of-the-cave.jpg',
-    },
   ],
 };
 
