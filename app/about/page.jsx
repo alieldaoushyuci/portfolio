@@ -237,20 +237,11 @@ export default function About() {
             venturing off on my own when I began working in high school.
             Traveling has taught me so much about other regions and ways of
             life, and I have an obsession with seeing as much of the world as I
-            can. Here&apos;s where I&apos;ve been so far.
+            can. Here&apos;s where I&apos;ve been so far:
           </p>
 
           <div className="platform">
             <TravelMap places={travelFavorites} />
-            <p className="interest-link">
-              <a
-                href="https://www.instagram.com/alieldaoushy/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram →
-              </a>
-            </p>
           </div>
         </section>
 
