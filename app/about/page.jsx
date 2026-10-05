@@ -1,6 +1,8 @@
 import SectionHeader from '../components/SectionHeader';
 import ReadingShelf from '../components/ReadingShelf';
 import PursuitVideos from '../components/PursuitVideos';
+import RaceTimeline from '../components/RaceTimeline';
+import TravelMap from '../components/TravelMap';
 import {
   IronmanPixel,
   BookPixel,
@@ -63,26 +65,19 @@ const albums = [
 ];
 
 const travelFavorites = [
-  {
-    country: 'Japan',
-    src: '/portfolio/travel/japan.png',
-    alt: 'Biking by a lake in Japan',
-  },
-  {
-    country: 'Spain',
-    src: '/portfolio/travel/spain.png',
-    alt: 'Walking through a plaza in Spain',
-  },
-  {
-    country: 'Egypt',
-    src: '/portfolio/travel/egypt.png',
-    alt: 'Looking out over the coast from a pool in Egypt',
-  },
-  {
-    country: 'Canada',
-    src: '/portfolio/travel/canada.png',
-    alt: 'Standing in a forest stream in Canada',
-  },
+  { country: 'Japan', lat: 36.2, lon: 138.2 },
+  { country: 'Spain', lat: 40.4, lon: -3.7 },
+  { country: 'Egypt', lat: 26.7, lon: 30.0 },
+  { country: 'Canada', lat: 56.1, lon: -106 },
+  { country: 'United States', lat: 39.8, lon: -98.5 },
+  { country: 'Bahamas', lat: 24.7, lon: -78.0 },
+  { country: 'Mexico', lat: 23.0, lon: -102.5 },
+  { country: 'England', lat: 52.5, lon: -1.5 },
+  { country: 'Germany', lat: 51.2, lon: 10.5 },
+  { country: 'Switzerland', lat: 46.8, lon: 8.2 },
+  { country: 'Italy', lat: 42.5, lon: 12.5 },
+  { country: 'Turkey', lat: 39.0, lon: 35.0 },
+  { country: 'UAE', lat: 24.0, lon: 54.0 },
 ];
 
 export default function About() {
@@ -105,24 +100,9 @@ export default function About() {
             really began to enjoy more individual sports, and eventually
             completed my first half marathon in June of my second year. Since
             then I&apos;ve dived into triathlon training. Most weeks that means
-            swimming, biking, running, and lifting 3 times each. Up next is the{' '}
-            <a
-              href="https://newportdunes.californiatriathlon.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Olympic Triathlon at Cal Tri Newport Dunes
-            </a>{' '}
-            on November 1, then{' '}
-            <a
-              href="https://www.ironman.com/races/im703-texas"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              IRONMAN 70.3 Texas
-            </a>{' '}
-            on April 4.
+            swimming, biking, running, and lifting 3 times each. Upcoming races:
           </p>
+          <RaceTimeline />
           <div className="platform">
             <ul className="travel-gallery">
               <li className="travel-gallery-item">
@@ -257,27 +237,11 @@ export default function About() {
             venturing off on my own when I began working in high school.
             Traveling has taught me so much about other regions and ways of
             life, and I have an obsession with seeing as much of the world as I
-            can. Here are some of my favorites so far.
+            can. Here&apos;s where I&apos;ve been so far.
           </p>
 
           <div className="platform">
-            <ul className="travel-gallery">
-              {travelFavorites.map((place) => (
-                <li key={place.country} className="travel-gallery-item">
-                  <div className="travel-gallery-photo">
-                    <img
-                      src={place.src}
-                      alt={place.alt}
-                      loading="lazy"
-                      className={
-                        place.country === 'Egypt' ? 'travel-egypt' : undefined
-                      }
-                    />
-                  </div>
-                  <span className="travel-gallery-label">{place.country}</span>
-                </li>
-              ))}
-            </ul>
+            <TravelMap places={travelFavorites} />
             <p className="interest-link">
               <a
                 href="https://www.instagram.com/alieldaoushy/"
@@ -326,7 +290,7 @@ export default function About() {
             <h3>Other Pursuits</h3>
           </div>
           <p>
-            Areas and hobbies I&apos;ve picked up over the years, or things
+            Areas and skills I&apos;ve picked up over the years, or things
             I&apos;m still trying to learn whenever I have free time.
           </p>
           <PursuitVideos />

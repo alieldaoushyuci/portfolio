@@ -2,6 +2,7 @@ import { Spectral, Libre_Franklin, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import LastUpdated from './components/LastUpdated';
+import SiteCompass from './components/SiteCompass';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <LastUpdated />
+          <SiteCompass />
         </div>
       </body>
     </html>

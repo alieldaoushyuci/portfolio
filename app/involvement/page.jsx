@@ -1,6 +1,11 @@
 import SectionHeader from '../components/SectionHeader';
+import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
+  {
+    title: 'Prospecting for Gold',
+    href: 'https://forum.effectivealtruism.org/posts/YY6PSor7TAZdyFRQi/prospecting-for-gold-owen-cotton-barratt',
+  },
   {
     title: 'Pacing the Frontier',
     href: 'https://pacing.tech/',
@@ -18,6 +23,10 @@ const FIELD_CONTEXT = [
     href: 'https://asteriskmag.com/issues/10/does-ai-progress-have-a-speed-limit',
   },
   {
+    title: 'Why agent swarms could be the next “scaling law”',
+    href: 'https://www.understandingai.org/p/why-agent-swarms-could-be-the-next',
+  },
+  {
     title: 'A “Morally Binding” White House Accord',
     href: 'https://thezvi.substack.com/p/a-morally-binding-white-house-accord',
   },
@@ -32,6 +41,10 @@ const FIELD_CONTEXT = [
   {
     title: 'For Democracy, Against Handoff',
     href: 'https://forum.effectivealtruism.org/posts/Tamg8ud99r3yRYgGg/for-democracy-against-handoff',
+  },
+  {
+    title: 'So you’re considering AI Safety',
+    href: 'https://aisafety.info/',
   },
   {
     title: 'If Anyone Builds It, Everyone Dies',
@@ -90,15 +103,7 @@ export default function Involvement() {
       <article className="entries">
         <div className="platform">
           <p className="group-label">Field Context</p>
-          <ul className="edu-list">
-            {FIELD_CONTEXT.map((item) => (
-              <li key={item.title}>
-                <a href={item.href} target="_blank" rel="noopener noreferrer">
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <FieldContextDeck items={FIELD_CONTEXT} />
         </div>
 
         <div className="entry platform">

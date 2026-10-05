@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const VIDEOS = [
   {
@@ -23,6 +23,7 @@ const VIDEOS = [
 
 export default function PursuitVideos() {
   const refs = useRef([]);
+  const [focused, setFocused] = useState(null);
 
   useEffect(() => {
     refs.current.forEach((video) => {
@@ -33,10 +34,35 @@ export default function PursuitVideos() {
     });
   }, []);
 
+  useEffect(() => {
+    refs.current.forEach((video, i) => {
+      if (!video) return;
+      if (focused === null || focused === i) {
+        const play = video.play();
+        if (play?.catch) play.catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, [focused]);
+
   return (
-    <div className="platform pursuit-videos">
+    <div
+      className={`platform pursuit-videos${focused !== null ? ' is-focusing' : ''}`}
+      onMouseLeave={() => setFocused(null)}
+    >
       {VIDEOS.map((clip, i) => (
-        <div key={clip.src} className="pursuit-video">
+        <div
+          key={clip.src}
+          className={[
+            'pursuit-video',
+            focused === i ? 'is-focused' : '',
+            focused !== null && focused !== i ? 'is-dimmed' : '',
+          ]
+            .filter(Boolean)
+            .join(' ')}
+          onMouseEnter={() => setFocused(i)}
+        >
           <video
             ref={(el) => {
               refs.current[i] = el;

@@ -1,18 +1,21 @@
 import SectionHeader from '../components/SectionHeader';
+import DegreeProgress from '../components/DegreeProgress';
 
 export default function Education() {
   return (
     <main>
       <SectionHeader slug="education" />
       <article className="entries">
-        <div className="entry platform">
-          <p className="when">Graduating December 2027</p>
-          <h2 className="who">University of California, Irvine</h2>
-          <p className="meta">
-            Bachelor of Science in Computer Science; Specialization in
-            Intelligent Systems
-          </p>
-          <p className="meta">GPA: 3.74</p>
+        <div className="entry platform degree-card">
+          <DegreeProgress label="June 2027" />
+          <div className="degree-copy">
+            <h2 className="who">University of California, Irvine</h2>
+            <p className="meta">
+              Bachelor of Science in Computer Science; Specialization in
+              Intelligent Systems
+            </p>
+            <p className="meta">GPA: 3.74</p>
+          </div>
         </div>
 
         <div className="platform">

@@ -65,8 +65,8 @@ export function IronmanPixel() {
 export function RecordPixel() {
   const black = '#1a1a1a';
   const groove = '#3a3a3a';
-  const label = '#c5e0b8';
-  const hole = '#1a2e1a';
+  const label = '#e8c4bf';
+  const hole = '#3a1518';
   const ring = (cx, cy, r, fill) => {
     const pts = [];
     for (let y = 0; y < 16; y++) {
@@ -135,9 +135,9 @@ export function SoccerPixel() {
 }
 
 export function BookPixel() {
-  const cover = '#3a5c32';
-  const page = '#eaf2e6';
-  const line = '#849e7c';
+  const cover = '#6b2a30';
+  const page = '#f6ebe8';
+  const line = '#a57e7c';
   const cells = [
     ...[3, 4, 5, 6, 7, 8, 9, 10, 11].flatMap((y) => [[2, y, cover], [3, y, page], [4, y, page], [5, y, page], [6, y, page]]),
     ...[3, 4, 5, 6, 7, 8, 9, 10, 11].map((y) => [7, y, cover]),
@@ -237,5 +237,24 @@ export function PursuitsPixel() {
         <Px key={i} x={x} y={y} fill={fill} />
       ))}
     </PixelSvg>
+  );
+}
+
+export function PixelRunner({ facing = 1, frame = 0 }) {
+  return (
+    <span
+      className={`pixel-runner${frame % 2 ? ' is-stride' : ''}`}
+      style={{ transform: facing < 0 ? 'scaleX(-1)' : undefined }}
+      aria-hidden="true"
+    >
+      <img
+        className="pixel-runner-img"
+        src="/portfolio/sprites/runner.png"
+        alt=""
+        draggable={false}
+        width={44}
+        height={38}
+      />
+    </span>
   );
 }

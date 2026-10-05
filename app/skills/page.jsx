@@ -103,7 +103,7 @@ export default function Skills() {
           <div className="skill-group platform">
             <h2>Certifications</h2>
             <ul className="cert-list">
-              <li>Future of AI (Issued by BlueDot Foundation)</li>
+              <li>Future of AI (BlueDot Foundation)</li>
               <li>Networking and Cybersecurity (William S. Hart District)</li>
             </ul>
           </div>

@@ -64,6 +64,10 @@ const BOOKS = {
 
 export default function ReadingShelf() {
   const [active, setActive] = useState('now');
+  const [pulled, setPulled] = useState(null);
+
+  const books = BOOKS[active];
+  const selected = books.find((b) => b.title === pulled) || null;
 
   return (
     <div className="reading-shelf">
@@ -77,7 +81,10 @@ export default function ReadingShelf() {
             aria-selected={active === tab.id}
             aria-controls={`reading-panel-${tab.id}`}
             className={active === tab.id ? 'is-active' : undefined}
-            onClick={() => setActive(tab.id)}
+            onClick={() => {
+              setActive(tab.id);
+              setPulled(null);
+            }}
           >
             {tab.label}
           </button>
@@ -96,28 +103,55 @@ export default function ReadingShelf() {
           {BOOKS[tab.id].length === 0 ? (
             <p className="reading-empty">No books in this list yet.</p>
           ) : (
-            <ul className="reading-books">
-              {BOOKS[tab.id].map((book) => (
-                <li key={book.title} className="reading-book">
-                  <div className="reading-cover">
-                    {book.cover ? (
-                      <img src={book.cover} alt={`${book.title} cover`} />
-                    ) : (
-                      <span>Cover</span>
-                    )}
-                  </div>
-                  <div className="reading-meta">
-                    <span className="book-title">{book.title}</span>
-                    {book.author ? (
-                      <span className="book-author">{book.author}</span>
-                    ) : null}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <div className="bookshelf">
+              <p className="bookshelf-caption">Click to pull from shelf</p>
+              <div className="bookshelf-ledge" aria-hidden="true" />
+              <ul className="bookshelf-row">
+                {BOOKS[tab.id].map((book) => {
+                  const isPulled = pulled === book.title;
+                  return (
+                    <li key={book.title}>
+                      <button
+                        type="button"
+                        className={`bookshelf-book${isPulled ? ' is-pulled' : ''}`}
+                        aria-pressed={isPulled}
+                        aria-label={book.title}
+                        onClick={() =>
+                          setPulled((cur) =>
+                            cur === book.title ? null : book.title
+                          )
+                        }
+                      >
+                        {book.cover ? (
+                          <img src={book.cover} alt="" draggable={false} />
+                        ) : (
+                          <span className="bookshelf-blank">Book</span>
+                        )}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           )}
         </div>
       ))}
+
+      {selected ? (
+        <div className="bookshelf-detail" aria-live="polite">
+          <div className="bookshelf-detail-cover">
+            {selected.cover ? (
+              <img src={selected.cover} alt="" />
+            ) : null}
+          </div>
+          <div className="bookshelf-detail-meta">
+            <span className="book-title">{selected.title}</span>
+            {selected.author ? (
+              <span className="book-author">{selected.author}</span>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -15,7 +15,6 @@ export default function PipelineBackground() {
 
         const loadScript = (src) => {
             return new Promise((resolve, reject) => {
-                // Check if script already exists
                 const existingScript = document.querySelector(`script[src="${src}"]`);
                 if (existingScript) {
                     resolve();
@@ -28,7 +27,7 @@ export default function PipelineBackground() {
                 script.onload = resolve;
                 script.onerror = () => {
                     console.warn(`Failed to load script: ${src}`);
-                    resolve(); // Continue even if one script fails
+                    resolve();
                 };
                 document.body.appendChild(script);
             });
@@ -36,7 +35,6 @@ export default function PipelineBackground() {
 
         const loadAllScripts = async () => {
             try {
-                // Ensure container exists before loading scripts
                 const container = document.querySelector('.content--canvas');
                 if (!container) {
                     console.error('Pipeline container not found');
@@ -49,17 +47,10 @@ export default function PipelineBackground() {
 
                 scriptsLoadedRef.current = true;
 
-                // pipeline.js adds window.addEventListener('load', setup)
-                // If window already loaded, manually trigger setup
-                // Wait a tick to ensure all scripts are fully executed
                 setTimeout(() => {
-                    // Check if setup function exists and container is available
                     const containerCheck = document.querySelector('.content--canvas');
                     if (containerCheck) {
-                        // Dispatch a load event to trigger pipeline.js setup
-                        // Or manually call setup if accessible
                         if (document.readyState === 'complete') {
-                            // Window already loaded, manually trigger
                             window.dispatchEvent(new Event('load'));
                         }
                     }

@@ -1,4 +1,5 @@
 import SocialNotes from './components/SocialNotes';
+import HeroPortrait from './components/HeroPortrait';
 
 export default function Home() {
   const profileSrc = '/portfolio/profile.png';
@@ -6,14 +7,7 @@ export default function Home() {
   return (
     <main>
       <section className="hero">
-        <div className="hero-portrait">
-          <img
-            src={profileSrc}
-            alt="Ali Eldaoushy portrait"
-            loading="eager"
-            decoding="async"
-          />
-        </div>
+        <HeroPortrait src={profileSrc} alt="Ali Eldaoushy portrait" />
 
         <div>
           <h1 className="title">Ali Eldaoushy</h1>
