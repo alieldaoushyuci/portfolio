@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 
-function toPos(lat, lon) {
+function toPos(place) {
   return {
-    left: `${((lon + 180) / 360) * 100}%`,
-    top: `${((90 - lat) / 180) * 100}%`,
+    left: `${place.x}%`,
+    top: `${place.y}%`,
   };
 }
 
@@ -24,7 +24,7 @@ export default function TravelMap({ places }) {
         />
 
         {places.map((place) => {
-          const pos = toPos(place.lat, place.lon);
+          const pos = toPos(place);
           const isActive = place.country === selected;
           return (
             <button
@@ -41,7 +41,9 @@ export default function TravelMap({ places }) {
               }
             >
               <span className="travel-pin-dot" aria-hidden="true" />
-              <span className="travel-pin-label">{place.country}</span>
+              <span className="travel-pin-label" aria-hidden="true">
+                {place.country}
+              </span>
             </button>
           );
         })}

@@ -65,19 +65,19 @@ const albums = [
 ];
 
 const travelFavorites = [
-  { country: 'Japan', lat: 36.2, lon: 138.2 },
-  { country: 'Spain', lat: 40.4, lon: -3.7 },
-  { country: 'Egypt', lat: 26.7, lon: 30.0 },
-  { country: 'Canada', lat: 56.1, lon: -106 },
-  { country: 'United States', lat: 39.8, lon: -98.5 },
-  { country: 'Bahamas', lat: 24.7, lon: -78.0 },
-  { country: 'Mexico', lat: 23.0, lon: -102.5 },
-  { country: 'England', lat: 52.5, lon: -1.5 },
-  { country: 'Germany', lat: 51.2, lon: 10.5 },
-  { country: 'Switzerland', lat: 46.8, lon: 8.2 },
-  { country: 'Italy', lat: 42.5, lon: 12.5 },
-  { country: 'Turkey', lat: 39.0, lon: 35.0 },
-  { country: 'UAE', lat: 24.0, lon: 54.0 },
+  { country: 'Japan', x: 85.5, y: 26.0 },
+  { country: 'Spain', x: 48.9, y: 27.6 },
+  { country: 'Egypt', x: 55.0, y: 31.5 },
+  { country: 'Canada', x: 20.6, y: 18.6 },
+  { country: 'United States', x: 22.6, y: 27.9 },
+  { country: 'Bahamas', x: 27.8, y: 37.9 },
+  { country: 'Mexico', x: 21.0, y: 39.0 },
+  { country: 'England', x: 49.6, y: 20.8 },
+  { country: 'Germany', x: 52.9, y: 21.6 },
+  { country: 'Switzerland', x: 52.3, y: 24.0 },
+  { country: 'Italy', x: 53.4, y: 26.6 },
+  { country: 'Turkey', x: 59.7, y: 28.3 },
+  { country: 'UAE', x: 65.7, y: 35.3 },
 ];
 
 export default function About() {

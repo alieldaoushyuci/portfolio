@@ -1499,7 +1499,7 @@ article h2:first-child {
 
 .travel-map-board {
   position: relative;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 4378 / 2435;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--platform-rule);
@@ -1511,8 +1511,7 @@ article h2:first-child {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  object-fit: fill;
   pointer-events: none;
   user-select: none;
   opacity: 0.78;
@@ -1522,20 +1521,19 @@ article h2:first-child {
 
 .travel-pin {
   position: absolute;
+  width: 12px;
+  height: 12px;
   transform: translate(-50%, -100%);
   border: 0;
   background: transparent;
   padding: 0;
   cursor: pointer;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
   color: inherit;
 }
 
 .travel-pin-dot {
+  display: block;
   width: 12px;
   height: 12px;
   border-radius: 50% 50% 50% 0;
@@ -1559,6 +1557,10 @@ article h2:first-child {
 }
 
 .travel-pin-label {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
   font-family: var(--sans), system-ui, sans-serif;
   font-size: 0.58rem;
   letter-spacing: 1px;
@@ -1566,7 +1568,6 @@ article h2:first-child {
   color: var(--platform-muted);
   white-space: nowrap;
   opacity: 0;
-  transform: translateY(2px);
   transition: opacity 0.18s ease;
   pointer-events: none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
