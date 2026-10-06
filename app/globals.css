@@ -1,15 +1,15 @@
 :root {
-  --bg: #4a4e69;
-  --paper: #3c3f58;
+  --bg: #363d4e;
+  --paper: #2b3140;
   --ink: #f1f3f7;
   --muted: #b8bccb;
   --subtle: #9a9fb3;
   --rule: rgba(228, 231, 238, 0.18);
   --rule-strong: rgba(228, 231, 238, 0.42);
   --accent: #e4e7ee;
-  --on-accent: #22223b;
+  --on-accent: #1e2330;
   --chip: rgba(228, 231, 238, 0.09);
-  --platform: #3c3f58;
+  --platform: #2b3140;
   --platform-ink: #f1f3f7;
   --platform-muted: #b8bccb;
   --platform-rule: rgba(228, 231, 238, 0.15);
@@ -1621,7 +1621,7 @@ article .skill-usage a {
   background: linear-gradient(
     180deg,
     rgba(228, 231, 238, 0.28),
-    rgba(34, 34, 59, 0.55)
+    rgba(30, 35, 48, 0.55)
   );
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1932,7 +1932,7 @@ article .skill-usage a {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--platform-rule);
-  background: #22223b;
+  background: #1e2330;
 }
 
 .travel-map-img {
@@ -1968,7 +1968,7 @@ article .skill-usage a {
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
   background: var(--accent);
-  box-shadow: 0 0 0 2px rgba(34, 34, 59, 0.85);
+  box-shadow: 0 0 0 2px rgba(30, 35, 48, 0.85);
   transition:
     transform 0.2s ease,
     background 0.2s ease,
@@ -1981,7 +1981,7 @@ article .skill-usage a {
   background: var(--accent);
   transform: rotate(-45deg) scale(1.2);
   box-shadow:
-    0 0 0 2px rgba(34, 34, 59, 0.85),
+    0 0 0 2px rgba(30, 35, 48, 0.85),
     0 0 0 5px rgba(228, 231, 238, 0.28);
 }
 
@@ -2059,7 +2059,7 @@ article .skill-usage a {
   }
 
   .travel-pin-dot {
-    box-shadow: 0 0 0 1.5px rgba(34, 34, 59, 0.85);
+    box-shadow: 0 0 0 1.5px rgba(30, 35, 48, 0.85);
   }
 
   .travel-pin-label {
@@ -2287,7 +2287,7 @@ article .skill-usage a {
   inset: 0;
   border-radius: 50%;
   border: 1px solid var(--rule-strong);
-  background: rgba(34, 34, 59, 0.72);
+  background: rgba(30, 35, 48, 0.72);
   backdrop-filter: blur(6px);
   transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }

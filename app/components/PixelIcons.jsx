@@ -66,7 +66,7 @@ export function RecordPixel() {
   const black = '#1a1a1a';
   const groove = '#3a3a3a';
   const label = '#e4e7ee';
-  const hole = '#22223b';
+  const hole = '#1e2330';
   const ring = (cx, cy, r, fill) => {
     const pts = [];
     for (let y = 0; y < 16; y++) {
