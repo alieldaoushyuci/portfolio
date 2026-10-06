@@ -6,11 +6,8 @@ export default function Projects() {
       <SectionHeader slug="projects" />
       <article className="entries">
         <div className="entry platform" id="homepilot">
-          <p className="when">February 2026 – March 2026</p>
           <h2 className="who">HomePilot – AI Powered Rental Copilot</h2>
-          <p className="meta">
-            Groq, PostgreSQL, React, Supabase, TypeScript, Vercel
-          </p>
+          <p className="meta">February 2026 – March 2026</p>
           <div className="body">
             <ul>
               <li>
@@ -48,9 +45,8 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="agonus-ai">
-          <p className="when">September 2025 – February 2026</p>
           <h2 className="who">Agonus AI – AI-Based Crypto Trading Platform</h2>
-          <p className="meta">AWS, FastAPI, React, SQLAlchemy, Viem, Wagmi</p>
+          <p className="meta">September 2025 – February 2026</p>
           <div className="body">
             <ul>
               <li>
@@ -81,9 +77,8 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="grams">
-          <p className="when">June 2025 – September 2025</p>
           <h2 className="who">GRAMS – Graduate Academic Management System</h2>
-          <p className="meta">IntelliJ, React, Git</p>
+          <p className="meta">June 2025 – September 2025</p>
           <div className="body">
             <ul>
               <li>
@@ -112,9 +107,8 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="data-management-system">
-          <p className="when">April 2025 – May 2025</p>
           <h2 className="who">Data Management System</h2>
-          <p className="meta">Flask, PyCharm</p>
+          <p className="meta">April 2025 – May 2025</p>
           <div className="body">
             <ul>
               <li>
@@ -134,9 +128,8 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="distributed-systems-simulation">
-          <p className="when">March 2025 – April 2025</p>
           <h2 className="who">Distributed Systems Simulation</h2>
-          <p className="meta">Go, Python, Tkinter</p>
+          <p className="meta">March 2025 – April 2025</p>
           <div className="body">
             <ul>
               <li>
