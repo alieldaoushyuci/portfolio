@@ -65,19 +65,19 @@ const albums = [
 ];
 
 const travelFavorites = [
-  { country: 'Japan', x: 85.5, y: 26.0 },
-  { country: 'Spain', x: 48.9, y: 27.6 },
-  { country: 'Egypt', x: 55.0, y: 31.5 },
-  { country: 'Canada', x: 20.6, y: 18.6 },
-  { country: 'United States', x: 22.6, y: 27.9 },
   { country: 'Bahamas', x: 27.8, y: 37.9 },
-  { country: 'Mexico', x: 21.0, y: 39.0 },
+  { country: 'Canada', x: 20.6, y: 18.6 },
+  { country: 'Egypt', x: 55.0, y: 31.5 },
   { country: 'England', x: 49.6, y: 20.8 },
   { country: 'Germany', x: 52.9, y: 21.6 },
-  { country: 'Switzerland', x: 52.3, y: 24.0 },
   { country: 'Italy', x: 53.4, y: 26.6 },
+  { country: 'Japan', x: 85.5, y: 26.0 },
+  { country: 'Mexico', x: 21.0, y: 39.0 },
+  { country: 'Spain', x: 48.9, y: 27.6 },
+  { country: 'Switzerland', x: 52.3, y: 24.0 },
   { country: 'Turkey', x: 59.7, y: 28.3 },
   { country: 'UAE', x: 65.7, y: 35.3 },
+  { country: 'United States', x: 22.6, y: 27.9 },
 ];
 
 export default function About() {
@@ -85,8 +85,6 @@ export default function About() {
     <main>
       <SectionHeader slug="about" />
       <article>
-        <h2 className="interests-heading">Interests</h2>
-
         <section className="interest" id="fitness">
           <div className="interest-head">
             <span className="pixel-badge" aria-hidden="true">

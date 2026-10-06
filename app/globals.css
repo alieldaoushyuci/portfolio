@@ -1078,6 +1078,7 @@ article h2:first-child {
 .skill-usage a {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   column-gap: 8px;
   min-width: 0;
 }
@@ -1153,20 +1154,68 @@ article h2:first-child {
 }
 
 .career-list {
+  --month: 9px;
   list-style: none;
   margin: 4px 0 0;
-  padding: 0;
+  padding: 0 0 10px;
   position: relative;
 }
 
 .career-list::before {
   content: '';
   position: absolute;
-  top: 14px;
-  bottom: 14px;
+  top: 10px;
+  bottom: 0;
   left: 84px;
   width: 1px;
-  background: var(--platform-rule);
+  background: linear-gradient(
+    to bottom,
+    rgba(228, 231, 238, 0.5),
+    rgba(228, 231, 238, 0.22) 30%,
+    rgba(228, 231, 238, 0.22) 85%,
+    transparent
+  );
+}
+
+.career-list > .career-item {
+  margin-top: calc(var(--gap, 0) * var(--month));
+}
+
+.career-year {
+  display: grid;
+  grid-template-columns: 70px 28px minmax(0, 1fr);
+  align-items: center;
+  margin-top: calc(var(--gap, 0) * var(--month) + 14px);
+  padding: 4px 0 2px;
+}
+
+.career-year:first-child {
+  margin-top: 6px;
+}
+
+.career-year-label {
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  color: var(--platform-ink);
+}
+
+.career-year-tick {
+  justify-self: center;
+  width: 16px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--platform-ink);
+  box-shadow: 0 0 0 3px var(--platform);
+  position: relative;
+  z-index: 1;
+}
+
+.career-year-rule {
+  height: 1px;
+  margin-left: 4px;
+  background: linear-gradient(to right, var(--platform-rule), transparent 80%);
 }
 
 a.career-link,
@@ -1179,15 +1228,23 @@ article .skill-usage a {
   display: grid;
   grid-template-columns: 70px 28px minmax(0, 1fr) auto;
   align-items: center;
-  padding: 7px 8px 7px 0;
+  padding: 8px 10px 8px 0;
   border-radius: 8px;
-  transition: background 0.18s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .career-link:hover,
 .career-link:focus-visible {
   background: var(--chip);
+  transform: translateX(3px);
   outline: none;
+}
+
+.career-link:hover .career-date,
+.career-link:focus-visible .career-date {
+  color: var(--platform-ink);
 }
 
 .career-date {
@@ -1257,7 +1314,20 @@ article .skill-usage a {
 }
 
 .career-kind {
-  padding-left: 10px;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border: 1px solid var(--platform-rule);
+  border-radius: 999px;
+  font-size: 0.58rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.career-link:hover .career-kind,
+.career-link:focus-visible .career-kind {
+  border-color: var(--rule-strong);
+  color: var(--platform-ink);
 }
 
 .entries .entry[id] {
@@ -1282,8 +1352,16 @@ article .skill-usage a {
     padding: 16px 14px 8px;
   }
 
+  .career-list {
+    --month: 6px;
+  }
+
   .career-list::before {
     left: 71px;
+  }
+
+  .career-year {
+    grid-template-columns: 60px 22px minmax(0, 1fr);
   }
 
   .career-link {
@@ -1337,13 +1415,6 @@ article .skill-usage a {
 
 .cert-list li:first-child {
   padding-top: 0;
-}
-
-.interests-heading {
-  margin-top: 48px;
-  margin-bottom: 8px;
-  padding-bottom: 14px;
-  border-bottom: 1.5px solid var(--ink);
 }
 
 .interest {
