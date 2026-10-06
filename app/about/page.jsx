@@ -195,7 +195,8 @@ export default function About() {
           </p>
           <p>
             I&apos;d always been really interested in learning to play music
-            myself, and grew up trying to learn guitar. Since I&apos;ve learned
+            myself, and was always interested in the guitar when I was young.
+            Since I&apos;ve learned
             it I&apos;ve been learning how to play the piano and use studio
             tools to build and mix music.
           </p>
