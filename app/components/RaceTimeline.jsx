@@ -261,7 +261,6 @@ export default function RaceTimeline() {
           <PixelRunner facing={facing} frame={frame} />
         </div>
       </div>
-      <p className="race-timeline-hint">Drag the runner to reveal each date</p>
     </div>
   );
 }

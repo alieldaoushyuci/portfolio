@@ -65,8 +65,8 @@ export function IronmanPixel() {
 export function RecordPixel() {
   const black = '#1a1a1a';
   const groove = '#3a3a3a';
-  const label = '#e8c4bf';
-  const hole = '#3a1518';
+  const label = '#e4e7ee';
+  const hole = '#22223b';
   const ring = (cx, cy, r, fill) => {
     const pts = [];
     for (let y = 0; y < 16; y++) {
@@ -135,9 +135,9 @@ export function SoccerPixel() {
 }
 
 export function BookPixel() {
-  const cover = '#6b2a30';
-  const page = '#f6ebe8';
-  const line = '#a57e7c';
+  const cover = '#c3c8d9';
+  const page = '#f1f3f7';
+  const line = '#6b7090';
   const cells = [
     ...[3, 4, 5, 6, 7, 8, 9, 10, 11].flatMap((y) => [[2, y, cover], [3, y, page], [4, y, page], [5, y, page], [6, y, page]]),
     ...[3, 4, 5, 6, 7, 8, 9, 10, 11].map((y) => [7, y, cover]),

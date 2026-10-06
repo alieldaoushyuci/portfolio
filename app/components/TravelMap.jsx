@@ -48,6 +48,28 @@ export default function TravelMap({ places }) {
           );
         })}
       </div>
+
+      <ul className="travel-chips" aria-label="Countries visited">
+        {places.map((place) => {
+          const isActive = place.country === selected;
+          return (
+            <li key={place.country}>
+              <button
+                type="button"
+                className={`travel-chip${isActive ? ' is-active' : ''}`}
+                aria-pressed={isActive}
+                onClick={() =>
+                  setSelected((cur) =>
+                    cur === place.country ? null : place.country
+                  )
+                }
+              >
+                {place.country}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

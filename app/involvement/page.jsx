@@ -3,6 +3,10 @@ import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
   {
+    title: 'Existential Risk from Power-Seeking AI',
+    href: 'https://arxiv.org/abs/2206.13353',
+  },
+  {
     title: 'Prospecting for Gold',
     href: 'https://forum.effectivealtruism.org/posts/YY6PSor7TAZdyFRQi/prospecting-for-gold-owen-cotton-barratt',
   },
