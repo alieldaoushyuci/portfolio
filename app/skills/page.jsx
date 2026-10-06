@@ -1,4 +1,5 @@
 import SectionHeader from '../components/SectionHeader';
+import SkillGroup from '../components/SkillGroup';
 
 export default function Skills() {
   const universalSkills = [
@@ -54,51 +55,20 @@ export default function Skills() {
     <main>
       <SectionHeader slug="skills" />
       <article>
+        <p className="skill-hint">
+          Skills with a number show where I&apos;ve used them. Tap one to see
+          the projects and roles.
+        </p>
         <div className="skill-groups">
-          <div className="skill-group platform">
-            <h2>Universal</h2>
-            <ul className="skill-list">
-              {universalSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillGroup title="Universal" skills={universalSkills} />
 
-          <div className="skill-group platform">
-            <h2>Front-End</h2>
-            <ul className="skill-list">
-              {frontEndSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillGroup title="Front-End" skills={frontEndSkills} />
 
-          <div className="skill-group platform">
-            <h2>Back-End</h2>
-            <ul className="skill-list">
-              {backEndSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillGroup title="Back-End" skills={backEndSkills} />
 
-          <div className="skill-group platform">
-            <h2>Tools</h2>
-            <ul className="skill-list">
-              {toolsSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillGroup title="Tools" skills={toolsSkills} />
 
-          <div className="skill-group platform">
-            <h2>Concepts</h2>
-            <ul className="skill-list">
-              {conceptSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillGroup title="Concepts" skills={conceptSkills} />
 
           <div className="skill-group platform">
             <h2>Certifications</h2>

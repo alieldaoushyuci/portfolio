@@ -984,6 +984,288 @@ article h2:first-child {
   border-color: var(--rule-strong);
 }
 
+.skill-hint {
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.skill-list li.has-usage {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.skill-chip {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: inherit;
+  padding: 0.4rem 0.55rem 0.4rem 0.85rem;
+  background: var(--chip);
+  border: 0.5px solid var(--rule-strong);
+  border-radius: 4px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.skill-chip:hover {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.skill-chip.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.skill-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  background: rgba(228, 231, 238, 0.16);
+  color: var(--accent);
+}
+
+.skill-chip.is-active .skill-count {
+  background: var(--on-accent);
+  color: var(--accent);
+}
+
+.skill-usage {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--platform-rule);
+}
+
+.skill-usage-label {
+  margin: 0 0 6px;
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--platform-muted);
+}
+
+.skill-usage ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-usage li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.skill-usage a {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  min-width: 0;
+}
+
+.skill-usage-title {
+  color: var(--platform-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+
+.skill-usage a:hover .skill-usage-title {
+  text-decoration-color: var(--accent);
+}
+
+.skill-usage-org {
+  color: var(--platform-muted);
+  font-size: 0.95rem;
+}
+
+.skill-usage-kind,
+.career-kind {
+  flex: none;
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--platform-muted);
+}
+
+.career-timeline {
+  padding: 18px 20px 10px;
+}
+
+.career-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.career-list::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 84px;
+  width: 1px;
+  background: var(--platform-rule);
+}
+
+article a.career-link,
+article .skill-usage a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.career-link {
+  display: grid;
+  grid-template-columns: 70px 28px minmax(0, 1fr) auto;
+  align-items: center;
+  padding: 7px 8px 7px 0;
+  border-radius: 8px;
+  transition: background 0.18s ease;
+}
+
+.career-link:hover,
+.career-link:focus-visible {
+  background: var(--chip);
+  outline: none;
+}
+
+.career-date {
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--platform-muted);
+  white-space: nowrap;
+}
+
+.career-dot {
+  justify-self: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--platform);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.18s ease;
+}
+
+.career-item.is-project .career-dot {
+  background: var(--platform);
+  border: 2px solid var(--accent);
+}
+
+.career-item.is-education .career-dot {
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.career-link:hover .career-dot {
+  transform: scale(1.25);
+}
+
+.career-item.is-education .career-link:hover .career-dot {
+  transform: rotate(45deg) scale(1.25);
+}
+
+.career-text {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  min-width: 0;
+  line-height: 1.35;
+}
+
+.career-title {
+  font-family: var(--ser), Georgia, serif;
+  font-size: 1rem;
+  color: var(--platform-ink);
+}
+
+.career-org {
+  font-family: var(--ser), Georgia, serif;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--platform-muted);
+}
+
+.career-kind {
+  padding-left: 10px;
+}
+
+.entries .entry[id] {
+  scroll-margin-top: 24px;
+}
+
+.entries .entry:target {
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 520px) {
+  .career-timeline {
+    padding: 16px 14px 8px;
+  }
+
+  .career-list::before {
+    left: 66px;
+  }
+
+  .career-link {
+    grid-template-columns: 56px 22px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .career-date {
+    font-size: 0.62rem;
+    padding-top: 4px;
+  }
+
+  .career-dot {
+    margin-top: 6px;
+  }
+
+  .career-kind {
+    display: none;
+  }
+
+  .career-title {
+    font-size: 0.95rem;
+  }
+
+  .career-org {
+    font-size: 0.85rem;
+  }
+
+  .skill-usage li {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
 .cert-list {
   list-style: none;
   margin: 8px 0 0;

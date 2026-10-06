@@ -1,0 +1,102 @@
+export const career = [
+  {
+    id: 'nomad-ecommerce',
+    kind: 'work',
+    title: 'Software Development Intern',
+    org: 'Nomad eCommerce',
+    start: '2026-03',
+    date: 'Mar 2026',
+    href: '/portfolio/experience#nomad-ecommerce',
+  },
+  {
+    id: 'homepilot',
+    kind: 'project',
+    title: 'HomePilot',
+    org: 'AI Powered Rental Copilot',
+    start: '2026-02',
+    date: 'Feb 2026',
+    href: '/portfolio/projects#homepilot',
+  },
+  {
+    id: 'pacific-coast-industrial',
+    kind: 'work',
+    title: 'Full-Stack Software Engineer (Contract)',
+    org: 'Pacific Coast Industrial Installers',
+    start: '2025-11',
+    date: 'Nov 2025',
+    href: '/portfolio/experience#pacific-coast-industrial',
+  },
+  {
+    id: 'agonus-ai',
+    kind: 'project',
+    title: 'Agonus AI',
+    org: 'AI-Based Crypto Trading Platform',
+    start: '2025-09',
+    date: 'Sep 2025',
+    href: '/portfolio/projects#agonus-ai',
+  },
+  {
+    id: 'grams',
+    kind: 'project',
+    title: 'GRAMS',
+    org: 'Graduate Academic Management System',
+    start: '2025-06',
+    date: 'Jun 2025',
+    href: '/portfolio/projects#grams',
+  },
+  {
+    id: 'uci-oit',
+    kind: 'work',
+    title: 'Software Development Intern',
+    org: 'Office Of Information Technology, UC Irvine',
+    start: '2025-06',
+    date: 'Jun 2025',
+    href: '/portfolio/experience#uci-oit',
+  },
+  {
+    id: 'uci',
+    kind: 'education',
+    title: 'B.S. in Computer Science',
+    org: 'University of California, Irvine',
+    start: '2024-09',
+    date: 'Sep 2024',
+    href: '/portfolio/education',
+  },
+  {
+    id: 'torpedo-labs',
+    kind: 'work',
+    title: 'Software Development Intern',
+    org: 'Torpedo Labs',
+    start: '2024-05',
+    date: 'May 2024',
+    href: '/portfolio/experience#torpedo-labs',
+  },
+];
+
+export const careerById = Object.fromEntries(career.map((c) => [c.id, c]));
+
+export const portfolioSite = {
+  id: 'portfolio-site',
+  kind: 'project',
+  title: 'This portfolio',
+  org: 'Personal site',
+  href: '/portfolio/',
+};
+
+// Only skills explicitly named in each entry's own description or tech line.
+export const skillUsage = {
+  CSS: ['portfolio-site'],
+  JavaScript: ['torpedo-labs'],
+  React: ['homepilot', 'agonus-ai', 'grams', 'uci-oit', 'portfolio-site'],
+  TypeScript: ['homepilot'],
+  PostgreSQL: ['homepilot'],
+  'REST APIs': ['nomad-ecommerce'],
+  SQLAlchemy: ['agonus-ai'],
+  Supabase: ['homepilot'],
+  Git: ['grams', 'torpedo-labs', 'portfolio-site'],
+  IntelliJ: ['grams', 'torpedo-labs'],
+  JSON: ['homepilot'],
+  Vercel: ['homepilot'],
+  Vitest: ['grams'],
+  'Unit Testing': ['grams'],
+};

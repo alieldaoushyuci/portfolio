@@ -5,7 +5,7 @@ export default function Projects() {
     <main>
       <SectionHeader slug="projects" />
       <article className="entries">
-        <div className="entry platform">
+        <div className="entry platform" id="homepilot">
           <p className="when">February 2026 – March 2026</p>
           <h2 className="who">HomePilot – AI Powered Rental Copilot</h2>
           <p className="meta">
@@ -47,7 +47,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="agonus-ai">
           <p className="when">September 2025 – February 2026</p>
           <h2 className="who">Agonus AI – AI-Based Crypto Trading Platform</h2>
           <p className="meta">FastAPI, React, SQLAlchemy, Viem, Wagmi</p>
@@ -80,7 +80,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="grams">
           <p className="when">June 2025 – September 2025</p>
           <h2 className="who">GRAMS – Graduate Academic Management System</h2>
           <p className="meta">IntelliJ, React, Git</p>

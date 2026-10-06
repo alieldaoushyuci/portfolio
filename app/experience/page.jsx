@@ -1,11 +1,14 @@
 import SectionHeader from '../components/SectionHeader';
+import CareerTimeline from '../components/CareerTimeline';
 
 export default function Experience() {
   return (
     <main>
       <SectionHeader slug="experience" />
       <article className="entries">
-        <div className="entry platform">
+        <CareerTimeline />
+
+        <div className="entry platform" id="nomad-ecommerce">
           <h2 className="who">
             Software Development Intern <em>— Nomad eCommerce</em>
           </h2>
@@ -37,7 +40,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="pacific-coast-industrial">
           <h2 className="who">
             Full-Stack Software Engineer (Contract){' '}
             <em>— Pacific Coast Industrial Installers</em>
@@ -67,7 +70,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="uci-oit">
           <h2 className="who">
             Software Development Intern{' '}
             <em>— Office Of Information Technology, UC Irvine</em>
@@ -92,7 +95,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="torpedo-labs">
           <h2 className="who">
             Software Development Intern{' '}
             <em>— Torpedo Labs</em>
