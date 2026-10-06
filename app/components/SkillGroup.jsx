@@ -1,18 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
-import { careerById, portfolioSite, skillUsage } from '@/data/career';
-
-const KIND_LABEL = {
-  work: 'Work',
-  project: 'Project',
-  education: 'Education',
-};
+import { careerById, KIND_LABEL, skillUsage } from '@/data/career';
 
 function usageFor(skill) {
-  return (skillUsage[skill] || [])
-    .map((id) => (id === portfolioSite.id ? portfolioSite : careerById[id]))
-    .filter(Boolean);
+  return (skillUsage[skill] || []).map((id) => careerById[id]).filter(Boolean);
 }
 
 export default function SkillGroup({ title, skills }) {
@@ -53,10 +46,10 @@ export default function SkillGroup({ title, skills }) {
           <ul>
             {used.map((item) => (
               <li key={item.id}>
-                <a href={item.href}>
+                <Link href={item.href}>
                   <span className="skill-usage-title">{item.title}</span>
                   <span className="skill-usage-org">{item.org}</span>
-                </a>
+                </Link>
                 <span className="skill-usage-kind">{KIND_LABEL[item.kind]}</span>
               </li>
             ))}

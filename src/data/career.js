@@ -1,4 +1,20 @@
+export const KIND_LABEL = {
+  work: 'Work',
+  project: 'Project',
+  education: 'Education',
+  involvement: 'Involvement',
+};
+
 export const career = [
+  {
+    id: 'ai-safety-uci',
+    kind: 'involvement',
+    title: 'Member',
+    org: 'AI Safety at UCI',
+    start: '2026-09',
+    date: 'Sep 2026',
+    href: '/involvement#ai-safety-uci',
+  },
   {
     id: 'nomad-ecommerce',
     kind: 'work',
@@ -6,7 +22,7 @@ export const career = [
     org: 'Nomad eCommerce',
     start: '2026-03',
     date: 'Mar 2026',
-    href: '/portfolio/experience#nomad-ecommerce',
+    href: '/experience#nomad-ecommerce',
   },
   {
     id: 'homepilot',
@@ -15,7 +31,7 @@ export const career = [
     org: 'AI Powered Rental Copilot',
     start: '2026-02',
     date: 'Feb 2026',
-    href: '/portfolio/projects#homepilot',
+    href: '/projects#homepilot',
   },
   {
     id: 'pacific-coast-industrial',
@@ -24,7 +40,7 @@ export const career = [
     org: 'Pacific Coast Industrial Installers',
     start: '2025-11',
     date: 'Nov 2025',
-    href: '/portfolio/experience#pacific-coast-industrial',
+    href: '/experience#pacific-coast-industrial',
   },
   {
     id: 'agonus-ai',
@@ -33,7 +49,7 @@ export const career = [
     org: 'AI-Based Crypto Trading Platform',
     start: '2025-09',
     date: 'Sep 2025',
-    href: '/portfolio/projects#agonus-ai',
+    href: '/projects#agonus-ai',
   },
   {
     id: 'grams',
@@ -42,7 +58,7 @@ export const career = [
     org: 'Graduate Academic Management System',
     start: '2025-06',
     date: 'Jun 2025',
-    href: '/portfolio/projects#grams',
+    href: '/projects#grams',
   },
   {
     id: 'uci-oit',
@@ -51,7 +67,16 @@ export const career = [
     org: 'Office Of Information Technology, UC Irvine',
     start: '2025-06',
     date: 'Jun 2025',
-    href: '/portfolio/experience#uci-oit',
+    href: '/experience#uci-oit',
+  },
+  {
+    id: 'sigma-pi',
+    kind: 'involvement',
+    title: 'Committee Chairman',
+    org: 'Sigma Pi Fraternity',
+    start: '2025-01',
+    date: 'Jan 2025',
+    href: '/involvement#sigma-pi',
   },
   {
     id: 'uci',
@@ -60,7 +85,7 @@ export const career = [
     org: 'University of California, Irvine',
     start: '2024-09',
     date: 'Sep 2024',
-    href: '/portfolio/education',
+    href: '/education',
   },
   {
     id: 'torpedo-labs',
@@ -69,25 +94,67 @@ export const career = [
     org: 'Torpedo Labs',
     start: '2024-05',
     date: 'May 2024',
-    href: '/portfolio/experience#torpedo-labs',
+    href: '/experience#torpedo-labs',
+  },
+  {
+    id: 'private-tutor',
+    kind: 'involvement',
+    title: 'Private Tutor',
+    org: 'Self-employed',
+    start: '2023-08',
+    date: 'Aug 2023',
+    href: '/involvement#private-tutor',
+  },
+  {
+    id: 'vons',
+    kind: 'involvement',
+    title: 'Courtesy Clerk',
+    org: 'Vons',
+    start: '2023-02',
+    date: 'Feb 2023',
+    href: '/involvement#vons',
   },
 ];
 
-export const careerById = Object.fromEntries(career.map((c) => [c.id, c]));
+// Undated work that can be cross-referenced but has no place on the timeline.
+const undated = [
+  {
+    id: 'data-management-system',
+    kind: 'project',
+    title: 'Data Management System',
+    org: 'Personal project',
+    href: '/projects#data-management-system',
+  },
+  {
+    id: 'distributed-systems-simulation',
+    kind: 'project',
+    title: 'Distributed Systems Simulation',
+    org: 'Personal project',
+    href: '/projects#distributed-systems-simulation',
+  },
+  {
+    id: 'portfolio-site',
+    kind: 'project',
+    title: 'This portfolio',
+    org: 'Personal site',
+    href: '/',
+  },
+];
 
-export const portfolioSite = {
-  id: 'portfolio-site',
-  kind: 'project',
-  title: 'This portfolio',
-  org: 'Personal site',
-  href: '/portfolio/',
-};
+export const careerById = Object.fromEntries(
+  [...career, ...undated].map((c) => [c.id, c])
+);
 
-// Only skills explicitly named in each entry's own description or tech line.
+// Python, SQL, HTML, CSS, and VS Code are used everywhere, so they stay untagged.
 export const skillUsage = {
-  CSS: ['portfolio-site'],
-  JavaScript: ['torpedo-labs'],
+  AWS: ['agonus-ai'],
+  Azure: ['nomad-ecommerce'],
+  Flask: ['data-management-system'],
+  Go: ['distributed-systems-simulation'],
+  Java: ['uci-oit'],
+  JavaScript: ['nomad-ecommerce', 'torpedo-labs'],
   React: ['homepilot', 'agonus-ai', 'grams', 'uci-oit', 'portfolio-site'],
+  Tkinter: ['distributed-systems-simulation'],
   TypeScript: ['homepilot'],
   PostgreSQL: ['homepilot'],
   'REST APIs': ['nomad-ecommerce'],
@@ -96,7 +163,7 @@ export const skillUsage = {
   Git: ['grams', 'torpedo-labs', 'portfolio-site'],
   IntelliJ: ['grams', 'torpedo-labs'],
   JSON: ['homepilot'],
+  PyCharm: ['data-management-system'],
   Vercel: ['homepilot'],
   Vitest: ['grams'],
-  'Unit Testing': ['grams'],
 };

@@ -50,7 +50,7 @@ export default function Projects() {
         <div className="entry platform" id="agonus-ai">
           <p className="when">September 2025 – February 2026</p>
           <h2 className="who">Agonus AI – AI-Based Crypto Trading Platform</h2>
-          <p className="meta">FastAPI, React, SQLAlchemy, Viem, Wagmi</p>
+          <p className="meta">AWS, FastAPI, React, SQLAlchemy, Viem, Wagmi</p>
           <div className="body">
             <ul>
               <li>
@@ -106,6 +106,52 @@ export default function Projects() {
               <li>
                 Improved reliability through unit and integration testing with
                 Vitest, validating React components across multiple use cases
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="entry platform" id="data-management-system">
+          <h2 className="who">Data Management System</h2>
+          <p className="meta">Flask, PyCharm</p>
+          <div className="body">
+            <ul>
+              <li>
+                Built a modular engine processing continent, country, and region
+                data with full search, load, and save functionality
+              </li>
+              <li>
+                Integrated GUI with event-driven architecture and custom
+                scheduling to manage interface-state interactions
+              </li>
+              <li>
+                Connected database schema to user interface, enabling robust
+                state persistence and error feedback upon user interaction
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="entry platform" id="distributed-systems-simulation">
+          <h2 className="who">Distributed Systems Simulation</h2>
+          <p className="meta">Go, Python, Tkinter</p>
+          <div className="body">
+            <ul>
+              <li>
+                Developed a simulation modeling system supported by device
+                propagation of alerts and cancellations through scheduled events
+              </li>
+              <li>
+                Implemented priority queue management and event-driven
+                simulation techniques to ensure correct message ordering
+              </li>
+              <li>
+                Built modular classes handling device interactions, alert
+                transmission, cancellations, and dynamic event scheduling
+              </li>
+              <li>
+                Utilized Python frameworks such as heapq, itertools, and
+                custom-designed event schedulers to execute simulations
               </li>
             </ul>
           </div>

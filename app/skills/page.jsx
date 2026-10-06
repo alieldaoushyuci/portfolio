@@ -57,7 +57,8 @@ export default function Skills() {
       <article>
         <p className="skill-hint">
           Skills with a number show where I&apos;ve used them. Tap one to see
-          the projects and roles.
+          the projects and roles. Python, SQL, HTML, CSS, and VS Code run
+          through all of my work.
         </p>
         <div className="skill-groups">
           <SkillGroup title="Universal" skills={universalSkills} />

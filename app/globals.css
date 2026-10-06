@@ -252,8 +252,13 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   .hero,
   .section-head,
-  article {
+  article,
+  main > .career-timeline {
     animation: rise 0.55s cubic-bezier(0.2, 0.6, 0.2, 1) both;
+  }
+
+  main > .career-timeline {
+    animation-delay: 200ms;
   }
 
   .hero {
@@ -1104,7 +1109,47 @@ article h2:first-child {
 }
 
 .career-timeline {
-  padding: 18px 20px 10px;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 8px;
+  padding: 20px 20px 10px;
+}
+
+.career-heading {
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--platform-muted);
+  margin: 0;
+}
+
+.career-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 10px 0 8px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--platform-rule);
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--platform-muted);
+}
+
+.career-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.career-legend .career-dot {
+  width: 8px;
+  height: 8px;
+  box-shadow: none;
 }
 
 .career-list {
@@ -1124,7 +1169,7 @@ article h2:first-child {
   background: var(--platform-rule);
 }
 
-article a.career-link,
+a.career-link,
 article .skill-usage a {
   color: inherit;
   text-decoration: none;
@@ -1176,6 +1221,12 @@ article .skill-usage a {
   transform: rotate(45deg);
 }
 
+.career-item.is-involvement .career-dot {
+  border-radius: 2px;
+  background: var(--platform);
+  border: 2px solid var(--accent);
+}
+
 .career-link:hover .career-dot {
   transform: scale(1.25);
 }
@@ -1213,7 +1264,8 @@ article .skill-usage a {
   scroll-margin-top: 24px;
 }
 
-.entries .entry:target {
+.entries .entry:target,
+.entries .entry.is-targeted {
   box-shadow:
     0 0 0 1px var(--accent),
     0 8px 24px rgba(0, 0, 0, 0.18);
@@ -1231,12 +1283,16 @@ article .skill-usage a {
   }
 
   .career-list::before {
-    left: 66px;
+    left: 71px;
   }
 
   .career-link {
-    grid-template-columns: 56px 22px minmax(0, 1fr);
+    grid-template-columns: 60px 22px minmax(0, 1fr);
     align-items: start;
+  }
+
+  .career-text {
+    flex-direction: column;
   }
 
   .career-date {

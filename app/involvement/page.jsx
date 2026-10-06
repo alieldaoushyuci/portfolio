@@ -110,7 +110,7 @@ export default function Involvement() {
           <FieldContextDeck items={FIELD_CONTEXT} />
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="ai-safety-uci">
           <h2 className="who">
             Member <em>— AI Safety at UCI</em>
           </h2>
@@ -132,7 +132,7 @@ export default function Involvement() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="sigma-pi">
           <h2 className="who">
             Committee Chairman <em>— Sigma Pi Fraternity</em>
           </h2>
@@ -154,7 +154,7 @@ export default function Involvement() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="private-tutor">
           <h2 className="who">
             Private Tutor <em>— Self-employed</em>
           </h2>
@@ -174,7 +174,7 @@ export default function Involvement() {
           </div>
         </div>
 
-        <div className="entry platform">
+        <div className="entry platform" id="vons">
           <h2 className="who">
             Courtesy Clerk <em>— Vons</em>
           </h2>

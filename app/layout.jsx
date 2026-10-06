@@ -3,6 +3,7 @@ import './globals.css';
 import Header from './components/Header';
 import LastUpdated from './components/LastUpdated';
 import SiteCompass from './components/SiteCompass';
+import HashTarget from './components/HashTarget';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
           <LastUpdated />
           <SiteCompass />
         </div>
+        <HashTarget />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 import SocialNotes from './components/SocialNotes';
 import HeroPortrait from './components/HeroPortrait';
+import CareerTimeline from './components/CareerTimeline';
 
 export default function Home() {
   const profileSrc = '/portfolio/profile.png';
@@ -20,6 +21,8 @@ export default function Home() {
           <SocialNotes />
         </div>
       </section>
+
+      <CareerTimeline />
     </main>
   );
 }

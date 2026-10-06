@@ -1,22 +1,22 @@
-import { career } from '@/data/career';
-
-const KIND_LABEL = {
-  work: 'Work',
-  project: 'Project',
-  education: 'Education',
-};
+import Link from 'next/link';
+import { career, KIND_LABEL } from '@/data/career';
 
 export default function CareerTimeline() {
   return (
-    <nav className="career-timeline platform" aria-label="Career timeline">
-      <p className="group-label">Timeline</p>
+    <nav className="career-timeline platform" aria-label="Professional timeline">
+      <h2 className="career-heading">Professional Timeline</h2>
+      <ul className="career-legend" aria-hidden="true">
+        {Object.entries(KIND_LABEL).map(([kind, label]) => (
+          <li key={kind} className={`career-item is-${kind}`}>
+            <span className="career-dot" />
+            {label}
+          </li>
+        ))}
+      </ul>
       <ol className="career-list">
         {career.map((item) => (
           <li key={item.id} className={`career-item is-${item.kind}`}>
-            <a
-              href={item.kind === 'work' ? `#${item.id}` : item.href}
-              className="career-link"
-            >
+            <Link href={item.href} className="career-link">
               <span className="career-date">{item.date}</span>
               <span className="career-dot" aria-hidden="true" />
               <span className="career-text">
@@ -24,7 +24,7 @@ export default function CareerTimeline() {
                 <span className="career-org">{item.org}</span>
               </span>
               <span className="career-kind">{KIND_LABEL[item.kind]}</span>
-            </a>
+            </Link>
           </li>
         ))}
       </ol>
