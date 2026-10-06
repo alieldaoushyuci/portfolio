@@ -90,7 +90,7 @@ export const career = [
   {
     id: 'sigma-pi',
     kind: 'involvement',
-    title: 'Committee Chairman',
+    title: 'Alumni Network & Scholarship Chairman',
     org: 'Sigma Pi Fraternity',
     start: '2025-01',
     date: 'Jan 2025',

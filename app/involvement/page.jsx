@@ -158,7 +158,8 @@ export default function Involvement() {
 
         <div className="entry platform" id="sigma-pi">
           <h2 className="who">
-            Committee Chairman <em>— Sigma Pi Fraternity</em>
+            Alumni Network &amp; Scholarship Chairman{' '}
+            <em>— Sigma Pi Fraternity</em>
           </h2>
           <p className="when">January 2025 – Present</p>
           <div className="body">
@@ -171,9 +172,18 @@ export default function Involvement() {
                 Collaborate with members and alumni to organize events and
                 other chapter activities
               </li>
-              <li>Alumni Network Chairman</li>
-              <li>Scholarship Chairman</li>
-              <li>Active Member</li>
+              <li>
+                Launch mentorship and support initiatives that connect members
+                with alumni for academic and professional guidance
+              </li>
+              <li>
+                Lead professional development workshops on resumes,
+                interviewing, and networking
+              </li>
+              <li>
+                Manage scholarship programs and help members find and apply for
+                academic funding opportunities
+              </li>
             </ul>
           </div>
         </div>
