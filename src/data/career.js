@@ -150,11 +150,11 @@ export const careerById = Object.fromEntries(
 );
 
 export const skillUsage = {
-  Communication: ['ai-safety-uci', 'private-tutor', 'vons'],
+  Communication: ['ai-safety-uci', 'sigma-pi', 'private-tutor', 'vons'],
   Dedication: ['ai-safety-uci', 'sigma-pi', 'private-tutor'],
-  'Follow-through': ['ai-safety-uci'],
+  'Follow-through': ['ai-safety-uci', 'sigma-pi'],
   Leadership: ['sigma-pi'],
-  Organization: ['sigma-pi'],
+  Organization: ['sigma-pi', 'private-tutor'],
   CSS: ['nomad-ecommerce', 'uci-oit'],
   HTML: ['nomad-ecommerce', 'uci-oit'],
   JavaScript: ['nomad-ecommerce', 'torpedo-labs'],
