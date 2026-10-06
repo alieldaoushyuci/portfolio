@@ -67,10 +67,6 @@ const FIELD_CONTEXT = [
     href: 'https://forum.effectivealtruism.org/posts/Tamg8ud99r3yRYgGg/for-democracy-against-handoff',
   },
   {
-    title: 'Future of AI',
-    href: 'https://bluedot.org/courses/future-of-ai/1/1',
-  },
-  {
     title: 'How to get into AI Safety in 3 months',
     href: 'https://80000hours.org/2026/09/how-to-get-into-ai-safety-in-three-months/',
   },
