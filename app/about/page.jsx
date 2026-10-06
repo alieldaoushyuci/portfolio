@@ -194,7 +194,7 @@ export default function About() {
             Personal Involvement with Music
           </p>
           <p>
-            I&apos;d always been really interested in learning to play music
+            I&apos;d always been determined to learn how to play music
             myself, and was always interested in the guitar when I was young.
             Since I&apos;ve learned
             it I&apos;ve been learning how to play the piano and use studio
