@@ -70,6 +70,24 @@ export const career = [
     href: '/experience#uci-oit',
   },
   {
+    id: 'data-management-system',
+    kind: 'project',
+    title: 'Data Management System',
+    org: 'Personal project',
+    start: '2025-04',
+    date: 'Apr 2025',
+    href: '/projects#data-management-system',
+  },
+  {
+    id: 'distributed-systems-simulation',
+    kind: 'project',
+    title: 'Distributed Systems Simulation',
+    org: 'Personal project',
+    start: '2025-03',
+    date: 'Mar 2025',
+    href: '/projects#distributed-systems-simulation',
+  },
+  {
     id: 'sigma-pi',
     kind: 'involvement',
     title: 'Committee Chairman',
@@ -118,20 +136,6 @@ export const career = [
 
 // Undated work that can be cross-referenced but has no place on the timeline.
 const undated = [
-  {
-    id: 'data-management-system',
-    kind: 'project',
-    title: 'Data Management System',
-    org: 'Personal project',
-    href: '/projects#data-management-system',
-  },
-  {
-    id: 'distributed-systems-simulation',
-    kind: 'project',
-    title: 'Distributed Systems Simulation',
-    org: 'Personal project',
-    href: '/projects#distributed-systems-simulation',
-  },
   {
     id: 'portfolio-site',
     kind: 'project',

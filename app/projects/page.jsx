@@ -112,6 +112,7 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="data-management-system">
+          <p className="when">April 2025 – May 2025</p>
           <h2 className="who">Data Management System</h2>
           <p className="meta">Flask, PyCharm</p>
           <div className="body">
@@ -133,6 +134,7 @@ export default function Projects() {
         </div>
 
         <div className="entry platform" id="distributed-systems-simulation">
+          <p className="when">March 2025 – April 2025</p>
           <h2 className="who">Distributed Systems Simulation</h2>
           <p className="meta">Go, Python, Tkinter</p>
           <div className="body">
