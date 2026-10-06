@@ -2403,20 +2403,17 @@ article .skill-usage a {
   color: inherit;
   cursor: pointer;
   font: inherit;
-}
-
-.context-front.is-long {
   flex-direction: row;
   align-items: flex-end;
   gap: 12px;
 }
 
-.context-front.is-long .context-title {
+.context-front .context-title {
   flex: 1 1 auto;
   align-self: flex-start;
 }
 
-.context-front.is-long .context-hint {
+.context-front .context-hint {
   flex: 0 0 auto;
 }
 

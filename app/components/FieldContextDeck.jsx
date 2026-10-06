@@ -1,9 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-
-const LONG_TITLE = 48;
-
 function hostLabel(href) {
   try {
     return new URL(href).hostname.replace(/^www\./, '');
@@ -19,13 +16,12 @@ export default function FieldContextDeck({ items }) {
     <ul className="context-deck">
       {items.map((item) => {
         const isFlipped = flipped === item.title;
-        const isLong = item.title.length > LONG_TITLE;
         return (
           <li key={item.title} className="context-card-wrap">
             <div className={`context-card${isFlipped ? ' is-flipped' : ''}`}>
               <button
                 type="button"
-                className={`context-face context-front${isLong ? ' is-long' : ''}`}
+                className="context-face context-front"
                 aria-expanded={isFlipped}
                 onClick={() =>
                   setFlipped((cur) => (cur === item.title ? null : item.title))
