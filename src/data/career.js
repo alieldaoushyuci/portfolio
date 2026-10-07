@@ -16,6 +16,15 @@ export const career = [
     href: '/involvement#ai-safety-uci',
   },
   {
+    id: 'triathlon-club',
+    kind: 'involvement',
+    title: 'Member',
+    org: 'Triathlon Club at UCI',
+    start: '2026-09',
+    date: 'Sep 2026',
+    href: '/involvement#triathlon-club',
+  },
+  {
     id: 'nomad-ecommerce',
     kind: 'work',
     title: 'Software Development Intern',

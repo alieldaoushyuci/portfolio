@@ -156,6 +156,28 @@ export default function Involvement() {
           </div>
         </div>
 
+        <div className="entry platform" id="triathlon-club">
+          <h2 className="who">
+            Member <em>— Triathlon Club at UCI</em>
+          </h2>
+          <p className="when">September 2026 – Present</p>
+          <div className="body">
+            <ul>
+              <li>
+                Train weekly with the team across swim, bike, and run sessions
+              </li>
+              <li>
+                Compete in collegiate and local triathlons throughout the
+                quarter
+              </li>
+              <li>
+                Build endurance, discipline, and consistency alongside a
+                supportive team community
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="entry platform" id="sigma-pi">
           <h2 className="who">
             Alumni Network &amp; Scholarship Chairman{' '}

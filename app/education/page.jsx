@@ -30,21 +30,9 @@ export default function Education() {
         </div>
 
         <div className="platform">
-          <p className="group-label">Extracurricular Involvement</p>
-          <ul className="edu-list">
-            <li>AI Safety at UCI</li>
-            <li>Blockchain at UCI</li>
-            <li>Campuswide Honors Collegium</li>
-            <li>ICS Student Council</li>
-            <li>Muslim Student Union</li>
-            <li>Sigma Pi Fraternity</li>
-            <li>Triathlon Club</li>
-          </ul>
-        </div>
-
-        <div className="platform">
           <p className="group-label">Honors</p>
           <ul className="edu-list">
+            <li>Campuswide Honors Collegium</li>
             <li>Dean&apos;s List</li>
           </ul>
         </div>
