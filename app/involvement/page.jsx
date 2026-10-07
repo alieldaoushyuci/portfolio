@@ -3,14 +3,6 @@ import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
   {
-    title: 'Racing through a minefield: The AI Deployment Problem',
-    href: 'https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/',
-  },
-  {
-    title: 'AI is going to run out of power',
-    href: 'https://www.transformernews.ai/p/ai-will-run-out-of-power',
-  },
-  {
     title: 'AI systems could cover up misbehavior',
     href: 'https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/',
   },
@@ -21,6 +13,10 @@ const FIELD_CONTEXT = [
   {
     title: 'Existential Risk from Power-Seeking AI',
     href: 'https://arxiv.org/abs/2206.13353',
+  },
+  {
+    title: 'High-level hopes for AI alignment',
+    href: 'https://www.cold-takes.com/high-level-hopes-for-ai-alignment/',
   },
   {
     title: 'Pacing the Frontier',
@@ -35,10 +31,6 @@ const FIELD_CONTEXT = [
     href: 'https://www.cold-takes.com/most-important-century/',
   },
   {
-    title: 'The Scramble: Getting in Position to Pace the Frontier',
-    href: 'https://blog.peterwildeford.com/p/the-scramble-getting-in-position',
-  },
-  {
     title: 'A “Morally Binding” White House Accord',
     href: 'https://thezvi.substack.com/p/a-morally-binding-white-house-accord',
   },
@@ -49,6 +41,10 @@ const FIELD_CONTEXT = [
   {
     title: 'AI 2040',
     href: 'https://ai-2040.com/',
+  },
+  {
+    title: 'AI is going to run out of power',
+    href: 'https://www.transformernews.ai/p/ai-will-run-out-of-power',
   },
   {
     title: 'An Alien Mind',
@@ -87,6 +83,10 @@ const FIELD_CONTEXT = [
     href: 'https://forum.effectivealtruism.org/posts/YY6PSor7TAZdyFRQi/prospecting-for-gold-owen-cotton-barratt',
   },
   {
+    title: 'Racing through a minefield: The AI Deployment Problem',
+    href: 'https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/',
+  },
+  {
     title: 'So you’re considering AI Safety',
     href: 'https://aisafety.info/',
   },
@@ -97,6 +97,10 @@ const FIELD_CONTEXT = [
   {
     title: 'The Rise and Fall of Agent Civilizations',
     href: 'https://www.dwarkesh.com/p/openai-huggingface',
+  },
+  {
+    title: 'The Scramble: Getting in Position to Pace the Frontier',
+    href: 'https://blog.peterwildeford.com/p/the-scramble-getting-in-position',
   },
   {
     title: 'Transformers, the Tech behind LLMs',
