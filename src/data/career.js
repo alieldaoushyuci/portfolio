@@ -18,7 +18,7 @@ export const career = [
   {
     id: 'triathlon-club',
     kind: 'involvement',
-    title: 'Member',
+    title: 'Competitive Member',
     org: 'Triathlon Club at UCI',
     start: '2026-09',
     date: 'Sep 2026',
@@ -160,8 +160,8 @@ export const careerById = Object.fromEntries(
 
 export const skillUsage = {
   Communication: ['ai-safety-uci', 'sigma-pi', 'private-tutor', 'vons'],
-  Dedication: ['ai-safety-uci', 'sigma-pi', 'private-tutor'],
-  'Follow-through': ['ai-safety-uci', 'sigma-pi'],
+  Dedication: ['ai-safety-uci', 'triathlon-club', 'sigma-pi', 'private-tutor'],
+  'Follow-through': ['ai-safety-uci', 'triathlon-club', 'sigma-pi'],
   Leadership: ['sigma-pi'],
   Organization: ['sigma-pi', 'private-tutor'],
   CSS: ['nomad-ecommerce', 'uci-oit'],

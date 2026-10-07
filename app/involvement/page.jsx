@@ -158,7 +158,7 @@ export default function Involvement() {
 
         <div className="entry platform" id="triathlon-club">
           <h2 className="who">
-            Member <em>— Triathlon Club at UCI</em>
+            Competitive Member <em>— Triathlon Club at UCI</em>
           </h2>
           <p className="when">September 2026 – Present</p>
           <div className="body">
