@@ -9,7 +9,6 @@ export default function Experience() {
             Software Development Intern <em>— Nomad eCommerce</em>
           </h2>
           <p className="when">March 2026 – Present</p>
-          <p className="meta">Azure, CSS, HTML, JavaScript, SQL</p>
           <div className="body">
             <ul>
               <li>
@@ -73,7 +72,6 @@ export default function Experience() {
             <em>— Office Of Information Technology, UC Irvine</em>
           </h2>
           <p className="when">June 2025 – June 2026</p>
-          <p className="meta">CSS, HTML, Java, React</p>
           <div className="body">
             <ul>
               <li>
