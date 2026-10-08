@@ -173,6 +173,14 @@ a {
   isolation: isolate;
 }
 
+.pursuit-hint {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
 .pursuit-video {
   position: absolute;
   inset: 0;

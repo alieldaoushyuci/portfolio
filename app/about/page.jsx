@@ -284,6 +284,7 @@ export default function About() {
             I&apos;m still trying to learn whenever I have free time.
           </p>
           <PursuitVideos />
+          <p className="pursuit-hint">Hover or tap a section to expand.</p>
         </section>
       </article>
     </main>
