@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 // Each filled cell is one pixel in a 24 × 24 monochrome logo.
 function PixelLogo({ rows }) {
@@ -108,6 +109,9 @@ const SOCIALS = [
 
 export default function SocialNotes() {
   const [copyStatus, setCopyStatus] = useState('');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     if (!copyStatus) return;
@@ -125,19 +129,18 @@ export default function SocialNotes() {
   }
 
   return (
+    <>
     <nav className="social-notes" aria-label="Social links">
       {SOCIALS.map(({ label, href, email, Icon }) => email ? (
         <button
           key={label}
           type="button"
-          className={`social-note${copyStatus ? ' has-copy-status' : ''}`}
+          className="social-note"
           onClick={() => copyEmail(email)}
           aria-label={`Copy email address ${email}`}
         >
           <Icon />
-          <span className="social-note-tip" role="status">
-            {copyStatus || 'Copy email'}
-          </span>
+          <span className="social-note-tip">Copy email</span>
         </button>
       ) : (
         <a
@@ -153,5 +156,9 @@ export default function SocialNotes() {
         </a>
       ))}
     </nav>
+    {mounted && createPortal(<div className={`email-copy-toast${copyStatus ? ' is-visible' : ''}`} role="status" aria-live="polite" aria-atomic="true">
+      {copyStatus}
+    </div>, document.body)}
+    </>
   );
 }

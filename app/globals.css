@@ -616,10 +616,31 @@ button.social-note {
 }
 
 .social-note:hover .social-note-tip,
-.social-note:focus-visible .social-note-tip,
-.social-note.has-copy-status .social-note-tip {
+.social-note:focus-visible .social-note-tip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+.email-copy-toast {
+  position: fixed;
+  left: max(20px, env(safe-area-inset-left));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 100;
+  max-width: calc(100vw - 40px);
+  padding: 12px 18px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans), system-ui, sans-serif;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.email-copy-toast.is-visible {
+  opacity: 1;
 }
 
 .contact-directory {
