@@ -280,7 +280,7 @@ export default function About() {
             <h3>Other Pursuits</h3>
           </div>
           <p>
-            Areas and skills I&apos;ve picked up over the years, or things
+            Interests and skills I&apos;ve picked up over the years, or things
             I&apos;m still trying to learn whenever I have free time.
           </p>
           <PursuitVideos />
