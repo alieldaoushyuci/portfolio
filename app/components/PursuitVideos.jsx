@@ -32,13 +32,21 @@ function sliceStyle(index) {
     const radians = angle * Math.PI / 180;
     return [50 + radius * Math.cos(radians), 50 + radius * Math.sin(radians)];
   };
-  const arc = Array.from({ length: 25 }, (_, step) =>
-    point(start + (end - start) * step / 24).map(value => `${value.toFixed(3)}%`).join(' '));
-  const [x, y] = point((start + end) / 2, 27);
+  const points = Array.from({ length: 25 }, (_, step) =>
+    point(start + (end - start) * step / 24));
+  const arc = points.map(coords => coords.map(value => `${value.toFixed(3)}%`).join(' '));
+  // Fit each preview to its slice's bounds rather than an oversized square.
+  const bounds = [[50, 50], ...points];
+  const left = Math.min(...bounds.map(([x]) => x));
+  const top = Math.min(...bounds.map(([, y]) => y));
+  const right = Math.max(...bounds.map(([x]) => x));
+  const bottom = Math.max(...bounds.map(([, y]) => y));
   return {
     '--slice': `polygon(50% 50%, ${arc.join(', ')})`,
-    '--video-left': `${x - 40}%`,
-    '--video-top': `${y - 40}%`,
+    '--video-left': `${left}%`,
+    '--video-top': `${top}%`,
+    '--video-width': `${right - left}%`,
+    '--video-height': `${bottom - top}%`,
   };
 }
 

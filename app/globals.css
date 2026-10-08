@@ -188,8 +188,8 @@ a {
   position: absolute;
   left: var(--video-left);
   top: var(--video-top);
-  width: 80%;
-  height: 80%;
+  width: var(--video-width);
+  height: var(--video-height);
   object-fit: cover;
   display: block;
   pointer-events: none;
@@ -202,11 +202,11 @@ a {
 }
 
 .pursuit-video.is-focused video {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  left: 4%;
+  top: 4%;
+  width: 92%;
+  height: 92%;
+  object-fit: cover;
 }
 
 .pursuit-video:focus-visible {
