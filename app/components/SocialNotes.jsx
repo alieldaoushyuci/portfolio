@@ -140,7 +140,7 @@ export default function SocialNotes() {
           aria-label={`Copy email address ${email}`}
         >
           <Icon />
-          <span className="social-note-tip">Copy email</span>
+          <span className="social-note-tip">Email</span>
         </button>
       ) : (
         <a
