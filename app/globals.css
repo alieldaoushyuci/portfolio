@@ -1749,6 +1749,10 @@ article .skill-usage a {
   }
 }
 
+.album-platform {
+  container: albums / inline-size;
+}
+
 .album-grid {
   list-style: none;
   margin: 0;
@@ -1758,7 +1762,15 @@ article .skill-usage a {
   gap: 20px;
 }
 
+/* Preserve the desktop grid; keep narrower panels in complete pairs. */
+@container albums (width < 620px) {
+  .album-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .album-card {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 6px;

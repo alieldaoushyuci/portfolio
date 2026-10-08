@@ -168,7 +168,7 @@ export default function About() {
             aspects of my character.
           </p>
           <p className="group-label interest-subhead">Some of My Favorites</p>
-          <div className="platform">
+          <div className="platform album-platform">
             <ul className="album-grid">
               {albums.map((album, i) => (
                 <li key={i} className="album-card">
