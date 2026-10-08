@@ -563,6 +563,12 @@ a {
   transition: background 0.18s ease, transform 0.18s ease;
 }
 
+button.social-note {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
 .social-note:hover,
 .social-note:focus-visible {
   color: var(--ink);
@@ -609,7 +615,8 @@ a {
 }
 
 .social-note:hover .social-note-tip,
-.social-note:focus-visible .social-note-tip {
+.social-note:focus-visible .social-note-tip,
+.social-note.has-copy-status .social-note-tip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }

@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 function PixelSvg({ size = 16, children }) {
   return (
     <svg
@@ -145,7 +149,7 @@ const SOCIALS = [
   },
   {
     label: 'Email',
-    href: 'https://mail.google.com/mail/u/0/?to=aeldaoushy1@gmail.com&su=Contact%20from%20Portfolio&tf=cm',
+    email: 'aeldaoushy1@gmail.com',
     Token: TokenBolt,
   },
   {
@@ -156,9 +160,39 @@ const SOCIALS = [
 ];
 
 export default function SocialNotes() {
+  const [copyStatus, setCopyStatus] = useState('');
+
+  useEffect(() => {
+    if (!copyStatus) return;
+    const timer = setTimeout(() => setCopyStatus(''), 3000);
+    return () => clearTimeout(timer);
+  }, [copyStatus]);
+
+  async function copyEmail(email) {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopyStatus('Email copied!');
+    } catch {
+      setCopyStatus(`Could not copy. Email: ${email}`);
+    }
+  }
+
   return (
     <nav className="social-notes" aria-label="Social links">
-      {SOCIALS.map(({ label, href, Token }) => (
+      {SOCIALS.map(({ label, href, email, Token }) => email ? (
+        <button
+          key={label}
+          type="button"
+          className={`social-note${copyStatus ? ' has-copy-status' : ''}`}
+          onClick={() => copyEmail(email)}
+          aria-label={`Copy email address ${email}`}
+        >
+          <Token />
+          <span className="social-note-tip" role="status">
+            {copyStatus || 'Copy email'}
+          </span>
+        </button>
+      ) : (
         <a
           key={label}
           href={href}
