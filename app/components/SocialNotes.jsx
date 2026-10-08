@@ -2,160 +2,107 @@
 
 import { useEffect, useState } from 'react';
 
-function PixelSvg({ size = 16, children }) {
+// Each filled cell is one pixel in a 24 × 24 monochrome logo.
+function PixelLogo({ rows }) {
   return (
     <svg
       className="pixel-note-svg"
-      width={size * 2.5}
-      height={size * 2.5}
-      viewBox={`0 0 ${size} ${size}`}
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
       shapeRendering="crispEdges"
       aria-hidden="true"
     >
-      {children}
+      {rows.flatMap((row, y) => [...row].map((pixel, x) => pixel === '#'
+        ? <rect key={`${x}-${y}`} x={x} y={y} width="1" height="1" fill="currentColor" />
+        : null))}
     </svg>
   );
 }
 
-function Px({ x, y, fill = 'currentColor' }) {
-  return <rect x={x} y={y} width={1} height={1} fill={fill} />;
+function LinkedInIcon() {
+  const rows = Array.from({ length: 24 }, (_, y) =>
+    Array.from({ length: 24 }, (_, x) => {
+      const square = x >= 2 && x <= 21 && y >= 2 && y <= 21;
+      const corner = (x === 2 || x === 21) && (y === 2 || y === 21);
+      const i = x >= 5 && x <= 7 && ((y >= 6 && y <= 8) || (y >= 10 && y <= 18));
+      const n = (x >= 10 && x <= 12 && y >= 10 && y <= 18)
+        || (x >= 13 && x <= 16 && y >= 10 && y <= 12)
+        || (x >= 16 && x <= 18 && y >= 12 && y <= 18);
+      return square && !corner && !i && !n ? '#' : '.';
+    }).join(''));
+  return <PixelLogo rows={rows} />;
 }
 
-function coinFace(metal, face) {
-  const pixels = [];
-  for (let y = 0; y < 16; y++) {
-    for (let x = 0; x < 16; x++) {
-      const d = Math.hypot(x + 0.5 - 8, y + 0.5 - 8);
-      if (d > 7.0) continue;
-      if (d > 5.6) pixels.push([x, y, metal]);
-      else pixels.push([x, y, face]);
-    }
-  }
-  return pixels;
+function GitHubIcon() {
+  return <PixelLogo rows={[
+    '........................',
+    '.........######.........',
+    '......############......',
+    '.....##############.....',
+    '....###..######..###....',
+    '...####....##....####...',
+    '..#####..........#####..',
+    '..#####..........#####..',
+    '..####............####..',
+    '.#####............#####.',
+    '.#####............#####.',
+    '.#####............#####.',
+    '.######..........######.',
+    '.#######........#######.',
+    '..########....########..',
+    '..###..###....########..',
+    '..####..##....########..',
+    '...####.......#######...',
+    '....######....######....',
+    '.....#####....#####.....',
+    '......####....####......',
+    '.........#....#.........',
+    '........................',
+    '........................',
+  ]} />;
 }
 
-function TokenStar() {
-  const base = coinFace('#0a66c2', '#3b8ddd');
-  const stamp = [
-    [7, 4], [8, 4],
-    [7, 5], [8, 5],
-    [5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [10, 6],
-    [6, 7], [7, 7], [8, 7], [9, 7],
-    [7, 8], [8, 8],
-    [6, 9], [7, 9], [8, 9], [9, 9],
-    [5, 10], [6, 10], [9, 10], [10, 10],
-  ];
-  const ink = '#062f5c';
-  return (
-    <PixelSvg>
-      {base.map(([x, y, fill], i) => (
-        <Px key={`b${i}`} x={x} y={y} fill={fill} />
-      ))}
-      {stamp.map(([x, y], i) => (
-        <Px key={`s${i}`} x={x} y={y} fill={ink} />
-      ))}
-    </PixelSvg>
-  );
+function EmailIcon() {
+  return <PixelLogo rows={Array.from({ length: 24 }, (_, y) =>
+    Array.from({ length: 24 }, (_, x) => {
+      const border = ((y === 5 || y === 18) && x >= 2 && x <= 21)
+        || ((x === 2 || x === 21) && y >= 5 && y <= 18);
+      const flap = y >= 6 && y <= 14 && (x === y - 3 || x === 26 - y);
+      return border || flap ? '#' : '.';
+    }).join(''))} />;
 }
 
-function TokenDiamond() {
-  const base = coinFace('#b8c4d0', '#d5dde6');
-  const stamp = [
-    [7, 4], [8, 4],
-    [6, 5], [7, 5], [8, 5], [9, 5],
-    [5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [10, 6],
-    [5, 7], [6, 7], [9, 7], [10, 7],
-    [5, 8], [6, 8], [7, 8], [8, 8], [9, 8], [10, 8],
-    [6, 9], [7, 9], [8, 9], [9, 9],
-    [7, 10], [8, 10],
-  ];
-  const ink = '#2c3640';
-  return (
-    <PixelSvg>
-      {base.map(([x, y, fill], i) => (
-        <Px key={`b${i}`} x={x} y={y} fill={fill} />
-      ))}
-      {stamp.map(([x, y], i) => (
-        <Px key={`s${i}`} x={x} y={y} fill={ink} />
-      ))}
-    </PixelSvg>
-  );
-}
-
-function TokenBolt() {
-  const base = coinFace('#f4c430', '#ffe066');
-  const stamp = [
-    [8, 3], [9, 3],
-    [7, 4], [8, 4],
-    [6, 5], [7, 5],
-    [5, 6], [6, 6], [7, 6], [8, 6], [9, 6],
-    [7, 7], [8, 7], [9, 7],
-    [8, 8], [9, 8],
-    [7, 9], [8, 9],
-    [6, 10], [7, 10],
-    [5, 11], [6, 11],
-  ];
-  const ink = '#6b4e00';
-  return (
-    <PixelSvg>
-      {base.map(([x, y, fill], i) => (
-        <Px key={`b${i}`} x={x} y={y} fill={fill} />
-      ))}
-      {stamp.map(([x, y], i) => (
-        <Px key={`s${i}`} x={x} y={y} fill={ink} />
-      ))}
-    </PixelSvg>
-  );
-}
-
-function TokenOneUp() {
-  const base = coinFace('#e85d04', '#ff8c42');
-  const stamp = [
-    [5, 5], [6, 5], [7, 5], [8, 5], [9, 5], [10, 5],
-    [4, 6], [5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [10, 6], [11, 6],
-    [4, 7], [5, 7], [6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7],
-    [6, 8], [7, 8], [8, 8], [9, 8],
-    [6, 9], [7, 9], [8, 9], [9, 9],
-    [6, 10], [7, 10], [8, 10], [9, 10],
-  ];
-  const spots = [[5, 6], [8, 6], [10, 7]];
-  const ink = '#5c2200';
-  const spot = '#ffd4a8';
-  return (
-    <PixelSvg>
-      {base.map(([x, y, fill], i) => (
-        <Px key={`b${i}`} x={x} y={y} fill={fill} />
-      ))}
-      {stamp.map(([x, y], i) => (
-        <Px key={`s${i}`} x={x} y={y} fill={ink} />
-      ))}
-      {spots.map(([x, y], i) => (
-        <Px key={`p${i}`} x={x} y={y} fill={spot} />
-      ))}
-    </PixelSvg>
-  );
+function SubstackIcon() {
+  return <PixelLogo rows={Array.from({ length: 24 }, (_, y) =>
+    Array.from({ length: 24 }, (_, x) => {
+      const bar = x >= 3 && x <= 20 && ((y >= 2 && y <= 3) || (y >= 6 && y <= 7));
+      const bookmark = x >= 3 && x <= 20 && y >= 10 && y <= 21
+        && (y <= 15 || x <= 26 - y || x >= y - 3);
+      return bar || bookmark ? '#' : '.';
+    }).join(''))} />;
 }
 
 const SOCIALS = [
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/alieldaoushy',
-    Token: TokenStar,
+    Icon: LinkedInIcon,
   },
   {
     label: 'GitHub',
     href: 'https://github.com/alieldaoushyuci',
-    Token: TokenDiamond,
+    Icon: GitHubIcon,
   },
   {
     label: 'Email',
     email: 'aeldaoushy1@gmail.com',
-    Token: TokenBolt,
+    Icon: EmailIcon,
   },
   {
     label: 'Substack',
     href: 'https://substack.com/@alieldaoushy',
-    Token: TokenOneUp,
+    Icon: SubstackIcon,
   },
 ];
 
@@ -179,7 +126,7 @@ export default function SocialNotes() {
 
   return (
     <nav className="social-notes" aria-label="Social links">
-      {SOCIALS.map(({ label, href, email, Token }) => email ? (
+      {SOCIALS.map(({ label, href, email, Icon }) => email ? (
         <button
           key={label}
           type="button"
@@ -187,7 +134,7 @@ export default function SocialNotes() {
           onClick={() => copyEmail(email)}
           aria-label={`Copy email address ${email}`}
         >
-          <Token />
+          <Icon />
           <span className="social-note-tip" role="status">
             {copyStatus || 'Copy email'}
           </span>
@@ -201,7 +148,7 @@ export default function SocialNotes() {
           rel="noopener noreferrer"
           aria-label={label}
         >
-          <Token />
+          <Icon />
           <span className="social-note-tip">{label}</span>
         </a>
       ))}
