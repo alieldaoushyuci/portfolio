@@ -19,6 +19,14 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 html,
@@ -1763,7 +1771,7 @@ article .skill-usage a {
 }
 
 /* Preserve the desktop grid; keep narrower panels in complete pairs. */
-@container albums (width < 620px) {
+@container albums (width < 780px) {
   .album-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1781,8 +1789,7 @@ article .skill-usage a {
   background: var(--chip);
   border: 0.5px solid var(--rule);
   overflow: hidden;
-  border-radius: 2px;
-  transition: border-radius 0.5s ease;
+  border-radius: 50%;
 }
 
 .album-cover img {
@@ -1790,23 +1797,15 @@ article .skill-usage a {
   height: 100%;
   object-fit: cover;
   transform-origin: center;
-  transition: transform 0.4s ease;
-}
-
-.album-card:hover .album-cover {
-  border-radius: 50%;
-}
-
-.album-card:hover .album-cover img {
   animation: vinyl-spin 8s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .album-card:hover .album-cover {
+  .album-cover {
     border-radius: 2px;
   }
 
-  .album-card:hover .album-cover img {
+  .album-cover img {
     animation: none;
   }
 }
