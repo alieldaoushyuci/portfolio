@@ -162,61 +162,67 @@ a {
 }
 
 .pursuit-videos {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 12px;
-}
-
-@media (min-width: 720px) {
-  .pursuit-videos {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-  }
+  position: relative;
+  width: min(100%, 620px);
+  aspect-ratio: 1;
+  margin: 24px auto 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--paper);
+  isolation: isolate;
 }
 
 .pursuit-video {
-  overflow: hidden;
-  border-radius: 10px;
-  background: rgba(26, 33, 24, 0.08);
-  aspect-ratio: 9 / 16;
-  max-height: 340px;
-  transition:
-    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.28s ease,
-    filter 0.28s ease;
-  transform-origin: center center;
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  border: none;
+  background: var(--paper);
+  clip-path: var(--slice);
+  cursor: pointer;
+  transition: clip-path 0.35s ease, opacity 0.28s ease, filter 0.28s ease;
 }
 
 .pursuit-video video {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  left: var(--video-left);
+  top: var(--video-top);
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   display: block;
+  pointer-events: none;
+  transition: left 0.35s ease, top 0.35s ease, width 0.35s ease, height 0.35s ease;
 }
 
 .pursuit-videos.is-focusing .pursuit-video.is-focused {
-  transform: scale(1.08);
+  clip-path: circle(46% at 50% 50%);
   z-index: 2;
-  position: relative;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.pursuit-video.is-focused video {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pursuit-video:focus-visible {
+  background: var(--accent);
+  outline: none;
 }
 
 .pursuit-videos.is-focusing .pursuit-video.is-dimmed {
   opacity: 0.38;
   filter: saturate(0.7);
-  transform: scale(0.96);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pursuit-video {
+  .pursuit-video,
+  .pursuit-video video {
     transition: none;
-  }
-
-  .pursuit-videos.is-focusing .pursuit-video.is-focused,
-  .pursuit-videos.is-focusing .pursuit-video.is-dimmed {
-    transform: none;
   }
 }
 
