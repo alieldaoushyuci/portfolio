@@ -284,7 +284,7 @@ export default function About() {
             I&apos;m still trying to learn whenever I have free time.
           </p>
           <PursuitVideos />
-          <p className="pursuit-hint">Hover over a section to expand. Use Tab to focus and Esc to reset.</p>
+          <p className="pursuit-hint">Hover over a section to expand.</p>
         </section>
       </article>
     </main>
