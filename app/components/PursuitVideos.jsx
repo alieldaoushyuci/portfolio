@@ -4,23 +4,28 @@ import { useEffect, useRef, useState } from 'react';
 
 const VIDEOS = [
   {
-    src: '/pursuits/pursuit-1.mov',
+    src: '/pursuits/pursuit-1-web.mp4',
+    poster: '/pursuits/pursuit-1-poster.jpg',
     label: 'Other pursuit clip 1',
   },
   {
-    src: '/pursuits/pursuit-3.mov',
+    src: '/pursuits/pursuit-3-web.mp4',
+    poster: '/pursuits/pursuit-3-poster.jpg',
     label: 'Other pursuit clip 3',
   },
   {
-    src: '/pursuits/pursuit-2.mov',
+    src: '/pursuits/pursuit-2-web.mp4',
+    poster: '/pursuits/pursuit-2-poster.jpg',
     label: 'Other pursuit clip 2',
   },
   {
-    src: '/pursuits/pursuit-4.mov',
+    src: '/pursuits/pursuit-4-web.mp4',
+    poster: '/pursuits/pursuit-4-poster.jpg',
     label: 'Other pursuit clip 4',
   },
   {
-    src: '/pursuits/pursuit-5.mp4',
+    src: '/pursuits/pursuit-5-web.mp4',
+    poster: '/pursuits/pursuit-5-poster.jpg',
     label: 'Skydiving',
   },
 ];
@@ -50,6 +55,14 @@ function sliceStyle(index) {
   };
 }
 
+function silenceVideo(video) {
+  if (!video) return;
+  video.defaultMuted = true;
+  video.setAttribute('muted', '');
+  if (!video.muted) video.muted = true;
+  if (video.volume !== 0) video.volume = 0;
+}
+
 export default function PursuitVideos() {
   const refs = useRef([]);
   const [focused, setFocused] = useState(null);
@@ -57,7 +70,7 @@ export default function PursuitVideos() {
   useEffect(() => {
     refs.current.forEach((video) => {
       if (!video) return;
-      video.muted = true;
+      silenceVideo(video);
       const play = video.play();
       if (play?.catch) play.catch(() => {});
     });
@@ -66,6 +79,7 @@ export default function PursuitVideos() {
   useEffect(() => {
     refs.current.forEach((video, i) => {
       if (!video) return;
+      silenceVideo(video);
       if (focused === null || focused === i) {
         const play = video.play();
         if (play?.catch) play.catch(() => {});
@@ -111,10 +125,14 @@ export default function PursuitVideos() {
           <video
             ref={(el) => {
               refs.current[i] = el;
+              silenceVideo(el);
             }}
             src={clip.src}
+            poster={clip.poster}
             autoPlay
             muted
+            onPlay={(event) => silenceVideo(event.currentTarget)}
+            onVolumeChange={(event) => silenceVideo(event.currentTarget)}
             loop
             playsInline
             preload="metadata"

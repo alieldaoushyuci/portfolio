@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("Involvement", "Ali Eldaoushy's involvement in AI Safety at UCI, student organizations, and the AI safety field.", '/involvement');
 import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [

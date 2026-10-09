@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("Projects", "Browse Ali Eldaoushy's software projects and the work behind them.", '/projects');
 
 export default function Projects() {
   return (

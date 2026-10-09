@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("Education", "Ali Eldaoushy's computer science education, coursework, and honors at the University of California, Irvine.", '/education');
 import DegreeProgress from '../components/DegreeProgress';
 
 export default function Education() {

@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("Skills", "Explore the technical tools, programming languages, and professional skills of Ali Eldaoushy.", '/skills');
 import SkillGroup from '../components/SkillGroup';
 
 export default function Skills() {

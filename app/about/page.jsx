@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("About", "Learn about Ali Eldaoushy's interests in fitness, music, travel, reading, and other pursuits.", '/about');
 import ReadingShelf from '../components/ReadingShelf';
 import PursuitVideos from '../components/PursuitVideos';
 import RaceTimeline from '../components/RaceTimeline';

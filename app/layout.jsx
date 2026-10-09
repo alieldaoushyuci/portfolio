@@ -29,8 +29,9 @@ const mono = JetBrains_Mono({
 
 export const metadata = {
   metadataBase: new URL('https://alieldaoushy.com'),
-  title: "Ali Eldaoushy's Portfolio",
-  description: 'Projects, Experience, and contact information',
+  title: { default: 'Ali Eldaoushy | Personal Portfolio', template: '%s | Ali Eldaoushy' },
+  description: 'The personal portfolio of Ali Eldaoushy (alieldaoushy): projects, experience, education, AI safety involvement, and interests.',
+  authors: [{ name: 'Ali Eldaoushy', url: 'https://alieldaoushy.com' }],
 };
 
 export default function RootLayout({ children }) {

@@ -2,11 +2,42 @@ import SocialNotes from './components/SocialNotes';
 import HeroPortrait from './components/HeroPortrait';
 import CareerTimeline from './components/CareerTimeline';
 
+export const metadata = {
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Ali Eldaoushy | Personal Portfolio',
+    description: 'Explore the projects, experience, education, and interests of Ali Eldaoushy (alieldaoushy).',
+    url: '/',
+    siteName: 'Ali Eldaoushy',
+    type: 'website',
+  },
+};
+
+const profile = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  url: 'https://alieldaoushy.com',
+  mainEntity: {
+    '@type': 'Person',
+    '@id': 'https://alieldaoushy.com/#ali',
+    name: 'Ali Eldaoushy',
+    alternateName: 'alieldaoushy',
+    url: 'https://alieldaoushy.com',
+    image: 'https://alieldaoushy.com/profile.png',
+    sameAs: [
+      'https://www.linkedin.com/in/alieldaoushy',
+      'https://github.com/alieldaoushyuci',
+      'https://substack.com/@alieldaoushy',
+    ],
+  },
+};
+
 export default function Home() {
   const profileSrc = '/profile.png';
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profile).replace(/</g, '\\u003c') }} />
       <section className="hero">
         <HeroPortrait src={profileSrc} alt="Ali Eldaoushy portrait" />
 

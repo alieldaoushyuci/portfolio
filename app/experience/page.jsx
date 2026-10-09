@@ -1,4 +1,7 @@
 import SectionHeader from '../components/SectionHeader';
+import { pageMetadata } from '../../src/data/seo';
+
+export const metadata = pageMetadata("Experience", "Explore Ali Eldaoushy's work experience, internships, and professional background.", '/experience');
 export default function Experience() {
   return (
     <main>
