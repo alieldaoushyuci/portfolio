@@ -86,6 +86,11 @@ function SubstackIcon() {
 
 const SOCIALS = [
   {
+    label: 'Email',
+    email: 'aeldaoushy1@gmail.com',
+    Icon: EmailIcon,
+  },
+  {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/alieldaoushy',
     Icon: LinkedInIcon,
@@ -94,11 +99,6 @@ const SOCIALS = [
     label: 'GitHub',
     href: 'https://github.com/alieldaoushyuci',
     Icon: GitHubIcon,
-  },
-  {
-    label: 'Email',
-    email: 'aeldaoushy1@gmail.com',
-    Icon: EmailIcon,
   },
   {
     label: 'Substack',
