@@ -188,7 +188,8 @@ a {
   transition: clip-path 0.35s ease, opacity 0.28s ease, filter 0.28s ease;
 }
 
-.pursuit-video video {
+.pursuit-video video,
+.pursuit-cover {
   position: absolute;
   left: var(--video-left);
   top: var(--video-top);
@@ -200,12 +201,21 @@ a {
   transition: left 0.35s ease, top 0.35s ease, width 0.35s ease, height 0.35s ease;
 }
 
+.pursuit-video video {
+  opacity: 0;
+}
+
+.pursuit-video video.is-playing {
+  opacity: 1;
+}
+
 .pursuit-videos.is-focusing .pursuit-video.is-focused {
   clip-path: circle(46% at 50% 50%);
   z-index: 2;
 }
 
-.pursuit-video.is-focused video {
+.pursuit-video.is-focused video,
+.pursuit-video.is-focused .pursuit-cover {
   left: 4%;
   top: 4%;
   width: 92%;
@@ -225,6 +235,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .pursuit-video,
+  .pursuit-cover,
   .pursuit-video video {
     transition: none;
   }

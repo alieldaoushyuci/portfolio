@@ -66,6 +66,11 @@ function silenceVideo(video) {
 export default function PursuitVideos() {
   const refs = useRef([]);
   const [focused, setFocused] = useState(null);
+  const [playing, setPlaying] = useState({});
+
+  function showPlayback(index, visible) {
+    setPlaying(current => current[index] === visible ? current : { ...current, [index]: visible });
+  }
 
   useEffect(() => {
     refs.current.forEach((video) => {
@@ -122,7 +127,16 @@ export default function PursuitVideos() {
             if (event.key === 'Escape') setFocused(null);
           }}
         >
+          <img
+            className="pursuit-cover"
+            src={clip.poster}
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            fetchPriority="high"
+          />
           <video
+            className={playing[i] ? 'is-playing' : ''}
             ref={(el) => {
               refs.current[i] = el;
               silenceVideo(el);
@@ -133,9 +147,12 @@ export default function PursuitVideos() {
             muted
             onPlay={(event) => silenceVideo(event.currentTarget)}
             onVolumeChange={(event) => silenceVideo(event.currentTarget)}
+            onPlaying={() => showPlayback(i, true)}
+            onWaiting={() => showPlayback(i, false)}
+            onError={() => showPlayback(i, false)}
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             aria-label={clip.label}
           />
         </button>
