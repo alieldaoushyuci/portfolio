@@ -249,7 +249,7 @@ export function PixelRunner({ facing = 1, frame = 0 }) {
     >
       <img
         className="pixel-runner-img"
-        src="/portfolio/sprites/runner.png"
+        src="/sprites/runner.png"
         alt=""
         draggable={false}
         width={44}

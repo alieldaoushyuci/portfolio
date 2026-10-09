@@ -15,52 +15,52 @@ const albums = [
   {
     title: 'Weird Fishes',
     artist: 'Radiohead',
-    cover: '/portfolio/albums/weird-fishes.jpg',
+    cover: '/albums/weird-fishes.jpg',
   },
   {
     title: 'Wish You Were Here',
     artist: 'Pink Floyd',
-    cover: '/portfolio/albums/wish-you-were-here.jpg',
+    cover: '/albums/wish-you-were-here.jpg',
   },
   {
     title: 'Channel Orange',
     artist: 'Frank Ocean',
-    cover: '/portfolio/albums/channel-orange.jpg',
+    cover: '/albums/channel-orange.jpg',
   },
   {
     title: 'By The Way',
     artist: 'Red Hot Chili Peppers',
-    cover: '/portfolio/albums/by-the-way.jpg',
+    cover: '/albums/by-the-way.jpg',
   },
   {
     title: 'Bloom',
     artist: 'RÜFÜS DU SOL',
-    cover: '/portfolio/albums/bloom.jpg',
+    cover: '/albums/bloom.jpg',
   },
   {
     title: "Let's Get It On",
     artist: 'Marvin Gaye',
-    cover: '/portfolio/albums/lets-get-it-on.jpg',
+    cover: '/albums/lets-get-it-on.jpg',
   },
   {
     title: 'The New Abnormal',
     artist: 'The Strokes',
-    cover: '/portfolio/albums/the-new-abnormal.jpg',
+    cover: '/albums/the-new-abnormal.jpg',
   },
   {
     title: 'Case Study 01',
     artist: 'Daniel Caesar',
-    cover: '/portfolio/albums/case-study-01.jpg',
+    cover: '/albums/case-study-01.jpg',
   },
   {
     title: "Let's Stay Together",
     artist: 'Al Green',
-    cover: '/portfolio/albums/lets-stay-together.jpg',
+    cover: '/albums/lets-stay-together.jpg',
   },
   {
     title: 'One of These Nights',
     artist: 'The Eagles',
-    cover: '/portfolio/albums/one-of-these-nights.jpg',
+    cover: '/albums/one-of-these-nights.jpg',
   },
 ];
 
@@ -106,7 +106,7 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/portfolio/fitness/fun-run.png"
+                    src="/fitness/fun-run.png"
                     alt="At the finish line of a fun run with friends"
                     loading="lazy"
                   />
@@ -115,7 +115,7 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/portfolio/fitness/canyon-hike.png"
+                    src="/fitness/canyon-hike.png"
                     alt="Hiking through a narrow canyon"
                     loading="lazy"
                   />
@@ -124,7 +124,7 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/portfolio/fitness/sandboard.png"
+                    src="/fitness/sandboard.png"
                     alt="Sandboarding down a dune"
                     loading="lazy"
                   />
@@ -133,7 +133,7 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/portfolio/fitness/ebike.png"
+                    src="/fitness/ebike.png"
                     alt="Riding e-bikes through a canyon road"
                     loading="lazy"
                   />
@@ -205,7 +205,7 @@ export default function About() {
               <li className="music-gallery-item">
                 <div className="music-gallery-photo">
                   <img
-                    src="/portfolio/music/guitar-camping.png"
+                    src="/music/guitar-camping.png"
                     alt="Playing acoustic guitar at a campsite"
                     loading="lazy"
                   />
@@ -214,7 +214,7 @@ export default function About() {
               <li className="music-gallery-item">
                 <div className="music-gallery-photo">
                   <img
-                    src="/portfolio/music/guitar-couch.png"
+                    src="/music/guitar-couch.png"
                     alt="Playing guitar on the couch with family"
                     loading="lazy"
                   />

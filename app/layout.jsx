@@ -28,6 +28,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://alieldaoushy.com'),
   title: "Ali Eldaoushy's Portfolio",
   description: 'Projects, Experience, and contact information',
 };

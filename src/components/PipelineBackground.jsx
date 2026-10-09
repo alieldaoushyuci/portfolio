@@ -8,9 +8,9 @@ export default function PipelineBackground() {
         if (scriptsLoadedRef.current) return;
 
         const scripts = [
-            '/portfolio/js/noise.min.js',
-            '/portfolio/js/util.js',
-            '/portfolio/js/pipeline.js'
+            '/js/noise.min.js',
+            '/js/util.js',
+            '/js/pipeline.js'
         ];
 
         const loadScript = (src) => {

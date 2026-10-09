@@ -13,51 +13,51 @@ const BOOKS = {
     {
       title: 'The Art of Living',
       author: 'Epictetus',
-      cover: '/portfolio/books/the-art-of-living.jpg',
+      cover: '/books/the-art-of-living.jpg',
     },
     {
       title: "Man's Search for Meaning",
       author: 'Viktor E. Frankl',
-      cover: '/portfolio/books/mans-search-for-meaning.jpg',
+      cover: '/books/mans-search-for-meaning.jpg',
     },
   ],
   planned: [
     {
       title: 'Musicophilia: Tales of Music and the Brain',
       author: 'Oliver Sacks',
-      cover: '/portfolio/books/musicophilia.jpg',
+      cover: '/books/musicophilia.jpg',
     },
     {
       title: '80,000 Hours',
       author: 'Benjamin Todd',
-      cover: '/portfolio/books/80000-hours.jpg',
+      cover: '/books/80000-hours.jpg',
     },
     {
       title: 'The 7 Habits of Highly Effective People',
       author: 'Stephen R. Covey',
-      cover: '/portfolio/books/the-7-habits.jpg',
+      cover: '/books/the-7-habits.jpg',
     },
   ],
   finished: [
     {
       title: 'Letters From a Stoic',
       author: 'Seneca',
-      cover: '/portfolio/books/letters-from-a-stoic.jpg',
+      cover: '/books/letters-from-a-stoic.jpg',
     },
     {
       title: 'Atomic Habits',
       author: 'James Clear',
-      cover: '/portfolio/books/atomic-habits.jpg',
+      cover: '/books/atomic-habits.jpg',
     },
     {
       title: 'Building a Second Brain',
       author: 'Tiago Forte',
-      cover: '/portfolio/books/building-a-second-brain.jpg',
+      cover: '/books/building-a-second-brain.jpg',
     },
     {
       title: 'If Anyone Builds It, Everyone Dies',
       author: 'Eliezer Yudkowsky & Nate Soares',
-      cover: '/portfolio/books/if-anyone-builds-it.jpg',
+      cover: '/books/if-anyone-builds-it.jpg',
     },
   ],
 };

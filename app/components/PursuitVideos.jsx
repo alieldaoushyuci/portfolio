@@ -4,23 +4,23 @@ import { useEffect, useRef, useState } from 'react';
 
 const VIDEOS = [
   {
-    src: '/portfolio/pursuits/pursuit-1.mov',
+    src: '/pursuits/pursuit-1.mov',
     label: 'Other pursuit clip 1',
   },
   {
-    src: '/portfolio/pursuits/pursuit-3.mov',
+    src: '/pursuits/pursuit-3.mov',
     label: 'Other pursuit clip 3',
   },
   {
-    src: '/portfolio/pursuits/pursuit-2.mov',
+    src: '/pursuits/pursuit-2.mov',
     label: 'Other pursuit clip 2',
   },
   {
-    src: '/portfolio/pursuits/pursuit-4.mov',
+    src: '/pursuits/pursuit-4.mov',
     label: 'Other pursuit clip 4',
   },
   {
-    src: '/portfolio/pursuits/pursuit-5.mp4',
+    src: '/pursuits/pursuit-5.mp4',
     label: 'Skydiving',
   },
 ];

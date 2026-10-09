@@ -17,7 +17,7 @@ export default function TravelMap({ places }) {
       <div className="travel-map-board" aria-label="Places I've visited">
         <img
           className="travel-map-img"
-          src="/portfolio/travel/world-map.svg"
+          src="/travel/world-map.svg"
           alt=""
           aria-hidden="true"
           draggable={false}

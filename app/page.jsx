@@ -3,7 +3,7 @@ import HeroPortrait from './components/HeroPortrait';
 import CareerTimeline from './components/CareerTimeline';
 
 export default function Home() {
-  const profileSrc = '/portfolio/profile.png';
+  const profileSrc = '/profile.png';
 
   return (
     <main>
