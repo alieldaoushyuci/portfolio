@@ -82,7 +82,7 @@ const travelFavorites = [
 
 export default function About() {
   return (
-    <main>
+    <main className="about-page">
       <SectionHeader slug="about" />
       <article>
         <section className="interest" id="fitness">
@@ -284,7 +284,7 @@ export default function About() {
             I&apos;m still trying to learn whenever I have free time.
           </p>
           <PursuitVideos />
-          <p className="pursuit-hint">Hover or tap a section to expand.</p>
+          <p className="pursuit-hint">Hover over a section to expand. Use Tab to focus and Esc to reset.</p>
         </section>
       </article>
     </main>

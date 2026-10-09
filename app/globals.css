@@ -87,12 +87,8 @@ a {
 }
 
 .platform {
-  background: var(--platform);
   color: var(--platform-ink);
-  border-radius: 16px;
-  padding: 18px 20px;
-  border: 1px solid var(--platform-rule);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  padding: 18px 0;
 }
 
 .platform .interest-subhead,
@@ -781,8 +777,8 @@ article h2:first-child {
 }
 
 .entries .entry.platform {
-  padding: 18px 20px;
-  border-top: none;
+  padding: 22px 0;
+  border-top: 0.5px solid var(--rule);
 }
 
 .entries .entry:first-child {
@@ -1477,6 +1473,25 @@ article .skill-usage a {
   border-bottom: none;
 }
 
+/* Let the media sit in the page instead of nesting framed panels. */
+.about-page .bookshelf {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding-inline: 0;
+}
+
+.about-page .travel-map-board,
+.about-page .travel-gallery-photo,
+.about-page .music-gallery-photo {
+  border: 0;
+  border-radius: 2px;
+}
+
+.skill-group + .skill-group {
+  border-top: 1px solid var(--rule);
+}
+
 .interest h3 {
   font-family: var(--ser), Georgia, serif;
   font-size: 1.4rem;
@@ -1501,9 +1516,6 @@ article .skill-usage a {
   justify-content: center;
   width: 56px;
   height: 56px;
-  border-radius: 10px;
-  background: var(--chip);
-  border: 1px solid var(--rule);
   color: var(--ink);
 }
 
@@ -2135,8 +2147,8 @@ article .skill-usage a {
 .race-timeline {
   margin: 18px 0 22px;
   padding: 18px 20px 14px;
-  background: var(--platform);
-  border-radius: 10px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
   color: var(--platform-ink);
   overflow: hidden;
 }
@@ -2439,10 +2451,10 @@ article .skill-usage a {
   inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--platform-rule);
-  background: rgba(228, 231, 238, 0.04);
-  padding: 14px 12px;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+  padding: 14px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2474,7 +2486,8 @@ article .skill-usage a {
 .context-front:hover,
 .context-front:focus-visible {
   border-color: rgba(228, 231, 238, 0.45);
-  outline: none;
+  outline: 1px solid var(--rule-strong);
+  outline-offset: 4px;
 }
 
 .context-back {

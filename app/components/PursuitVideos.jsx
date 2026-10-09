@@ -89,7 +89,7 @@ export default function PursuitVideos() {
           type="button"
           style={sliceStyle(i)}
           aria-label={`Focus ${clip.label}`}
-          aria-pressed={focused === i}
+          aria-expanded={focused === i}
           className={[
             'pursuit-video',
             focused === i ? 'is-focused' : '',
@@ -103,7 +103,6 @@ export default function PursuitVideos() {
           onFocus={(event) => {
             if (event.currentTarget.matches(':focus-visible')) setFocused(i);
           }}
-          onClick={() => setFocused(current => current === i ? null : i)}
           onKeyDown={(event) => {
             if (event.key === 'Escape') setFocused(null);
           }}

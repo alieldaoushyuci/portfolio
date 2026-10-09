@@ -2,6 +2,12 @@ import SectionHeader from '../components/SectionHeader';
 import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
+  {"title":"Can AI Scaling Continue Through 2030?","href":"https://epoch.ai/blog/can-ai-scaling-continue-through-2030"},
+  {"title":"In search of a dynamist vision for safe superhuman AI","href":"https://helentoner.substack.com/p/dynamism-vs-stasis"},
+  {"title":"The choices we make now are critical","href":"https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make"},
+  {"title":"The Gentle Singularity","href":"https://blog.samaltman.com/the-gentle-singularity"},
+  {"title":"Introducing Better Futures","href":"https://www.forethought.org/research/introducing-better-futures"},
+  {"title":"The Intelligence Age","href":"https://ia.samaltman.com/"},
   {
     title: 'AI systems could cover up misbehavior',
     href: 'https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/',
@@ -52,7 +58,7 @@ const FIELD_CONTEXT = [
   },
   {
     title: 'Basics of Rational Discourse',
-    href: 'https://www.lesswrong.com/posts/XPv4sYrKnPzeJASuk/basics-of-rationalist-discourse',
+    href: 'https://www.lesswrong.com/posts/XPv4sYrKnPzeJASuk/basics-of-rationalist-discourse-1',
   },
   {
     title: 'Daniel Selsam — Personal Statement on AI Risk',
@@ -64,7 +70,7 @@ const FIELD_CONTEXT = [
   },
   {
     title: 'How to get into AI Safety in 3 months',
-    href: 'https://80000hours.org/2026/09/how-to-get-into-ai-safety-in-three-months/',
+    href: 'https://80000hours.org/2026/09/how-to-get-into-ai-safety-in-3-months/',
   },
   {
     title: 'If Anyone Builds It, Everyone Dies',
