@@ -103,6 +103,7 @@ export default function PursuitVideos() {
           onFocus={(event) => {
             if (event.currentTarget.matches(':focus-visible')) setFocused(i);
           }}
+          onClick={() => setFocused(current => current === i ? null : i)}
           onKeyDown={(event) => {
             if (event.key === 'Escape') setFocused(null);
           }}
