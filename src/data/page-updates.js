@@ -3,7 +3,7 @@
 export const PAGE_UPDATES = {
   '/': '2026-10-09',
   '/about': '2026-10-09',
-  '/education': '2026-10-06',
+  '/education': '2026-10-13',
   '/experience': '2026-10-06',
   '/involvement': '2026-10-09',
   '/projects': '2026-10-06',

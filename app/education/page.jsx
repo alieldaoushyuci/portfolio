@@ -25,6 +25,7 @@ export default function Education() {
           <p className="group-label">Relevant Coursework</p>
           <ul className="edu-list">
             <li>Data Structures and Algorithms</li>
+            <li>Design and Analysis of Algorithms</li>
             <li>Discrete Mathematics and Boolean Logic</li>
             <li>Introduction to Artificial Intelligence</li>
             <li>Machine Learning and Data Mining</li>
