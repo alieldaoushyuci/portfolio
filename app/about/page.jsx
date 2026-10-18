@@ -119,7 +119,6 @@ export default function About() {
                 <div className="travel-gallery-photo">
                   <img
                     src="/fitness/triathlon-team.jpg"
-                    style={{ objectFit: 'contain', objectPosition: 'center' }}
                     alt="UC Irvine triathlon team together on the beach after a race"
                     loading="lazy"
                   />
