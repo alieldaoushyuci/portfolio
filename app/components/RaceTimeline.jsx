@@ -14,6 +14,7 @@ const RACES = [
   {
     id: 'ironbruin',
     name: 'UCLA IronBruin',
+    completed: true,
     dateLabel: 'Oct 18, 2026',
     date: '2026-10-18',
     href: 'https://losangeles.californiatriathlon.org/',
@@ -60,7 +61,7 @@ export default function RaceTimeline() {
       RACES.map((race) => ({
         ...race,
         days: daysUntil(race.date),
-        past: daysUntil(race.date) < 0,
+        past: race.completed || daysUntil(race.date) < 0,
       })),
     []
   );

@@ -118,8 +118,8 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/fitness/canyon-hike.png"
-                    alt="Hiking through a narrow canyon"
+                    src="/fitness/triathlon-team.jpg"
+                    alt="UC Irvine triathlon team together on the beach after a race"
                     loading="lazy"
                   />
                 </div>
