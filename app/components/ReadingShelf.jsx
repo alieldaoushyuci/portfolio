@@ -11,9 +11,9 @@ const TABS = [
 const BOOKS = {
   now: [
     {
-      title: 'The Art of Living',
-      author: 'Epictetus',
-      cover: '/books/the-art-of-living.jpg',
+      title: 'The Untethered Soul',
+      author: 'Michael A. Singer',
+      cover: 'https://covers.openlibrary.org/b/isbn/9781572245372-L.jpg',
     },
     {
       title: "Man's Search for Meaning",
@@ -23,9 +23,34 @@ const BOOKS = {
   ],
   planned: [
     {
-      title: 'Musicophilia: Tales of Music and the Brain',
-      author: 'Oliver Sacks',
-      cover: '/books/musicophilia.jpg',
+      title: "The World's Religions",
+      author: 'Huston Smith',
+      cover: 'https://covers.openlibrary.org/b/isbn/9780061660184-L.jpg',
+    },
+    {
+      title: 'How Music Works',
+      author: 'David Byrne',
+      cover: 'https://covers.openlibrary.org/b/isbn/9780804188937-L.jpg',
+    },
+    {
+      title: 'The Alchemist',
+      author: 'Paulo Coelho',
+      cover: 'https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg',
+    },
+    {
+      title: 'Thinking, Fast and Slow',
+      author: 'Daniel Kahneman',
+      cover: 'https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg',
+    },
+    {
+      title: 'The Infinity Machine: Demis Hassabis, DeepMind, and the Quest for Superintelligence',
+      author: 'Sebastian Mallaby',
+      cover: 'https://covers.openlibrary.org/b/isbn/9780593831847-L.jpg',
+    },
+    {
+      title: 'The 7 Habits of Highly Effective People',
+      author: 'Stephen R. Covey',
+      cover: '/books/the-7-habits.jpg',
     },
     {
       title: '80,000 Hours',
@@ -33,21 +58,26 @@ const BOOKS = {
       cover: '/books/80000-hours.jpg',
     },
     {
-      title: 'The 7 Habits of Highly Effective People',
-      author: 'Stephen R. Covey',
-      cover: '/books/the-7-habits.jpg',
+      title: 'Musicophilia: Tales of Music and the Brain',
+      author: 'Oliver Sacks',
+      cover: '/books/musicophilia.jpg',
     },
   ],
   finished: [
+    {
+      title: 'The Art of Living',
+      author: 'Epictetus',
+      cover: '/books/the-art-of-living.jpg',
+    },
     {
       title: 'Letters From a Stoic',
       author: 'Seneca',
       cover: '/books/letters-from-a-stoic.jpg',
     },
     {
-      title: 'Atomic Habits',
-      author: 'James Clear',
-      cover: '/books/atomic-habits.jpg',
+      title: 'If Anyone Builds It, Everyone Dies',
+      author: 'Eliezer Yudkowsky & Nate Soares',
+      cover: '/books/if-anyone-builds-it.jpg',
     },
     {
       title: 'Building a Second Brain',
@@ -55,9 +85,9 @@ const BOOKS = {
       cover: '/books/building-a-second-brain.jpg',
     },
     {
-      title: 'If Anyone Builds It, Everyone Dies',
-      author: 'Eliezer Yudkowsky & Nate Soares',
-      cover: '/books/if-anyone-builds-it.jpg',
+      title: 'Atomic Habits',
+      author: 'James Clear',
+      cover: '/books/atomic-habits.jpg',
     },
   ],
 };
