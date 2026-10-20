@@ -127,8 +127,8 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/fitness/sandboard.png"
-                    alt="Sandboarding down a dune"
+                    src="/fitness/triathlon-running.jpg"
+                    alt="Running toward the finish line at a triathlon"
                     loading="lazy"
                   />
                 </div>
@@ -136,8 +136,9 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/fitness/ebike.png"
-                    alt="Riding e-bikes through a canyon road"
+                    src="/fitness/triathlon-cycling.jpg"
+                    style={{ objectPosition: '65% center' }}
+                    alt="Cycling along the coast during a triathlon"
                     loading="lazy"
                   />
                 </div>
