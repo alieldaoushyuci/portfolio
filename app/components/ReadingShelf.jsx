@@ -15,11 +15,6 @@ const BOOKS = {
       author: 'Michael A. Singer',
       cover: 'https://covers.openlibrary.org/b/isbn/9781572245372-L.jpg',
     },
-    {
-      title: "Man's Search for Meaning",
-      author: 'Viktor E. Frankl',
-      cover: '/books/mans-search-for-meaning.jpg',
-    },
   ],
   planned: [
     {
@@ -28,24 +23,9 @@ const BOOKS = {
       cover: 'https://covers.openlibrary.org/b/isbn/9780061660184-L.jpg',
     },
     {
-      title: 'How Music Works',
-      author: 'David Byrne',
-      cover: 'https://covers.openlibrary.org/b/isbn/9780804188937-L.jpg',
-    },
-    {
-      title: 'The Alchemist',
-      author: 'Paulo Coelho',
-      cover: 'https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg',
-    },
-    {
       title: 'Thinking, Fast and Slow',
       author: 'Daniel Kahneman',
       cover: 'https://covers.openlibrary.org/b/isbn/9780374533557-L.jpg',
-    },
-    {
-      title: 'The Infinity Machine: Demis Hassabis, DeepMind, and the Quest for Superintelligence',
-      author: 'Sebastian Mallaby',
-      cover: 'https://covers.openlibrary.org/b/isbn/9780593831847-L.jpg',
     },
     {
       title: 'The 7 Habits of Highly Effective People',
@@ -64,6 +44,11 @@ const BOOKS = {
     },
   ],
   finished: [
+    {
+      title: "Man's Search for Meaning",
+      author: 'Viktor E. Frankl',
+      cover: '/books/mans-search-for-meaning.jpg',
+    },
     {
       title: 'The Art of Living',
       author: 'Epictetus',
