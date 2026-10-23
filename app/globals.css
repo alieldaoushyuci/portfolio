@@ -952,6 +952,45 @@ article h2:first-child {
   margin: 0 0 12px;
 }
 
+.entries .field-context > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+}
+
+.field-context > summary::-webkit-details-marker {
+  display: none;
+}
+
+.field-context > summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
+}
+
+.field-context-expand,
+.field-context-collapse {
+  font-size: 0.75rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.field-context-collapse,
+.field-context[open] .field-context-expand {
+  display: none;
+}
+
+.field-context[open] .field-context-collapse {
+  display: inline;
+}
+
+.entries .field-context[open] > summary {
+  margin-bottom: 12px;
+}
+
 .entries .edu-list {
   list-style: none;
   margin: 0;

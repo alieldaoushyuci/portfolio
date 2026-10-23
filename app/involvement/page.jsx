@@ -160,10 +160,14 @@ export default function Involvement() {
     <main>
       <SectionHeader slug="involvement" />
       <article className="entries">
-        <div className="platform">
-          <p className="group-label">Field Context</p>
+        <details className="platform field-context">
+          <summary className="group-label">
+            <span>Field Context</span>
+            <span className="field-context-expand">Click to expand</span>
+            <span className="field-context-collapse">Click to collapse</span>
+          </summary>
           <FieldContextDeck items={FIELD_CONTEXT} />
-        </div>
+        </details>
 
         <div className="entry platform" id="ai-safety-uci">
           <h2 className="who">
