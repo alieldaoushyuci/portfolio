@@ -162,7 +162,12 @@ export default function Involvement() {
       <article className="entries">
         <details className="platform field-context">
           <summary className="group-label">
-            <span>Field Context</span>
+            <span>
+              <span>Field Context</span>
+              <span className="field-context-description">
+                A collection of articles, research, and resources exploring AI safety.
+              </span>
+            </span>
             <span className="field-context-expand">Click to expand</span>
             <span className="field-context-collapse">Click to collapse</span>
           </summary>
