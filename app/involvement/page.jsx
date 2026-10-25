@@ -223,7 +223,7 @@ export default function Involvement() {
             Alumni Network &amp; Scholarship Chairman{' '}
             <em>— Sigma Pi Fraternity</em>
           </h2>
-          <p className="when">January 2025 – Present</p>
+          <p className="when">January 2025 – September 2026</p>
           <div className="body">
             <ul>
               <li>
