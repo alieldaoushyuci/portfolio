@@ -76,7 +76,16 @@ export default function Skills() {
           <div className="skill-group platform">
             <h2>Certifications</h2>
             <ul className="cert-list">
-              <li>AGI Strategy (BlueDot Foundation)</li>
+              <li>
+                <a href="https://bluedot.org/certification?id=recaN3srSWUI3azh5" target="_blank" rel="noopener noreferrer">
+                  Frontier AI Governance (BlueDot Foundation)
+                </a>
+              </li>
+              <li>
+                <a href="https://bluedot.org/certification?id=recmFoIEJHS5bT05X" target="_blank" rel="noopener noreferrer">
+                  AGI Strategy (BlueDot Foundation)
+                </a>
+              </li>
               <li>Future of AI (BlueDot Foundation)</li>
               <li>Networking and Cybersecurity (William S. Hart District)</li>
             </ul>
