@@ -5,189 +5,342 @@ export const metadata = pageMetadata("Involvement", "Ali Eldaoushy's involvement
 import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
-  {"title":"AI Governance: Overview and Theoretical Lenses","href":"https://docs.google.com/document/d/18urWknXlA3EJ8NcJdxhU12crlVMQTty_DJ0XEC1Y3LM/edit?usp=sharing"},
-  {"title":"Taking Jaggedness Seriously","href":"https://helentoner.substack.com/p/taking-jaggedness-seriously"},
-  {"title":"International AI Safety Report 2026 - Extended Summary for Policymakers","href":"https://internationalaisafetyreport.org/sites/default/files/2026-02/ai-safety-report-2026-extended-summary-for-policymakers.pdf"},
-  {"title":"Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident","href":"https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"},
-  {"title":"The Next Three Phases of AI Politics","href":"https://writing.antonleicht.me/p/the-next-three-phases-of-ai-politics"},
-  {"title":"GPT-6 Astra System Card","href":"https://deploymentsafety.openai.com/gpt-6-astra"},
-  {"title":"Takeoff speeds rule everything around me","href":"https://www.planned-obsolescence.org/p/takeoff-speeds-rule-everything-around"},
-  {"title":"AI 2040: Verification Plan","href":"https://ai-2040.com/supplements/verification-plan"},
-  {"title":"AI Safety Evaluations: An Explainer","href":"https://cset.georgetown.edu/article/ai-safety-evaluations-an-explainer/"},
-  {"title":"When is a capability truly worrying?","href":"https://www.aipolicyperspectives.com/p/when-is-a-capability-truly-worrying"},
-  {"title":"An International Agreement to Prevent the Premature Creation of Artificial Superintelligence","href":"https://techgov.intelligence.org/research/an-international-agreement-to-prevent-the-premature-creation-of-artificial-superintelligence"},
-  {"title":"Superintelligence Strategy","href":"https://www.nationalsecurity.ai/"},
-  {"title":"Research acceleration: The view inside OpenAI","href":"https://openai.com/index/research-acceleration-view-inside-openai/"},
-  {"title":"Task-Completion Time Horizons of Frontier AI Models","href":"https://metr.org/time-horizons/"},
-  {"title":"When Reporting an AI Security Incident Is Not Mandatory","href":"https://www.lawfaremedia.org/article/when-reporting-an-ai-security-incident-is-not-mandatory"},
-  {"title":"AI 2040: Plan S — Shut It All Down","href":"https://ai-2040.com/?choices=plan-s-root"},
-  {"title":"When AI Builds AI","href":"https://cset.georgetown.edu/wp-content/uploads/CSET-When-AI-Builds-AI.pdf"},
-  {"title":"Strategic Visions in AI Governance: Mapping Pathways to Victory","href":"https://static1.squarespace.com/static/64edf8e7f2b10d716b5ba0e1/t/697ba5166a5f471745732db3/1769710870770/Strategic%2BVisions.pdf"},
-  {"title":"Securing a seat at the table: pathways for advancing the UK’s global leadership in frontier AI governance","href":"https://www.longtermresilience.org/reports/advancing-the-uks-global-leadership-in-frontier-ai-governance/"},
-  {"title":"Distributed vs centralized agents","href":"https://www.mindthefuture.info/p/distributed-vs-centralized-agents"},
-  {"title":"How China Views AI Risks and What to do About Them","href":"https://carnegieendowment.org/russia-eurasia/research/2025/10/how-china-views-ai-risks-and-what-to-do-about-them"},
-  {"title":"Common Elements of Frontier AI Safety Policies","href":"https://metr.org/common-elements"},
-  {"title":"Radical Optionality","href":"https://radical-optionality.ai/"},
-  {"title":"ASI existential risk: reconsidering alignment as a goal","href":"https://michaelnotebook.com/xriskbrief/"},
-  {"title":"AI 2040: Plan A — FAQ","href":"https://ai-2040.com/supplements/faq"},
-  {"title":"AI Governance at the Frontier: Unpacking Foundational Assumptions","href":"https://cset.georgetown.edu/publication/ai-governance-at-the-frontier/"},
-  {"title":"Project Tailwind: Interventions","href":"https://coefficientgiving.org/tailwind/initiatives/"},
-  {"title":"Become a person who actually does things","href":"https://www.neelnanda.io/blog/become-a-person-who-actually-does-things"},
-  {"title":"Selective Optimism: A Critique of AI 2040","href":"https://www.mindthefuture.info/p/selective-optimism-a-critique-of"},
-  {"title":"Plan A’s Problem with Dry Tinder","href":"https://www.lesswrong.com/posts/8iDZnQwmvwuxZo3Wx/plan-a-s-problem-with-dry-tinder"},
-  {"title":"AI 2040: Comparing Possible Plans","href":"https://ai-2040.com/supplements/comparing-possible-plans"},
-  {"title":"AI 2040: Capability Scaling Strategy","href":"https://ai-2040.com/supplements/capability-scaling-strategy"},
-  {"title":"Teaching Claude Why","href":"https://www.anthropic.com/research/teaching-claude-why"},
-  {"title":"Alignment remains a hard, unsolved problem","href":"https://www.lesswrong.com/posts/epjuxGnSPof3GnMSL/alignment-remains-a-hard-unsolved-problem"},
-  {"title":"An approach to Technical AGI Safety and Security","href":"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf"},
-  {"title":"Building a Defense-in-Depth Biosecurity Strategy for the AI Era","href":"https://www.rand.org/content/dam/rand/pubs/research_reports/RRA4900/RRA4999-1/RAND_RRA4999-1.pdf"},
-  {"title":"On Civilization-Threatening Bioweapons","href":"https://docs.google.com/document/d/14TUeRD1nEFRBMczLEM3RYJTwX0AhbqkRIMbnr5vDMzk/edit?tab=t.0#heading=h.3h0owwuktuge"},
-  {"title":"Extreme Power Concentration","href":"https://80000hours.org/problem-profiles/extreme-power-concentration/"},
-  {"title":"Why AI alignment could be hard with deep learning","href":"https://www.cold-takes.com/why-ai-alignment-could-be-hard-with-modern-deep-learning/"},
-  {"title":"What Failure Looks Like","href":"https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like"},
-  {"title":"The Loss of Control Playbook","href":"https://lossofcontrol.ai/"},
-  {"title":"AI Could Defeat All of Us Combined","href":"https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/"},
-  {"title":"Synthetic Data Generation for Agentic AI","href":"https://www.nvidia.com/en-us/use-cases/synthetic-data-generation-for-agentic-ai/"},
-  {"title":"The Economics of Recursive Self Improvement","href":"https://elasticity.institute/rsi-paper.pdf"},
-  {"title":"Q2.5 2026 Timeline Update: Uplift and Revenue","href":"https://blog.aifutures.org/p/q25-2026-timelines-update-uplift"},
-  {"title":"Anthropic measurements for understanding the pace of AI development","href":"https://www.anthropic.com/institute/measuring-pace-of-ai-development"},
-  {"title":"METR Frontier Risk Report (Feb - March 2026)","href":"https://metr.org/blog/2026-05-19-frontier-risk-report/"},
-  {"title":"Epoch Benchmarks","href":"https://epoch.ai/benchmarks/search"},
-  {"title":"Epoch Capabilities Index","href":"https://epoch.ai/eci"},
-  {"title":"Trends in AI","href":"https://epoch.ai/trends"},
-  {"title":"What a 100 year-old horse teaches us about AI","href":"https://youtu.be/eP1dSWFqKVs"},
-  {"title":"What will AI look like by 2030?","href":"https://epoch.ai/publications/what-will-ai-look-like-in-2030"},
-  {"title":"Could we reach AGI by 2030?","href":"https://80000hours.org/ai/guide/when-will-agi-arrive/"},
-  {"title":"Can AI Scaling Continue Through 2030?","href":"https://epoch.ai/blog/can-ai-scaling-continue-through-2030"},
-  {"title":"In search of a dynamist vision for safe superhuman AI","href":"https://helentoner.substack.com/p/dynamism-vs-stasis"},
-  {"title":"The choices we make now are critical","href":"https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make"},
-  {"title":"The Gentle Singularity","href":"https://blog.samaltman.com/the-gentle-singularity"},
-  {"title":"Introducing Better Futures","href":"https://www.forethought.org/research/introducing-better-futures"},
-  {"title":"The Intelligence Age","href":"https://ia.samaltman.com/"},
   {
-    title: 'AI systems could cover up misbehavior',
-    href: 'https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/',
+    "title": "International AI Safety Report 2026 - Extended Summary for Policymakers",
+    "href": "https://internationalaisafetyreport.org/sites/default/files/2026-02/ai-safety-report-2026-extended-summary-for-policymakers.pdf"
   },
   {
-    title: 'Does AI Progress Have A Speed Limit?',
-    href: 'https://asteriskmag.com/issues/10/does-ai-progress-have-a-speed-limit',
+    "title": "The Next Three Phases of AI Politics",
+    "href": "https://writing.antonleicht.me/p/the-next-three-phases-of-ai-politics"
   },
   {
-    title: 'Existential Risk from Power-Seeking AI',
-    href: 'https://arxiv.org/abs/2206.13353',
+    "title": "AI 2040: Verification Plan",
+    "href": "https://ai-2040.com/supplements/verification-plan"
   },
   {
-    title: 'High-level hopes for AI alignment',
-    href: 'https://www.cold-takes.com/high-level-hopes-for-ai-alignment/',
+    "title": "An International Agreement to Prevent the Premature Creation of Artificial Superintelligence",
+    "href": "https://techgov.intelligence.org/research/an-international-agreement-to-prevent-the-premature-creation-of-artificial-superintelligence"
   },
   {
-    title: 'Pacing the Frontier',
-    href: 'https://pacing.tech/',
+    "title": "Superintelligence Strategy",
+    "href": "https://www.nationalsecurity.ai/"
   },
   {
-    title: 'Preparing for the Intelligence Explosion',
-    href: 'https://www.forethought.org/research/preparing-for-the-intelligence-explosion',
+    "title": "Research acceleration: The view inside OpenAI",
+    "href": "https://openai.com/index/research-acceleration-view-inside-openai/"
   },
   {
-    title: 'The Most Important Century',
-    href: 'https://www.cold-takes.com/most-important-century/',
+    "title": "When Reporting an AI Security Incident Is Not Mandatory",
+    "href": "https://www.lawfaremedia.org/article/when-reporting-an-ai-security-incident-is-not-mandatory"
   },
   {
-    title: 'A “Morally Binding” White House Accord',
-    href: 'https://thezvi.substack.com/p/a-morally-binding-white-house-accord',
+    "title": "AI 2040: Plan S — Shut It All Down",
+    "href": "https://ai-2040.com/?choices=plan-s-root"
   },
   {
-    title: 'AI 2027',
-    href: 'https://ai-2027.com/',
+    "title": "When AI Builds AI",
+    "href": "https://cset.georgetown.edu/wp-content/uploads/CSET-When-AI-Builds-AI.pdf"
   },
   {
-    title: 'AI 2040',
-    href: 'https://ai-2040.com/',
+    "title": "Strategic Visions in AI Governance: Mapping Pathways to Victory",
+    "href": "https://static1.squarespace.com/static/64edf8e7f2b10d716b5ba0e1/t/697ba5166a5f471745732db3/1769710870770/Strategic%2BVisions.pdf"
   },
   {
-    title: 'AI is going to run out of power',
-    href: 'https://www.transformernews.ai/p/ai-will-run-out-of-power',
+    "title": "Securing a seat at the table: pathways for advancing the UK’s global leadership in frontier AI governance",
+    "href": "https://www.longtermresilience.org/reports/advancing-the-uks-global-leadership-in-frontier-ai-governance/"
   },
   {
-    title: 'An Alien Mind',
-    href: 'https://openai.com/index/an-alien-mind/',
+    "title": "Distributed vs centralized agents",
+    "href": "https://www.mindthefuture.info/p/distributed-vs-centralized-agents"
   },
   {
-    title: 'Basics of Rational Discourse',
-    href: 'https://www.lesswrong.com/posts/XPv4sYrKnPzeJASuk/basics-of-rationalist-discourse-1',
+    "title": "How China Views AI Risks and What to do About Them",
+    "href": "https://carnegieendowment.org/russia-eurasia/research/2025/10/how-china-views-ai-risks-and-what-to-do-about-them"
   },
   {
-    title: 'Daniel Selsam — Personal Statement on AI Risk',
-    href: 'https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub',
+    "title": "Common Elements of Frontier AI Safety Policies",
+    "href": "https://metr.org/common-elements"
   },
   {
-    title: 'For Democracy, Against Handoff',
-    href: 'https://forum.effectivealtruism.org/posts/Tamg8ud99r3yRYgGg/for-democracy-against-handoff',
+    "title": "Radical Optionality",
+    "href": "https://radical-optionality.ai/"
   },
   {
-    title: 'How to get into AI Safety in 3 months',
-    href: 'https://80000hours.org/2026/09/how-to-get-into-ai-safety-in-3-months/',
+    "title": "ASI existential risk: reconsidering alignment as a goal",
+    "href": "https://michaelnotebook.com/xriskbrief/"
   },
   {
-    title: 'If Anyone Builds It, Everyone Dies',
-    href: 'https://ifanyonebuildsit.com/',
+    "title": "AI 2040: Plan A — FAQ",
+    "href": "https://ai-2040.com/supplements/faq"
   },
   {
-    title: 'If you remember one AI disaster, make it this one',
-    href: 'https://www.youtube.com/watch?v=r_9wkavYt4Y',
+    "title": "AI Governance at the Frontier: Unpacking Foundational Assumptions",
+    "href": "https://cset.georgetown.edu/publication/ai-governance-at-the-frontier/"
   },
   {
-    title: 'Intro to Effective Altruism',
-    href: 'https://www.effectivealtruism.org/articles/introduction-to-effective-altruism',
+    "title": "A “Morally Binding” White House Accord",
+    "href": "https://substack.com/inbox/post/218179351?redirect=app-store-no-desktop&inbox=true&triedRedirect=true"
   },
   {
-    title: 'Prospecting for Gold',
-    href: 'https://forum.effectivealtruism.org/posts/YY6PSor7TAZdyFRQi/prospecting-for-gold-owen-cotton-barratt',
+    "title": "AI 2027",
+    "href": "https://ai-2027.com/"
   },
   {
-    title: 'Racing through a minefield: The AI Deployment Problem',
-    href: 'https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/',
+    "title": "AI 2040: Capability Scaling Strategy",
+    "href": "https://ai-2040.com/supplements/capability-scaling-strategy"
   },
   {
-    title: 'So you’re considering AI Safety',
-    href: 'https://aisafety.info/',
+    "title": "AI 2040: Comparing Possible Plans",
+    "href": "https://ai-2040.com/supplements/comparing-possible-plans"
   },
   {
-    title: 'The case for multi-decade AI Timelines',
-    href: 'https://epochai.substack.com/p/the-case-for-multi-decade-ai-timelines',
+    "title": "AI Could Defeat All of Us Combined",
+    "href": "https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/"
   },
   {
-    title: 'The Rise and Fall of Agent Civilizations',
-    href: 'https://www.dwarkesh.com/p/openai-huggingface',
+    "title": "AI is going to run out of power",
+    "href": "https://open.substack.com/pub/transformernews/p/ai-will-run-out-of-power?r=2xf1ok"
   },
   {
-    title: 'The Scramble: Getting in Position to Pace the Frontier',
-    href: 'https://blog.peterwildeford.com/p/the-scramble-getting-in-position',
+    "title": "AI systems could cover up misbehavior",
+    "href": "https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/"
   },
   {
-    title: 'Transformers, the Tech behind LLMs',
-    href: 'https://www.youtube.com/watch?v=wjZofJX0v4M',
+    "title": "Alignment remains a hard, unsolved problem",
+    "href": "https://www.lesswrong.com/posts/epjuxGnSPof3GnMSL/alignment-remains-a-hard-unsolved-problem"
   },
   {
-    title: 'We’re Not Ready for Superintelligence (AI 2027)',
-    href: 'https://www.youtube.com/watch?v=5KVDDfAkRgc',
+    "title": "An approach to Technical AGI Safety and Security",
+    "href": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf"
   },
   {
-    title: 'Why agent swarms could be the next “scaling law”',
-    href: 'https://www.understandingai.org/p/why-agent-swarms-could-be-the-next',
+    "title": "Anthropic measurements for understanding the pace of AI development",
+    "href": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
   },
   {
-    title: 'Why are we sprinting off the AI cliff?',
-    href: 'https://www.youtube.com/watch?v=fjZ90V_JREk',
+    "title": "Basics of Rational Discourse",
+    "href": "https://www.lesswrong.com/posts/XPv4sYrKnPzeJASuk/basics-of-rationalist-discourse-1"
   },
   {
-    title: 'You Need a Theory of Victory',
-    href: 'https://firstscattering.com/p/you-need-a-theory-of-victory',
+    "title": "Become a person who actually does things",
+    "href": "https://www.neelnanda.io/blog/become-a-person-who-actually-does-things"
   },
   {
-    title: 'You should, unfortunately, really be worried about Sam Altman',
-    href: 'https://www.youtube.com/watch?v=_eYTkvZqbnQ',
+    "title": "Building a Defense-in-Depth Biosecurity Strategy for the AI Era",
+    "href": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA4900/RRA4999-1/RAND_RRA4999-1.pdf"
   },
+  {
+    "title": "Can AI Scaling Continue Through 2030?",
+    "href": "https://epoch.ai/blog/can-ai-scaling-continue-through-2030"
+  },
+  {
+    "title": "Could we reach AGI by 2030?",
+    "href": "https://80000hours.org/ai/guide/when-will-agi-arrive/"
+  },
+  {
+    "title": "Daniel Selsam - Personal Statement on AI Risk",
+    "href": "https://docs.google.com/document/d/1NRSfwBrVGWkBE24zRKOeP_Ksmx8ZRLbIwsF1k8pjDfA/edit?tab=t.0#heading=h.gousluhraia4"
+  },
+  {
+    "title": "Extreme Power Concentration",
+    "href": "https://80000hours.org/problem-profiles/extreme-power-concentration/"
+  },
+  {
+    "title": "For Democracy, Against Handoff",
+    "href": "https://forum.effectivealtruism.org/posts/Tamg8ud99r3yRYgGg/for-democracy-against-handoff"
+  },
+  {
+    "title": "How to get into AI Safety in 3 months",
+    "href": "https://80000hours.org/2026/09/how-to-get-into-ai-safety-in-3-months/"
+  },
+  {
+    "title": "If Anyone Builds it, Everyone Dies",
+    "href": "https://ifanyonebuildsit.com"
+  },
+  {
+    "title": "If you remember one AI disaster, make it this one",
+    "href": "https://youtu.be/r_9wkavYt4Y?is=I8p777Vb8mFSvQay"
+  },
+  {
+    "title": "Intro to Effective Altruism",
+    "href": "https://www.effectivealtruism.org/articles/introduction-to-effective-altruism"
+  },
+  {
+    "title": "Introducing Better Futures",
+    "href": "https://www.forethought.org/research/introducing-better-futures"
+  },
+  {
+    "title": "METR Frontier Risk Report (Feb - March 2026)",
+    "href": "https://metr.org/blog/2026-05-19-frontier-risk-report/"
+  },
+  {
+    "title": "On Civilization-Threatening Bioweapons",
+    "href": "https://docs.google.com/document/d/14TUeRD1nEFRBMczLEM3RYJTwX0AhbqkRIMbnr5vDMzk/edit?tab=t.0#heading=h.3h0owwuktuge"
+  },
+  {
+    "title": "Plan A’s Problem with Dry Tinder",
+    "href": "https://www.lesswrong.com/posts/8iDZnQwmvwuxZo3Wx/plan-a-s-problem-with-dry-tinder"
+  },
+  {
+    "title": "Project Tailwind: Interventions",
+    "href": "https://coefficientgiving.org/tailwind/initiatives/"
+  },
+  {
+    "title": "Prospecting for Gold",
+    "href": "https://www.effectivealtruism.org/articles/prospecting-for-gold-owen-cotton-barratt"
+  },
+  {
+    "title": "Q2.5 2026 Timeline Update: Uplift and Revenue",
+    "href": "https://blog.aifutures.org/p/q25-2026-timelines-update-uplift"
+  },
+  {
+    "title": "Racing through a minefield: The AI Deployment Problem",
+    "href": "https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/"
+  },
+  {
+    "title": "Selective Optimism: A Critique of AI 2040",
+    "href": "https://www.mindthefuture.info/p/selective-optimism-a-critique-of"
+  },
+  {
+    "title": "So you’re considering AI Safety",
+    "href": "https://cdn.discordapp.com/attachments/1549453922345811978/1550216952562061312/So_youre_considering_AI_Safety.pdf?ex=6aad878b&is=6aac360b&hm=0df280e36437ed461bbf68d64f86f71ef6a440db309bbf53552bb1e05e9c3852"
+  },
+  {
+    "title": "Synthetic Data Generation for Agentic AI",
+    "href": "https://www.nvidia.com/en-us/use-cases/synthetic-data-generation-for-agentic-ai/"
+  },
+  {
+    "title": "Teaching Claude Why",
+    "href": "https://www.anthropic.com/research/teaching-claude-why"
+  },
+  {
+    "title": "The case for multi-decade AI Timelines",
+    "href": "https://epochai.substack.com/p/the-case-for-multi-decade-ai-timelines"
+  },
+  {
+    "title": "The Economics of Recursive Self Improvement",
+    "href": "https://elasticity.institute/rsi-paper.pdf"
+  },
+  {
+    "title": "The Gentle Singularity",
+    "href": "https://blog.samaltman.com/the-gentle-singularity"
+  },
+  {
+    "title": "The Intelligence Age",
+    "href": "https://ia.samaltman.com/"
+  },
+  {
+    "title": "The Loss of Control Playbook",
+    "href": "https://lossofcontrol.ai/"
+  },
+  {
+    "title": "The Most Important Century",
+    "href": "https://www.cold-takes.com/most-important-century/#Summary"
+  },
+  {
+    "title": "The Rise and Fall of Agent Civilizations",
+    "href": "https://www.dwarkesh.com/p/openai-huggingface"
+  },
+  {
+    "title": "The Scramble: Getting in Position to Pace the Frontier",
+    "href": "https://blog.peterwildeford.com/p/the-scramble-getting-in-position"
+  },
+  {
+    "title": "Transformers, the Tech behind LLMs",
+    "href": "https://www.youtube.com/watch?v=wjZofJX0v4M"
+  },
+  {
+    "title": "Trends in AI",
+    "href": "https://epoch.ai/trends"
+  },
+  {
+    "title": "We’re Not Ready for SuperIntelligence (AI 2027)",
+    "href": "https://youtu.be/5KVDDfAkRgc?is=S3RPYDpoKJhIeejA"
+  },
+  {
+    "title": "What a 100 year-old horse teaches us about AI",
+    "href": "https://youtu.be/eP1dSWFqKVs?is=gw_fzXd4owfiH7No"
+  },
+  {
+    "title": "What Failure Looks Like",
+    "href": "https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like"
+  },
+  {
+    "title": "What will AI look like by 2030?",
+    "href": "https://epoch.ai/publications/what-will-ai-look-like-in-2030"
+  },
+  {
+    "title": "Why agent swarms could be the next “scaling law”",
+    "href": "https://open.substack.com/pub/understandingai/p/why-agent-swarms-could-be-the-next?r=2xf1ok"
+  },
+  {
+    "title": "Why AI alignment could be hard with deep learning",
+    "href": "https://www.cold-takes.com/why-ai-alignment-could-be-hard-with-modern-deep-learning/"
+  },
+  {
+    "title": "Why are we sprinting off the AI cliff?",
+    "href": "https://youtu.be/fjZ90V_JREk?is=qXpRFOWQxM-YFY03"
+  },
+  {
+    "title": "You Need a Theory of Victory",
+    "href": "https://firstscattering.com/p/you-need-a-theory-of-victory"
+  },
+  {
+    "title": "You should, unfortunately, really be worried about Sam Altman",
+    "href": "https://youtu.be/_eYTkvZqbnQ?is=W514M_WrMSX0L1KG"
+  },
+  {
+    "title": "Takeoff speeds rule everything around me",
+    "href": "https://www.planned-obsolescence.org/p/takeoff-speeds-rule-everything-around"
+  },
+  {
+    "title": "AI Governance: Overview and Theoretical Lenses",
+    "href": "https://docs.google.com/document/d/18urWknXlA3EJ8NcJdxhU12crlVMQTty_DJ0XEC1Y3LM/edit?usp=sharing"
+  },
+  {
+    "title": "AI Safety Evaluations: An Explainer",
+    "href": "https://cset.georgetown.edu/article/ai-safety-evaluations-an-explainer/"
+  },
+  {
+    "title": "When is a capability truly worrying?",
+    "href": "https://www.aipolicyperspectives.com/p/when-is-a-capability-truly-worrying"
+  },
+  {
+    "title": "Task-Completion Time Horizons of Frontier AI Models",
+    "href": "https://metr.org/time-horizons/"
+  },
+  {
+    "title": "Epoch Benchmarks",
+    "href": "https://epoch.ai/benchmarks/search"
+  },
+  {
+    "title": "Epoch Capabilities Index",
+    "href": "https://epoch.ai/eci?view=graph&tab=release-date#overview"
+  },
+  {
+    "title": "Taking Jaggedness Seriously",
+    "href": "https://helentoner.substack.com/p/taking-jaggedness-seriously"
+  },
+  {
+    "title": "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+    "href": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+  },
+  {
+    "title": "GPT-6 Astra System Card",
+    "href": "https://deploymentsafety.openai.com/gpt-6-astra"
+  },
+  {
+    "title": "AI 2040",
+    "href": "https://ai-2040.com/?choices=plan-a-root"
+  },
+  {
+    "title": "Pacing the Frontier",
+    "href": "https://www.pacingthefrontier.com/"
+  },
+  {
+    "title": "An Alien Mind",
+    "href": "https://openai.com/index/an-alien-mind/"
+  }
 ];
 
 export default function Involvement() {
@@ -258,7 +411,7 @@ export default function Involvement() {
             Alumni Network &amp; Scholarship Chairman{' '}
             <em>— Sigma Pi Fraternity</em>
           </h2>
-          <p className="when">January 2025 – Present</p>
+          <p className="when">January 2025 – September 2026</p>
           <div className="body">
             <ul>
               <li>
