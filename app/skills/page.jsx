@@ -86,7 +86,11 @@ export default function Skills() {
                   AGI Strategy (BlueDot Foundation)
                 </a>
               </li>
-              <li>Future of AI (BlueDot Foundation)</li>
+              <li>
+                <a href="https://bluedot.org/certification?id=recmIdDC681FaWKcr" target="_blank" rel="noopener noreferrer">
+                  Future of AI (BlueDot Foundation)
+                </a>
+              </li>
               <li>Networking and Cybersecurity (William S. Hart District)</li>
             </ul>
           </div>
