@@ -11,7 +11,7 @@ export default function Experience() {
           <h2 className="who">
             Software Development Intern <em>— Nomad eCommerce</em>
           </h2>
-          <p className="when">March 2026 – Present</p>
+          <p className="when">March 2026 – November 2026</p>
           <div className="body">
             <ul>
               <li>

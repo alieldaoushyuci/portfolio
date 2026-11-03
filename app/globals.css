@@ -1365,7 +1365,7 @@ article .skill-usage a {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--platform-muted);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .career-dot {

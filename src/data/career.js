@@ -30,7 +30,7 @@ export const career = [
     title: 'Software Development Intern',
     org: 'Nomad eCommerce',
     start: '2026-03',
-    date: 'Mar 2026',
+    date: 'Mar–Nov 2026',
     href: '/experience#nomad-ecommerce',
   },
   {
