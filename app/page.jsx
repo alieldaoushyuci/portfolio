@@ -3,10 +3,11 @@ import HeroPortrait from './components/HeroPortrait';
 import CareerTimeline from './components/CareerTimeline';
 
 export const metadata = {
+  description: null,
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Ali Eldaoushy | Personal Portfolio',
-    description: 'Explore the projects, experience, education, and interests of Ali Eldaoushy (alieldaoushy).',
+    description: null,
     url: '/',
     siteName: 'Ali Eldaoushy',
     type: 'website',
