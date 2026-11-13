@@ -7,6 +7,36 @@ export default function Experience() {
     <main>
       <SectionHeader slug="experience" />
       <article className="entries">
+        <div className="entry platform" id="pacific-coast-industrial">
+          <h2 className="who">
+            Full-Stack Software Engineer (Contract){' '}
+            <em>— Pacific Coast Industrial Installers</em>
+          </h2>
+          <p className="when">November 2025 – Present</p>
+          <div className="body">
+            <ul>
+              <li>
+                Architecting cross-platform application that verifies contractor
+                identity, insurance, and licenses before job-site entry
+              </li>
+              <li>
+                Led client requirements sessions with stakeholders and translated
+                business needs into scalable development milestones and designing
+                architecture accordingly
+              </li>
+              <li>
+                Implemented database authentication and row-level access policies,
+                building server-side verification workflows for credential data
+              </li>
+              <li>
+                Integrated third-party APIs to validate credentials against live
+                sources, with expiration tracking and QR-code sharing of user
+                profiles
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="entry platform" id="nomad-ecommerce">
           <h2 className="who">
             Software Development Intern <em>— Nomad eCommerce</em>
@@ -34,36 +64,6 @@ export default function Experience() {
                 Diagnosed and resolved database issues including query
                 inefficiencies and data integrity failures, restoring system
                 reliability
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="entry platform" id="pacific-coast-industrial">
-          <h2 className="who">
-            Full-Stack Software Engineer (Contract){' '}
-            <em>— Pacific Coast Industrial Installers</em>
-          </h2>
-          <p className="when">November 2025 – Present</p>
-          <div className="body">
-            <ul>
-              <li>
-                Architecting cross-platform application that verifies contractor
-                identity, insurance, and licenses before job-site entry
-              </li>
-              <li>
-                Led client requirements sessions with stakeholders and translated
-                business needs into scalable development milestones and designing
-                architecture accordingly
-              </li>
-              <li>
-                Implemented database authentication and row-level access policies,
-                building server-side verification workflows for credential data
-              </li>
-              <li>
-                Integrated third-party APIs to validate credentials against live
-                sources, with expiration tracking and QR-code sharing of user
-                profiles
               </li>
             </ul>
           </div>
