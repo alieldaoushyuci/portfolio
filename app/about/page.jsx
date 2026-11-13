@@ -136,9 +136,9 @@ export default function About() {
               <li className="travel-gallery-item">
                 <div className="travel-gallery-photo">
                   <img
-                    src="/fitness/triathlon-cycling.jpg"
-                    style={{ objectPosition: '65% center' }}
-                    alt="Cycling along the coast during a triathlon"
+                    src="/fitness/triathlon-finish.jpg"
+                    style={{ objectPosition: '43% center' }}
+                    alt="Crossing the finish line at a Cal Tri triathlon"
                     loading="lazy"
                   />
                 </div>

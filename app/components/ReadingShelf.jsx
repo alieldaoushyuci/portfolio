@@ -11,6 +11,11 @@ const TABS = [
 const BOOKS = {
   now: [
     {
+      title: 'Musicophilia: Tales of Music and the Brain',
+      author: 'Oliver Sacks',
+      cover: '/books/musicophilia.jpg',
+    },
+    {
       title: 'The Untethered Soul',
       author: 'Michael A. Singer',
       cover: 'https://covers.openlibrary.org/b/isbn/9781572245372-L.jpg',
@@ -36,11 +41,6 @@ const BOOKS = {
       title: '80,000 Hours',
       author: 'Benjamin Todd',
       cover: '/books/80000-hours.jpg',
-    },
-    {
-      title: 'Musicophilia: Tales of Music and the Brain',
-      author: 'Oliver Sacks',
-      cover: '/books/musicophilia.jpg',
     },
   ],
   finished: [

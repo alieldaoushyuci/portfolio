@@ -6,6 +6,10 @@ import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
   {
+    "title": "METR - Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
+    "href": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  {
     "title": "International AI Safety Report 2026 - Extended Summary for Policymakers",
     "href": "https://internationalaisafetyreport.org/sites/default/files/2026-02/ai-safety-report-2026-extended-summary-for-policymakers.pdf"
   },
