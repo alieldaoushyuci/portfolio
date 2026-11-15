@@ -5,7 +5,7 @@ export const PAGE_UPDATES = {
   '/about': '2026-11-13',
   '/education': '2026-10-13',
   '/experience': '2026-11-13',
-  '/involvement': '2026-11-13',
+  '/involvement': '2026-11-15',
   '/projects': '2026-10-06',
   '/skills': '2026-11-02',
 };

@@ -6,6 +6,14 @@ import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
   {
+    "title": "How to pace the US Frontier",
+    "href": "https://blog.aifutures.org/p/how-to-pace-the-us-frontier"
+  },
+  {
+    "title": "The Free World Must Prevail",
+    "href": "https://situational-awareness.ai/the-free-world-must-prevail/#Whoever_leads_on_superintelligence_will_have_a_decisive_military_advantage"
+  },
+  {
     "title": "METR - Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
     "href": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
   },
