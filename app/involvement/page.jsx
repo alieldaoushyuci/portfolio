@@ -374,6 +374,19 @@ export default function Involvement() {
           <FieldContextDeck items={FIELD_CONTEXT} />
         </details>
 
+        <section className="entry platform" id="writing" aria-labelledby="writing-heading">
+          <h2 className="who" id="writing-heading">Writing</h2>
+          <p className="interest-link">
+            <a
+              href="https://substack.com/@alieldaoushy/note/p-225010712"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read my post on Substack →
+            </a>
+          </p>
+        </section>
+
         <div className="entry platform" id="ai-safety-uci">
           <h2 className="who">
             Member <em>— AI Safety at UCI</em>
