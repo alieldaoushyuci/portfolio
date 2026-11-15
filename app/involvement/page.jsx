@@ -382,7 +382,7 @@ export default function Involvement() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Read my post on Substack →
+              Framing AI Safety
             </a>
           </p>
         </section>
