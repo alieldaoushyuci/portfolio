@@ -7,12 +7,21 @@ export const KIND_LABEL = {
 
 export const career = [
   {
+    id: 'ai-safety-uci-board',
+    kind: 'involvement',
+    title: 'Board Member',
+    org: 'AI Safety at UCI',
+    start: '2026-11-18',
+    date: 'Nov 18, 2026',
+    href: '/involvement#ai-safety-uci',
+  },
+  {
     id: 'ai-safety-uci',
     kind: 'involvement',
     title: 'Member',
     org: 'AI Safety at UCI',
     start: '2026-09',
-    date: 'Sep 2026',
+    date: 'Sep–Nov 18, 2026',
     href: '/involvement#ai-safety-uci',
   },
   {

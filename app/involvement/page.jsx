@@ -378,6 +378,15 @@ export default function Involvement() {
           <h2 className="who" id="writing-heading">Writing</h2>
           <p className="interest-link">
             <a
+              href="https://alieldaoushy.substack.com/p/what-should-a-transparency-mandate?r=2xf1ok&utm_campaign=post&utm_medium=web"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              What Should a Transparency Mandate Require?
+            </a>
+          </p>
+          <p className="interest-link">
+            <a
               href="https://substack.com/@alieldaoushy/note/p-225010712"
               target="_blank"
               rel="noopener noreferrer"
@@ -389,11 +398,16 @@ export default function Involvement() {
 
         <div className="entry platform" id="ai-safety-uci">
           <h2 className="who">
-            Member <em>— AI Safety at UCI</em>
+            Board Member <em>— AI Safety at UCI</em>
           </h2>
-          <p className="when">September 2026 – Present</p>
+          <p className="when">November 18, 2026 – Present</p>
           <div className="body">
             <ul>
+              <li>
+                Design and lead an AI policy curriculum that culminates in a
+                capstone project where participants draft a comprehensive AI
+                safety bill.
+              </li>
               <li>
                 Attend club meetings to discuss and keep up with the latest AI
                 news, research, and writing in the field
