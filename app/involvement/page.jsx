@@ -6,6 +6,18 @@ import FieldContextDeck from '../components/FieldContextDeck';
 
 const FIELD_CONTEXT = [
   {
+    "title": "A National Center for Advanced AI Reliability and Security (FAS)",
+    "href": "https://fas.org/publication/a-national-center-for-advanced-ai-reliability-and-security/"
+  },
+  {
+    "title": "Scaling up AI (Our World in Data)",
+    "href": "https://ourworldindata.org/scaling-up-ai"
+  },
+  {
+    "title": "Policy: An Early Career Guide!",
+    "href": "https://www.chinatalk.media/p/policy-an-early-career-guide-revised"
+  },
+  {
     "title": "How to pace the US Frontier",
     "href": "https://blog.aifutures.org/p/how-to-pace-the-us-frontier"
   },
@@ -404,9 +416,9 @@ export default function Involvement() {
           <div className="body">
             <ul>
               <li>
-                Design and lead an AI policy curriculum that culminates in a
-                capstone project where participants draft a comprehensive AI
-                safety bill.
+                Designing and leading an AI policy curriculum that culminates
+                in a capstone project where participants draft a comprehensive
+                AI safety bill.
               </li>
               <li>
                 Attend club meetings to discuss and keep up with the latest AI
